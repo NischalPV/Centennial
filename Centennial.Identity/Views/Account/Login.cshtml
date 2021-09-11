@@ -1,0 +1,57 @@
+﻿@model Centennial.Identity.Models.AccountViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Sign In";
+    Layout = "_LayoutLogin";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="text-title">
+                <div role="heading">@ViewData["Title"]</div>
+                <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <div asp-validation-summary="All" class="text-danger text-13"></div>
+                    <div class="form-group">
+                        <input asp-for="Phone" class="form-control form-input form-input-center rounded-0 nofocus" placeholder="Phone Number" />
+                        <span asp-validation-for="Phone" class="text-danger text-13"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="Password" class="form-control form-input form-input-center rounded-0 nofocus" placeholder="Password" />
+                        <span asp-validation-for="Password" class="text-danger text-13"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-checkbox">
+                            <label asp-for="RememberMe" class="text-13">
+                                <input asp-for="RememberMe" />
+                                @Html.DisplayNameFor(m => m.RememberMe)
+                            </label>
+                        </div>
+                    </div>
+                    <span class="text-13">
+                        No Account? <a asp-area="" asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Create One</a>
+                    </span>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="pt-3">
+                                <a href="@ViewData["ReturnUrl"]" class="btn btn-block btn-light rounded-0">Back</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="pt-3">
+                                <button type="submit" class="btn btn-block btn-primary rounded-0">Sign In</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3A0BDDE8-47C2-4D7A-BDAC-504CDEB79605}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{96E67D94-38CB-4C27-80E7-964476C4F73F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CC16B8C9-2ED1-466F-9C85-9B08B4CCC376}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{EA677F08-CD60-466D-990A-688D5D9D29C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{C843F40A-C684-479C-A4B2-60A7BF486D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Centennial.Identity", "Centennial.Identity\Centennial.Identity.csproj", "{26AE809F-E532-438E-A37F-658FE58CEA39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Centennial.Api", "Centennial.Api\Centennial.Api.csproj", "{AFF9EB8D-0D52-4B2D-BCFA-224B456173E9}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C4FEA763-FC60-4707-861F-D57C1E6E3E0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{24D41EF8-C561-4152-8A07-34EF3DF14B15}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Centennial.Angular", "Centennial.Angular\Centennial.Angular.csproj", "{A841DD3E-8F62-412B-9AB6-B639F62F997D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26AE809F-E532-438E-A37F-658FE58CEA39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AE809F-E532-438E-A37F-658FE58CEA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AE809F-E532-438E-A37F-658FE58CEA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AE809F-E532-438E-A37F-658FE58CEA39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF9EB8D-0D52-4B2D-BCFA-224B456173E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF9EB8D-0D52-4B2D-BCFA-224B456173E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF9EB8D-0D52-4B2D-BCFA-224B456173E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF9EB8D-0D52-4B2D-BCFA-224B456173E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4FEA763-FC60-4707-861F-D57C1E6E3E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FEA763-FC60-4707-861F-D57C1E6E3E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FEA763-FC60-4707-861F-D57C1E6E3E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FEA763-FC60-4707-861F-D57C1E6E3E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A841DD3E-8F62-412B-9AB6-B639F62F997D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A841DD3E-8F62-412B-9AB6-B639F62F997D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A841DD3E-8F62-412B-9AB6-B639F62F997D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A841DD3E-8F62-412B-9AB6-B639F62F997D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C9A2FAF-647E-4926-BB84-46A42023A83A}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96E67D94-38CB-4C27-80E7-964476C4F73F} = {3A0BDDE8-47C2-4D7A-BDAC-504CDEB79605}
+		{CC16B8C9-2ED1-466F-9C85-9B08B4CCC376} = {96E67D94-38CB-4C27-80E7-964476C4F73F}
+		{EA677F08-CD60-466D-990A-688D5D9D29C9} = {3A0BDDE8-47C2-4D7A-BDAC-504CDEB79605}
+		{C843F40A-C684-479C-A4B2-60A7BF486D56} = {96E67D94-38CB-4C27-80E7-964476C4F73F}
+		{26AE809F-E532-438E-A37F-658FE58CEA39} = {C843F40A-C684-479C-A4B2-60A7BF486D56}
+		{AFF9EB8D-0D52-4B2D-BCFA-224B456173E9} = {CC16B8C9-2ED1-466F-9C85-9B08B4CCC376}
+		{A841DD3E-8F62-412B-9AB6-B639F62F997D} = {EA677F08-CD60-466D-990A-688D5D9D29C9}
+	EndGlobalSection
+EndGlobal

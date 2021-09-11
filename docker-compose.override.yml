@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+  centennial.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - IdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - ExternalIdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - TZ=Asia/Kolkata
+    ports:
+      - "6002:80"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+      - "/etc/localtime:/etc/localtime:ro"
+
+  centennial.identity:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ApiUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:6002
+      - TZ=Asia/Kolkata
+    ports:
+      - "5000:80"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+      - "/etc/localtime:/etc/localtime:ro"
+
+
+  centennial.angular:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - IdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - ExternalIdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - WebApiUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:6002
+      - TZ=Asia/Kolkata
+    ports:
+      - "6003:80"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+      - "/etc/localtime:/etc/localtime:ro"
+

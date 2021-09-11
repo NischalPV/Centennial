@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  centennial.api:
+    image: ${REGISTRY:-nischalvarasadait}/centennial.api:${PLATFORM:-linux}-${TAG:-dev}
+    build:
+      context: .
+      dockerfile: Centennial.Api/Dockerfile
+
+  centennial.identity:
+    image: ${REGISTRY:-nischalvarasadait}/centennial.identity:${PLATFORM:-linux}-${TAG:-dev}
+    build:
+      context: .
+      dockerfile: Centennial.Identity/Dockerfile
+
+
+  centennial.angular:
+    image: ${REGISTRY:-nischalvarasadait}/centennial.angular:${PLATFORM:-linux}-${TAG:-dev}
+    build:
+      context: .
+      dockerfile: Centennial.Angular/Dockerfile
+
