@@ -5,12 +5,14 @@ import { ProcessesComponent } from './processes/processes.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
+import { RawMaterialComponent } from './raw-material/raw-material.component';
 
 const routes: Routes = [
   { path: 'masterdata/processes', component: ProcessesComponent },
   { path: 'masterdata/materials', component: MaterialsComponent },
   { path: 'masterdata/customers', component: CustomersComponent },
   { path: 'masterdata/products', component: ProductsComponent },
+  { path: 'masterdata/rawmaterials', component: RawMaterialComponent },
 ];
 
 @NgModule({

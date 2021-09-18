@@ -27,13 +27,15 @@ import { ProcessesComponent } from './processes/processes.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
+import { RawMaterialComponent } from './raw-material/raw-material.component';
 
 @NgModule({
   declarations: [
     ProcessesComponent,
     MaterialsComponent,
     CustomersComponent,
-    ProductsComponent
+    ProductsComponent,
+    RawMaterialComponent
   ],
   imports: [
     CommonModule,
