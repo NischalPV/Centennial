@@ -13,31 +13,40 @@ import { IProduct } from '../../../shared/interfaces/product.model';
 })
 export class ProductsService {
   private webApiUrl = "";
+  private apiVersion = "";
 
   constructor(private dataService: DataService, private identityService: SecurityService, private configurationService: ConfigurationService) {
-    if (this.configurationService.isReady)
+    if (this.configurationService.isReady) {
       this.webApiUrl = this.configurationService.serverSettings.webApiUrl;
-    else
-      this.configurationService.settingsLoaded$.subscribe(x => this.webApiUrl = this.configurationService.serverSettings.webApiUrl)
+      this.apiVersion = this.configurationService.serverSettings.apiVersion;
+    }
+
+    else {
+      this.configurationService.settingsLoaded$.subscribe(x => {
+        this.webApiUrl = this.configurationService.serverSettings.webApiUrl;
+        this.apiVersion = this.configurationService.serverSettings.apiVersion;
+      });
+
+    }
   }
 
   getProducts(): Observable<IProduct[]> {
-    let url = this.webApiUrl + '/api/v1/products';
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/products/`;
     return this.dataService.get(url).pipe<IProduct[]>(tap((res: any) => { return res; }));
   }
 
   getProduct(id: string): Observable<IProduct> {
-    let url = this.webApiUrl + '/api/v1/products/' + id;
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/products/${id}`;
     return this.dataService.get(url).pipe<IProduct>(tap((res: any) => { return res; }));
   }
 
   postProduct(product: IProduct): Observable<IProduct> {
-    let url = this.webApiUrl + '/api/v1/products';
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/products/`;
     return this.dataService.post(url, product).pipe<IProduct>(tap((res: any) => { return res; }));
   }
 
   deleteProduct(id: string): Observable<any> {
-    let url = this.webApiUrl + '/api/v1/products/' + id;
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/products/${id}`;
     return this.dataService.delete(url).pipe(tap((res: any) => {
       return res;
     }));

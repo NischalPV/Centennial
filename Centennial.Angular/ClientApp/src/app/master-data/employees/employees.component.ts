@@ -3,10 +3,8 @@ import { Observable } from 'rxjs';
 import { catchError, filter } from 'rxjs/operators';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { IProduct } from '../../shared/interfaces/product.model';
-import { IMaterial } from '../../shared/interfaces/material.model';
-import { ProductsService } from '../shared/services/products.service';
-import { MaterialsService } from '../shared/services/materials.service';
+import { IEmployee } from '../../shared/interfaces/employee.model';
+import { EmployeesService } from '../shared/services/employees.service';
 import { ConfigurationService } from '../../shared/services/configuration.service';
 
 import { MatPaginator } from '@angular/material/paginator';
@@ -15,29 +13,25 @@ import { MatSort } from '@angular/material/sort';
 import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  selector: 'app-employees',
+  templateUrl: './employees.component.html',
+  styleUrls: ['./employees.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class EmployeesComponent implements OnInit {
 
-  public products: IProduct[];
-  public materials: IMaterial[];
+  public employees: IEmployee[];
   errorReceived: boolean;
   readonly formControl: AbstractControl;
-  public displayedColumns: string[] = ['sn', 'name', 'dimensions', 'price', 'uniqueIdentifier', 'material', 'createdDate', 'updatedDate', 'action'];
-  public datasource = new MatTableDataSource<IProduct>();
+  public displayedColumns: string[] = ['sn', 'name', 'createdDate', 'action'];
+  public datasource = new MatTableDataSource<IEmployee>();
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
 
-  constructor(private service: ProductsService, private materialService: MaterialsService, private configurationService: ConfigurationService, private formBuilder: FormBuilder, public _componentPageTitle: ComponentPageTitle) { }
+  constructor(private service: EmployeesService, private configurationService: ConfigurationService, private formBuilder: FormBuilder, public _componentPageTitle: ComponentPageTitle) { }
 
-  public createProductForm = this.formBuilder.group({
+  public createEmployeeForm = this.formBuilder.group({
     name: ['', Validators.required],
-    dimensions: ['', Validators.required],
-    price: ['', Validators.required],
-    materialId: ['', Validators.required],
   })
 
   ngOnInit(): void {
@@ -52,16 +46,16 @@ export class ProductsComponent implements OnInit {
       });
     }
 
-    this._componentPageTitle.title = "Products";
+    this._componentPageTitle.title = "Employees";
 
     this.datasource.paginator = this.paginator;
     this.datasource.sort = this.sort;
   }
 
   public onSubmit(): void {
-    console.log(this.createProductForm.value);
-    this.postProduct(this.createProductForm.value);
-    this.createProductForm.reset();
+    //console.log(this.createRawMaterialForm.value);
+    this.postEmployee(this.createEmployeeForm.value);
+    this.createEmployeeForm.reset();
   }
 
   public applyFilter(event: Event) {
@@ -73,22 +67,22 @@ export class ProductsComponent implements OnInit {
     }
   }
 
-  public deleteProduct(id: string) {
+  public deleteEmployee(id: string) {
     this.errorReceived = false;
-    this.service.deleteProduct(id)
+    this.service.deleteEmployee(id)
       .pipe(catchError((err) => this.handleError(err)))
       .subscribe((res) => {
-        console.log("product deleted: " + id);
+        console.log("employee deleted: " + id);
         this.loadData();
       });
   }
 
-  private postProduct(product: IProduct) {
+  private postEmployee(employee: IEmployee) {
     this.errorReceived = false;
-    this.service.postProduct(product)
+    this.service.postEmployee(employee)
       .pipe(catchError((err) => this.handleError(err)))
-      .subscribe(prod => {
-        console.log("product saved!", prod);
+      .subscribe(rmat => {
+        console.log("employee saved!", rmat);
         this.loadData();
       });
   }
@@ -97,21 +91,15 @@ export class ProductsComponent implements OnInit {
     //let url = this._baseUrl + 'api/devices/values';
     this.errorReceived = false;
 
-    this.service.getProducts()
+    this.service.getEmployees()
       .pipe(catchError((err) => this.handleError(err)))
-      .subscribe(prods => {
-        this.products = prods;
-        this.datasource.data = prods;
+      .subscribe(emps => {
+        this.employees = emps;
+        this.datasource.data = emps;
         this.datasource.paginator = this.paginator;
         this.datasource.sort = this.sort;
-        console.log("products received: " + this.products.length);
-      });
-
-    this.materialService.getMaterials()
-      .pipe(catchError((err) => this.handleError(err)))
-      .subscribe(mats => {
-        this.materials = mats;
-        console.log("materials received: " + this.materials.length);
+        console.log("employees received: " + this.employees.length);
+        //console.log("raw materials received", this.rawMaterials);
       });
   }
 

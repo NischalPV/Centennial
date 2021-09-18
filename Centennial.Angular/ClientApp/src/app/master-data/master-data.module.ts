@@ -28,6 +28,7 @@ import { MaterialsComponent } from './materials/materials.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
 import { RawMaterialComponent } from './raw-material/raw-material.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RawMaterialComponent } from './raw-material/raw-material.component';
     MaterialsComponent,
     CustomersComponent,
     ProductsComponent,
-    RawMaterialComponent
+    RawMaterialComponent,
+    EmployeesComponent
   ],
   imports: [
     CommonModule,

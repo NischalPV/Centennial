@@ -10,6 +10,7 @@ import { ConfigurationService } from '../../shared/services/configuration.servic
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 
 @Component({
   selector: 'app-customers',
@@ -27,7 +28,7 @@ export class CustomersComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
 
-  constructor(private service: CustomersService, private configurationService: ConfigurationService, private formBuilder: FormBuilder) { }
+  constructor(private service: CustomersService, private configurationService: ConfigurationService, private formBuilder: FormBuilder, public _componentPageTitle: ComponentPageTitle) { }
 
   public createCustomerForm = this.formBuilder.group({
     name: ['', Validators.required],
@@ -45,6 +46,8 @@ export class CustomersComponent implements OnInit {
       this.configurationService.settingsLoaded$.subscribe(x => {
         this.loadData();
       });
+
+      this._componentPageTitle.title = "Customers";
     }
 
     this.datasource.paginator = this.paginator;

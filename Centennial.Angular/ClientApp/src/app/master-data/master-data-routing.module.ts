@@ -6,6 +6,7 @@ import { MaterialsComponent } from './materials/materials.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
 import { RawMaterialComponent } from './raw-material/raw-material.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 const routes: Routes = [
   { path: 'masterdata/processes', component: ProcessesComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'masterdata/customers', component: CustomersComponent },
   { path: 'masterdata/products', component: ProductsComponent },
   { path: 'masterdata/rawmaterials', component: RawMaterialComponent },
+  { path: 'masterdata/employees', component: EmployeesComponent },
 ];
 
 @NgModule({
@@ -21,4 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
-export class MasterDataRoutingModule {}
+export class MasterDataRoutingModule { }

@@ -12,6 +12,7 @@ import { ConfigurationService } from '../../shared/services/configuration.servic
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 
 
 
@@ -32,7 +33,7 @@ export class RawMaterialComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
 
-  constructor(private service: RawMaterialService, private materialService: MaterialsService, private configurationService: ConfigurationService, private formBuilder: FormBuilder) { }
+  constructor(private service: RawMaterialService, private materialService: MaterialsService, private configurationService: ConfigurationService, private formBuilder: FormBuilder, public _componentPageTitle: ComponentPageTitle) { }
 
   public createRawMaterialForm = this.formBuilder.group({
     name: ['', Validators.required],
@@ -51,6 +52,8 @@ export class RawMaterialComponent implements OnInit {
         this.loadData();
       });
     }
+
+    this._componentPageTitle.title = "Raw materials";
 
     this.datasource.paginator = this.paginator;
     this.datasource.sort = this.sort;

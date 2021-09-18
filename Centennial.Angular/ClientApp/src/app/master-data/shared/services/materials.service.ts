@@ -13,31 +13,40 @@ import { IMaterial } from '../../../shared/interfaces/material.model';
 })
 export class MaterialsService {
   private webApiUrl = "";
+  private apiVersion = "";
 
   constructor(private dataService: DataService, private identityService: SecurityService, private configurationService: ConfigurationService) {
-    if (this.configurationService.isReady)
+    if (this.configurationService.isReady) {
       this.webApiUrl = this.configurationService.serverSettings.webApiUrl;
-    else
-      this.configurationService.settingsLoaded$.subscribe(x => this.webApiUrl = this.configurationService.serverSettings.webApiUrl)
+      this.apiVersion = this.configurationService.serverSettings.apiVersion;
+    }
+
+    else {
+      this.configurationService.settingsLoaded$.subscribe(x => {
+        this.webApiUrl = this.configurationService.serverSettings.webApiUrl;
+        this.apiVersion = this.configurationService.serverSettings.apiVersion;
+      });
+
+    }
   }
 
   getMaterials(): Observable<IMaterial[]> {
-    let url = this.webApiUrl + '/api/v1/materials';
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/materials/`;
     return this.dataService.get(url).pipe<IMaterial[]>(tap((res: any) => { return res; }));
   }
 
   getMaterial(id: string): Observable<IMaterial> {
-    let url = this.webApiUrl + '/api/v1/materials/' + id;
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/materials/${id}`;
     return this.dataService.get(url).pipe<IMaterial>(tap((res: any) => { return res; }));
   }
 
   postMaterial(material: IMaterial): Observable<IMaterial> {
-    let url = this.webApiUrl + '/api/v1/materials';
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/materials/`;
     return this.dataService.post(url, material).pipe<IMaterial>(tap((res: any) => { return res; }));
   }
 
   deleteMaterial(id: string): Observable<any> {
-    let url = this.webApiUrl + '/api/v1/materials/' + id;
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/materials/${id}`;
     return this.dataService.delete(url).pipe(tap((res: any) => {
       return res;
     }));

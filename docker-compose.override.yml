@@ -37,6 +37,7 @@ services:
       - ExternalIdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
       - WebApiUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:6002
       - TZ=Asia/Kolkata
+      - ApiVersion=v1
     ports:
       - "6003:80"
     volumes:

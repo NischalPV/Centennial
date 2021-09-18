@@ -30,6 +30,7 @@ import { MasterDataRoutingModule } from './master-data/master-data-routing.modul
 // Modules
 
 import { MasterDataModule } from './master-data/master-data.module';
+import { ComponentPageHeader } from './component-page-header/component-page-header.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { MasterDataModule } from './master-data/master-data.module';
     HomeComponent,
     IdentityComponent,
     NavMenuComponent,
+    ComponentPageHeader,
   ],
   imports: [
     BrowserModule.withServerTransition({

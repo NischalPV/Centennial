@@ -27,6 +27,7 @@ export class ConfigurationService {
       console.log(this.serverSettings);
       this.storageService.store('identityUrl', this.serverSettings.identityUrl);
       this.storageService.store('webApiUrl', this.serverSettings.webApiUrl);
+      this.storageService.store('apiVersion', this.serverSettings.apiVersion);
       this.isReady = true;
       this.settingsLoadedSource.next();
     });

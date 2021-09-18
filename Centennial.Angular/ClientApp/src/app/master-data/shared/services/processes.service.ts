@@ -14,27 +14,41 @@ import { IProcess } from '../../../shared/interfaces/process.model';
 export class ProcessesService {
 
   private webApiUrl = "";
+  private apiVersion = "";
 
 
   constructor(private dataService: DataService, private identityService: SecurityService, private configurationService: ConfigurationService) {
-    if (this.configurationService.isReady)
+    if (this.configurationService.isReady) {
       this.webApiUrl = this.configurationService.serverSettings.webApiUrl;
-    else
-      this.configurationService.settingsLoaded$.subscribe(x => this.webApiUrl = this.configurationService.serverSettings.webApiUrl)
+      this.apiVersion = this.configurationService.serverSettings.apiVersion;
+    }
+
+    else {
+      this.configurationService.settingsLoaded$.subscribe(x => {
+        this.webApiUrl = this.configurationService.serverSettings.webApiUrl;
+        this.apiVersion = this.configurationService.serverSettings.apiVersion;
+      });
+
+    }
   }
 
   getProcesses(): Observable<IProcess[]> {
-    let url = this.webApiUrl + '/api/v1/processes';
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/processes/`;
+    return this.dataService.get(url).pipe<IProcess[]>(tap((res: any) => { return res; }));
+  }
+
+  getProcess(id: number): Observable<IProcess[]> {
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/processes/${id}`;
     return this.dataService.get(url).pipe<IProcess[]>(tap((res: any) => { return res; }));
   }
 
   postProcess(process: IProcess): Observable<IProcess> {
-    let url = this.webApiUrl + '/api/v1/processes';
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/processes/`;
     return this.dataService.post(url, process).pipe<IProcess>(tap((res: any) => { return res; }));
   }
 
   deleteProcess(id: number): Observable<any> {
-    let url = this.webApiUrl + '/api/v1/processes/' + id;
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/processes/${id}`;
     return this.dataService.delete(url).pipe(tap((res: any) => {
       return res;
     }));

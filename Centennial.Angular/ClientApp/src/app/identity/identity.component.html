@@ -16,6 +16,7 @@
   <button mat-menu-item [matMenuTriggerFor]="processes">Processes</button>
   <button mat-menu-item [matMenuTriggerFor]="products">Products</button>
   <button mat-menu-item [matMenuTriggerFor]="rawmaterials">Raw Materials</button>
+  <button mat-menu-item [matMenuTriggerFor]="employees">Employees</button>
 </mat-menu>
 
 <mat-menu #customers="matMenu">
@@ -42,6 +43,17 @@
 
 <mat-menu #rawmaterials="matMenu">
   <button mat-menu-item [routerLink]="['/masterdata/rawmaterials']">
+    <mat-icon color="primary" fontSet="material-icons-outlined">view_list</mat-icon>
+    <span>Manage</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>add</mat-icon>
+    <span>Add New</span>
+  </button>
+</mat-menu>
+
+<mat-menu #employees="matMenu">
+  <button mat-menu-item [routerLink]="['/masterdata/employees']">
     <mat-icon color="primary" fontSet="material-icons-outlined">view_list</mat-icon>
     <span>Manage</span>
   </button>

@@ -5,5 +5,6 @@ namespace Centennial.Angular
     {
         public string IdentityUrl { get; set; }
         public string WebApiUrl { get; set; }
+        public string ApiVersion { get; set; }
     }
 }

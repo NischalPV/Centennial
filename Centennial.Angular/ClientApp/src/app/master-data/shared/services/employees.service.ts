@@ -6,14 +6,15 @@ import { DataService } from '../../../shared/services/data.service';
 import { SecurityService } from '../../../shared/services/security.service';
 import { ConfigurationService } from '../../../shared/services/configuration.service';
 
-import { ICustomer } from '../../../shared/interfaces/customer.model';
+import { IEmployee } from '../../../shared/interfaces/employee.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CustomersService {
-  private apiVersion = "";
+export class EmployeesService {
+
   private webApiUrl = "";
+  private apiVersion = "";
 
   constructor(private dataService: DataService, private identityService: SecurityService, private configurationService: ConfigurationService) {
     if (this.configurationService.isReady) {
@@ -30,23 +31,23 @@ export class CustomersService {
     }
   }
 
-  getCustomers(): Observable<ICustomer[]> {
-    let url = `${this.webApiUrl}/api/${this.apiVersion}/customers/`;
-    return this.dataService.get(url).pipe<ICustomer[]>(tap((res: any) => { return res; }));
+  getEmployees(): Observable<IEmployee[]> {
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/Employees/`;
+    return this.dataService.get(url).pipe<IEmployee[]>(tap((res: any) => { return res; }));
   }
 
-  getCustomer(id: string): Observable<ICustomer> {
-    let url = `${this.webApiUrl}/api/${this.apiVersion}/customers/${id}`;
-    return this.dataService.get(url).pipe<ICustomer>(tap((res: any) => { return res; }));
+  getEmployee(id: string): Observable<IEmployee> {
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/Employees/${id}`;
+    return this.dataService.get(url).pipe<IEmployee>(tap((res: any) => { return res; }));
   }
 
-  postCustomer(customer: ICustomer): Observable<ICustomer> {
-    let url = `${this.webApiUrl}/api/${this.apiVersion}/customers/`;
-    return this.dataService.post(url, customer).pipe<ICustomer>(tap((res: any) => { return res; }));
+  postEmployee(employee: IEmployee) {
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/Employees/`;
+    return this.dataService.post(url, employee).pipe<IEmployee>(tap((res: any) => { return res; }));
   }
 
-  deleteCustomer(id: string): Observable<any> {
-    let url = `${this.webApiUrl}/api/${this.apiVersion}/customers/${id}`;
+  deleteEmployee(id: string): Observable<any> {
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/Employees/${id}`;
     return this.dataService.delete(url).pipe(tap((res: any) => {
       return res;
     }));
