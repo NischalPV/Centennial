@@ -25,11 +25,13 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MasterDataRoutingModule } from './master-data/master-data-routing.module';
+import { ConfigurationRoutingModule } from './configuration/configuration-routing.module';
 
 
 // Modules
 
 import { MasterDataModule } from './master-data/master-data.module';
+import {ConfigurationModule } from './configuration/configuration.module';
 import { ComponentPageHeader } from './component-page-header/component-page-header.component';
 
 
@@ -59,8 +61,10 @@ import { ComponentPageHeader } from './component-page-header/component-page-head
     MatButtonModule,
     AppRoutingModule,
     MasterDataRoutingModule,
+    ConfigurationRoutingModule,
     BrowserAnimationsModule,
     MasterDataModule,
+    ConfigurationModule,
     ReactiveFormsModule
   ],
   providers: [],

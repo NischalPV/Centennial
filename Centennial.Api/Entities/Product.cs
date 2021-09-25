@@ -31,18 +31,21 @@ namespace Centennial.Api.Entities
         public string UpdatedBy { get; set; }
 
         private readonly List<ProductPriceRecord> _productPriceRecords;
+        private readonly List<ProductionProcess> _productionProcesses;
 
         public virtual Material Material { get; set; }
 
         public virtual IReadOnlyCollection<ProductPriceRecord> ProductPriceRecords => _productPriceRecords;
         public virtual IReadOnlyCollection<StockRecord> StockRecords { get; }
         public virtual IReadOnlyCollection<Inventory> Inventories { get; }
+        public virtual IReadOnlyCollection<ProductionProcess> ProductionProcesses => _productionProcesses;
 
         private Product()
         {
             Id = Guid.NewGuid().ToString();
             CreatedDate = DateTime.UtcNow;
             _productPriceRecords = new List<ProductPriceRecord>();
+            _productionProcesses = new List<ProductionProcess>();
             IsActive = true;
         }
 
@@ -50,6 +53,12 @@ namespace Centennial.Api.Entities
         {
             var newRecord = new ProductPriceRecord(productId, price, change);
             _productPriceRecords.Add(newRecord);
+        }
+
+        public void AddProductionProcesses(string productId, List<ProductionProcess> productionProcesses)
+        {
+            productionProcesses.ForEach(x => x.ProductId = productId);
+            _productionProcesses.AddRange(productionProcesses);
         }
 
         public void SetUniqueIdentifier(string name, string dimensions, float price, string material)

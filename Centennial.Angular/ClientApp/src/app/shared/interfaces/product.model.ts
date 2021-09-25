@@ -1,4 +1,5 @@
 import { IMaterial } from './material.model';
+import { IProductionProcess } from './production-process.model';
 
 export interface IProduct {
   id: string;
@@ -13,4 +14,6 @@ export interface IProduct {
   updatedDate: Date;
   updatedBy: string;
   material: IMaterial;
+  productionProcesses: IProductionProcess[];
+
 }

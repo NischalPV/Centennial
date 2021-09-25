@@ -35,6 +35,7 @@ namespace Centennial.Api.Data
         public DbSet<TransactionType> TransactionTypes { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<RawMaterial> RawMaterials { get; set; }
+        public DbSet<ProductionProcess> ProductionProcesses { get; set; }
 
         private readonly IMediator _mediator;
         private IDbContextTransaction _currentTransaction;

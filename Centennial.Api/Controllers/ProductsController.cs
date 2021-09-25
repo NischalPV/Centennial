@@ -61,6 +61,28 @@ namespace Centennial.Api.Controllers
             return BadRequest(ModelState);
         }
 
+        [HttpPost("{Id}")]
+        public async Task<IActionResult> PostProductionProcesses(string Id, List<Entities.ProductionProcess> productionProcesses)
+        {
+            var dbProduct = await _productRepository.GetByIdAsync(Id);
+
+            if (dbProduct == null)
+            {
+                return BadRequest();
+            }
+
+            try
+            {
+                var product = await _productRepository.AddProductionProcessesAsync(productionProcesses: productionProcesses, productId: Id);
+                return Ok(product);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Error while adding Processes: {ex.Message}");
+                throw;
+            }
+        }
+
         [HttpPut("{Id}")]
         public async Task<IActionResult> PutProduct(string Id, Entities.Product product)
         {

@@ -4,14 +4,16 @@ using Centennial.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Centennial.Api.Data.Migrations.CentennialDb
 {
     [DbContext(typeof(CentennialDbContext))]
-    partial class CentennialDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210919135957_Schema.ProductionProcess.Add")]
+    partial class SchemaProductionProcessAdd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

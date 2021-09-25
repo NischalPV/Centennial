@@ -52,7 +52,7 @@ namespace Centennial.Api.Repositories
             {
                 await _context.SaveChangesAsync();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occured while adding Product");
             }
@@ -64,12 +64,12 @@ namespace Centennial.Api.Repositories
         {
             var lastPriceRecord = await _context.ProductPriceRecords.Where(p => p.ProductId == product.Id).OrderByDescending(p => p.CreatedDate).FirstOrDefaultAsync();
 
-            if(lastPriceRecord.Price != product.Price)
+            if (lastPriceRecord.Price != product.Price)
             {
                 product.AddProductPriceRecord(product.Id, product.Price, (lastPriceRecord.Price - product.Price));
             }
 
-            if(product.Material != null)
+            if (product.Material != null)
             {
                 product.SetUniqueIdentifier(product.Name, product.Dimensions, product.Price, product.Material.Name);
 
@@ -87,7 +87,7 @@ namespace Centennial.Api.Repositories
             {
                 await _context.SaveChangesAsync();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occured while saving Product");
             }
@@ -110,10 +110,33 @@ namespace Centennial.Api.Repositories
             {
                 await _context.SaveChangesAsync();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occured while deleting Product");
             }
+        }
+
+        public async Task<Entities.Product> AddProductionProcessesAsync(List<Entities.ProductionProcess> productionProcesses, string productId)
+        {
+            var dbProduct = await _dbContext.Products.FindAsync(productId);
+            dbProduct.AddProductionProcesses(productId, productionProcesses);
+
+            productionProcesses.ForEach(x =>
+            {
+                x.ProductId = productId;
+                x.IsActive = true;
+            }
+            );
+            try
+            {
+                await _dbContext.ProductionProcesses.AddRangeAsync(productionProcesses);
+                await this.UnitOfWork.SaveEntitiesAsync();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, "An error occured while adding Production Processes");
+            }
+            return dbProduct;
         }
     }
 }
