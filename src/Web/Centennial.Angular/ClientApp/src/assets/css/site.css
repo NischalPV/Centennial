@@ -1,0 +1,235 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*Custom CSS classes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+.logotext, .header-text {
+  font-family: 'Red Hat Display'
+}
+
+.bg-login {
+  background-image: url('../images/login.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-color: #EAF3FA;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto' !important;
+}
+
+.font-weight-thin {
+  font-weight: 100 !important;
+}
+
+.fade-in-lightbox {
+  animation: fadeIn .3s ease-in;
+  -webkit-animation: fadeIn .3s ease-in;
+  -moz-animation: fadeIn .3s ease-in;
+  -ms-animation: fadeIn .3s ease-in;
+  -o-animation: fadeIn .3s ease-in;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 440px;
+  width: calc(100% - 40px);
+  padding: 44px;
+  margin-bottom: 28px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  min-width: 320px;
+  min-height: 338px;
+  overflow: hidden;
+}
+
+.lightbox-cover {
+  background-color: white;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+}
+
+.outer {
+  /*background: url(https://source.unsplash.com/collection/137627/daily) no-repeat center center fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.logo {
+  max-width: 256px;
+  height: 24px;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-title {
+  color: #1b1b1b;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.text-13 {
+  font-size: 1rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: visible;
+  z-index: 99;
+  clear: both;
+  background-color: rgba(0,0,0,0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endColorstr='#99000000');
+}
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding-left: 0;
+}
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea, select {
+  padding: 6px 10px;
+  /*border-width: 1px;*/
+  border-color: #666;
+  border-color: rgba(0,0,0,0.6);
+  height: 36px;
+  outline: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  background-color: transparent;
+}
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea {
+  padding: 4px 8px;
+  border-style: solid;
+  /*border-width: 2px;*/
+  border-color: rgba(0,0,0,0.4);
+  background-color: rgba(255,255,255,0.4);
+  height: 32px;
+  height: 2rem;
+}
+
+.nofocus:focus {
+  box-shadow: none !important;
+  border-bottom-width: 2px;
+}
+
+/*End Custom CSS classes*/
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+/*.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}*/
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+  color: #171717;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.hover-none:hover {
+  text-decoration: none !important;
+}
+
+/*Custom Css*/
+button{
+    padding:10px;
+}
+/*Custom Css*/

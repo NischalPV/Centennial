@@ -1,0 +1,4890 @@
+﻿/*Backrounds*/
+
+
+:root {
+    /*Red*/
+    --red50: #ffebee;
+    --red100: #ffcdd2;
+    --red200: #ef9a9a;
+    --red300: #e57373;
+    --red400: #ef5350;
+    --red500: #f44336;
+    --red600: #e53935;
+    --red700: #d32f2f;
+    --red800: #c62828;
+    --red900: #b71c1c;
+    --redA100: #ff8a80;
+    --redA200: #ff5252;
+    --redA400: #ff1744;
+    --redA700: #d50000;
+    /*Pink*/
+    --pink50: #fce4ec;
+    --pink100: #f8bbd0;
+    --pink200: #f48fb1;
+    --pink300: #f06292;
+    --pink400: #ec407a;
+    --pink500: #e91e63;
+    --pink600: #d81b60;
+    --pink700: #c2185b;
+    --pink800: #ad1457;
+    --pink900: #880e4f;
+    --pinkA100: #ff80ab;
+    --pinkA200: #ff4081;
+    --pinkA400: #f50057;
+    --pinkA700: #c51162;
+    /*Purple*/
+    --purple50: #f3e5f5;
+    --purple100: #e1bee7;
+    --purple200: #ce93d8;
+    --purple300: #ba68c8;
+    --purple400: #ab47bc;
+    --purple500: #9c27b0;
+    --purple600: #8e24aa;
+    --purple700: #7b1fa2;
+    --purple800: #6a1b9a;
+    --purple900: #4a148c;
+    --purpleA100: #ea80fc;
+    --purpleA200: #e040fb;
+    --purpleA400: #d500f9;
+    --purpleA700: #aa00ff;
+    /*Deep Purple*/
+    --deepPurple50: #ede7f6;
+    --deepPurple100: #d1c4e9;
+    --deepPurple200: #b39ddb;
+    --deepPurple300: #9575cd;
+    --deepPurple400: #7e57c2;
+    --deepPurple500: #673ab7;
+    --deepPurple600: #5e35b1;
+    --deepPurple700: #512da8;
+    --deepPurple800: #4527a0;
+    --deepPurple900: #311b92;
+    --deepPurpleA100: #b388ff;
+    --deepPurpleA200: #7c4dff;
+    --deepPurpleA400: #651fff;
+    --deepPurpleA700: #6200ea;
+    /*Indigo*/
+    --indigo50: #e8eaf6;
+    --indigo100: #c5cae9;
+    --indigo200: #9fa8da;
+    --indigo300: #7986cb;
+    --indigo400: #5c6bc0;
+    --indigo500: #3f51b5;
+    --indigo600: #3949ab;
+    --indigo700: #303f9f;
+    --indigo800: #283593;
+    --indigo900: #1a237e;
+    --indigoA100: #8c9eff;
+    --indigoA200: #536dfe;
+    --indigoA400: #3d5afe;
+    --indigoA700: #304ffe;
+    /*Blue*/
+    --blue50: #e3f2fd;
+    --blue100: #bbdefb;
+    --blue200: #90caf9;
+    --blue300: #64b5f6;
+    --blue400: #42a5f5;
+    --blue500: #2196f3;
+    --blue600: #1e88e5;
+    --blue700: #1976d2;
+    --blue800: #1565c0;
+    --blue900: #0d47a1;
+    --blueA100: #82b1ff;
+    --blueA200: #448aff;
+    --blueA400: #2979ff;
+    --blueA700: #2962ff;
+    /*Light Blue*/
+    --lightBlue50: #e1f5fe;
+    --lightBlue100: #b3e5fc;
+    --lightBlue200: #81d4fa;
+    --lightBlue300: #4fc3f7;
+    --lightBlue400: #29b6f6;
+    --lightBlue500: #03a9f4;
+    --lightBlue600: #039be5;
+    --lightBlue700: #0288d1;
+    --lightBlue800: #0277bd;
+    --lightBlue900: #01579b;
+    --lightBlueA100: #80d8ff;
+    --lightBlueA200: #40c4ff;
+    --lightBlueA400: #00b0ff;
+    --lightBlueA700: #0091ea;
+    /*Cyan*/
+    --cyan50: #e0f7fa;
+    --cyan100: #b2ebf2;
+    --cyan200: #80deea;
+    --cyan300: #4dd0e1;
+    --cyan400: #26c6da;
+    --cyan500: #00bcd4;
+    --cyan600: #00acc1;
+    --cyan700: #0097a7;
+    --cyan800: #00838f;
+    --cyan900: #006064;
+    --cyanA100: #84ffff;
+    --cyanA200: #18ffff;
+    --cyanA400: #00e5ff;
+    --cyanA700: #00b8d4;
+    /*Teal*/
+    --teal50: #e0f2f1;
+    --teal100: #b2dfdb;
+    --teal200: #80cbc4;
+    --teal300: #4db6ac;
+    --teal400: #26a69a;
+    --teal500: #009688;
+    --teal600: #00897b;
+    --teal700: #00796b;
+    --teal800: #00695c;
+    --teal900: #004d40;
+    --tealA100: #a7ffeb;
+    --tealA200: #64ffda;
+    --tealA400: #1de9b6;
+    --tealA700: #00bfa5;
+    /*Green*/
+    --green50: #e8f5e9;
+    --green100: #c8e6c9;
+    --green200: #a5d6a7;
+    --green300: #81c784;
+    --green400: #66bb6a;
+    --green500: #4caf50;
+    --green600: #43a047;
+    --green700: #388e3c;
+    --green800: #2e7d32;
+    --green900: #1b5e20;
+    --greenA100: #b9f6ca;
+    --greenA200: #69f0ae;
+    --greenA400: #00e676;
+    --greenA700: #00c853;
+    /*Light Green*/
+    --lightGreen50: #f1f8e9;
+    --lightGreen100: #dcedc8;
+    --lightGreen200: #c5e1a5;
+    --lightGreen300: #aed581;
+    --lightGreen400: #9ccc65;
+    --lightGreen500: #8bc34a;
+    --lightGreen600: #7cb342;
+    --lightGreen700: #689f38;
+    --lightGreen800: #558b2f;
+    --lightGreen900: #33691e;
+    --lightGreenA100: #ccff90;
+    --lightGreenA200: #b2ff59;
+    --lightGreenA400: #76ff03;
+    --lightGreenA700: #64dd17;
+    /*Lime*/
+    --lime50: #f9fbe7;
+    --lime100: #f0f4c3;
+    --lime200: #e6ee9c;
+    --lime300: #dce775;
+    --lime400: #d4e157;
+    --lime500: #cddc39;
+    --lime600: #c0ca33;
+    --lime700: #afb42b;
+    --lime800: #9e9d24;
+    --lime900: #827717;
+    --limeA100: #f4ff81;
+    --limeA200: #eeff41;
+    --limeA400: #c6ff00;
+    --limeA700: #aeea00;
+    /*Yellow*/
+    --yellow50: #fffde7;
+    --yellow100: #fff9c4;
+    --yellow200: #fff59d;
+    --yellow300: #fff176;
+    --yellow400: #ffee58;
+    --yellow500: #ffeb3b;
+    --yellow600: #fdd835;
+    --yellow700: #fbc02d;
+    --yellow800: #f9a825;
+    --yellow900: #f57f17;
+    --yellowA100: #ffff8d;
+    --yellowA200: #ffff00;
+    --yellowA400: #ffea00;
+    --yellowA700: #ffd600;
+    /*Amber*/
+    --amber50: #fff8e1;
+    --amber100: #ffecb3;
+    --amber200: #ffe082;
+    --amber300: #ffd54f;
+    --amber400: #ffca28;
+    --amber500: #ffc107;
+    --amber600: #ffb300;
+    --amber700: #ffa000;
+    --amber800: #ff8f00;
+    --amber900: #ff6f00;
+    --amberA100: #ffe57f;
+    --amberA200: #ffd740;
+    --amberA400: #ffc400;
+    --amberA700: #ffab00;
+    /*Orange*/
+    --orange50: #fff3e0;
+    --orange100: #ffe0b2;
+    --orange200: #ffcc80;
+    --orange300: #ffb74d;
+    --orange400: #ffa726;
+    --orange500: #ff9800;
+    --orange600: #fb8c00;
+    --orange700: #f57c00;
+    --orange800: #ef6c00;
+    --orange900: #e65100;
+    --orangeA100: #ffd180;
+    --orangeA200: #ffab40;
+    --orangeA400: #ff9100;
+    --orangeA700: #ff6d00;
+    /*Deep Orange*/
+    --deepOrange50: #fbe9e7;
+    --deepOrange100: #ffccbc;
+    --deepOrange200: #ffab91;
+    --deepOrange300: #ff8a65;
+    --deepOrange400: #ff7043;
+    --deepOrange500: #ff5722;
+    --deepOrange600: #f4511e;
+    --deepOrange700: #e64a19;
+    --deepOrange800: #d84315;
+    --deepOrange900: #bf360c;
+    --deepOrangeA100: #ff9e80;
+    --deepOrangeA200: #ff6e40;
+    --deepOrangeA400: #ff3d00;
+    --deepOrangeA700: #dd2c00;
+    /*Brown*/
+    --brown50: #efebe9;
+    --brown100: #d7ccc8;
+    --brown200: #bcaaa4;
+    --brown300: #a1887f;
+    --brown400: #8d6e63;
+    --brown500: #795548;
+    --brown600: #6d4c41;
+    --brown700: #5d4037;
+    --brown800: #4e342e;
+    --brown900: #3e2723;
+    /*Grey*/
+    --grey50: #fafafa;
+    --grey100: #f5f5f5;
+    --grey200: #eeeeee;
+    --grey300: #e0e0e0;
+    --grey400: #bdbdbd;
+    --grey500: #9e9e9e;
+    --grey600: #757575;
+    --grey700: #616161;
+    --grey800: #424242;
+    --grey900: #212121;
+    /*Blue Grey*/
+    --blueGrey50: #eceff1;
+    --blueGrey100: #cfd8dc;
+    --blueGrey200: #b0bec5;
+    --blueGrey300: #90a4ae;
+    --blueGrey400: #78909c;
+    --blueGrey500: #607d8b;
+    --blueGrey600: #546e7a;
+    --blueGrey700: #455a64;
+    --blueGrey800: #37474f;
+    --blueGrey900: #263238;
+}
+
+
+/*Background red50*/
+.bg-red50 {
+    background-color: var(--red50) !important
+}
+/*Text red50*/
+.text-red50 {
+    color: var(--red50) !important
+}
+/*Background red100*/
+.bg-red100 {
+    background-color: var(--red100) !important
+}
+/*Text red100*/
+.text-red100 {
+    color: var(--red100) !important
+}
+/*Background red200*/
+.bg-red200 {
+    background-color: var(--red200) !important
+}
+/*Text red200*/
+.text-red200 {
+    color: var(--red200) !important
+}
+/*Background red300*/
+.bg-red300 {
+    background-color: var(--red300) !important
+}
+/*Text red300*/
+.text-red300 {
+    color: var(--red300) !important
+}
+/*Background red400*/
+.bg-red400 {
+    background-color: var(--red400) !important
+}
+/*Text red400*/
+.text-red400 {
+    color: var(--red400) !important
+}
+/*Background red500*/
+.bg-red500 {
+    background-color: var(--red500) !important
+}
+/*Text red500*/
+.text-red500 {
+    color: var(--red500) !important
+}
+/*Background red600*/
+.bg-red600 {
+    background-color: var(--red600) !important
+}
+/*Text red600*/
+.text-red600 {
+    color: var(--red600) !important
+}
+/*Background red700*/
+.bg-red700 {
+    background-color: var(--red700) !important
+}
+/*Text red700*/
+.text-red700 {
+    color: var(--red700) !important
+}
+/*Background red800*/
+.bg-red800 {
+    background-color: var(--red800) !important
+}
+/*Text red800*/
+.text-red800 {
+    color: var(--red800) !important
+}
+/*Background red900*/
+.bg-red900 {
+    background-color: var(--red900) !important
+}
+/*Text red900*/
+.text-red900 {
+    color: var(--red900) !important
+}
+/*Background redA100*/
+.bg-redA100 {
+    background-color: var(--redA100) !important
+}
+/*Text redA100*/
+.text-redA100 {
+    color: var(--redA100) !important
+}
+/*Background redA200*/
+.bg-redA200 {
+    background-color: var(--redA200) !important
+}
+/*Text redA200*/
+.text-redA200 {
+    color: var(--redA200) !important
+}
+/*Background redA400*/
+.bg-redA400 {
+    background-color: var(--redA400) !important
+}
+/*Text redA400*/
+.text-redA400 {
+    color: var(--redA400) !important
+}
+/*Background redA700*/
+.bg-redA700 {
+    background-color: var(--redA700) !important
+}
+/*Text redA700*/
+.text-redA700 {
+    color: var(--redA700) !important
+}
+
+/*Background pink50*/
+.bg-pink50 {
+    background-color: var(--pink50) !important
+}
+/*Text pink50*/
+.text-pink50 {
+    color: var(--pink50) !important
+}
+/*Background pink100*/
+.bg-pink100 {
+    background-color: var(--pink100) !important
+}
+/*Text pink100*/
+.text-pink100 {
+    color: var(--pink100) !important
+}
+/*Background pink200*/
+.bg-pink200 {
+    background-color: var(--pink200) !important
+}
+/*Text pink200*/
+.text-pink200 {
+    color: var(--pink200) !important
+}
+/*Background pink300*/
+.bg-pink300 {
+    background-color: var(--pink300) !important
+}
+/*Text pink300*/
+.text-pink300 {
+    color: var(--pink300) !important
+}
+/*Background pink400*/
+.bg-pink400 {
+    background-color: var(--pink400) !important
+}
+/*Text pink400*/
+.text-pink400 {
+    color: var(--pink400) !important
+}
+/*Background pink500*/
+.bg-pink500 {
+    background-color: var(--pink500) !important
+}
+/*Text pink500*/
+.text-pink500 {
+    color: var(--pink500) !important
+}
+/*Background pink600*/
+.bg-pink600 {
+    background-color: var(--pink600) !important
+}
+/*Text pink600*/
+.text-pink600 {
+    color: var(--pink600) !important
+}
+/*Background pink700*/
+.bg-pink700 {
+    background-color: var(--pink700) !important
+}
+/*Text pink700*/
+.text-pink700 {
+    color: var(--pink700) !important
+}
+/*Background pink800*/
+.bg-pink800 {
+    background-color: var(--pink800) !important
+}
+/*Text pink800*/
+.text-pink800 {
+    color: var(--pink800) !important
+}
+/*Background pink900*/
+.bg-pink900 {
+    background-color: var(--pink900) !important
+}
+/*Text pink900*/
+.text-pink900 {
+    color: var(--pink900) !important
+}
+/*Background pinkA100*/
+.bg-pinkA100 {
+    background-color: var(--pinkA100) !important
+}
+/*Text pinkA100*/
+.text-pinkA100 {
+    color: var(--pinkA100) !important
+}
+/*Background pinkA200*/
+.bg-pinkA200 {
+    background-color: var(--pinkA200) !important
+}
+/*Text pinkA200*/
+.text-pinkA200 {
+    color: var(--pinkA200) !important
+}
+/*Background pinkA400*/
+.bg-pinkA400 {
+    background-color: var(--pinkA400) !important
+}
+/*Text pinkA400*/
+.text-pinkA400 {
+    color: var(--pinkA400) !important
+}
+/*Background pinkA700*/
+.bg-pinkA700 {
+    background-color: var(--pinkA700) !important
+}
+/*Text pinkA700*/
+.text-pinkA700 {
+    color: var(--pinkA700) !important
+}
+/*Background purple50*/
+.bg-purple50 {
+    background-color: var(--purple50) !important
+}
+/*Text purple50*/
+.text-purple50 {
+    color: var(--purple50) !important
+}
+/*Background purple100*/
+.bg-purple100 {
+    background-color: var(--purple100) !important
+}
+/*Text purple100*/
+.text-purple100 {
+    color: var(--purple100) !important
+}
+/*Background purple200*/
+.bg-purple200 {
+    background-color: var(--purple200) !important
+}
+/*Text purple200*/
+.text-purple200 {
+    color: var(--purple200) !important
+}
+/*Background purple300*/
+.bg-purple300 {
+    background-color: var(--purple300) !important
+}
+/*Text purple300*/
+.text-purple300 {
+    color: var(--purple300) !important
+}
+/*Background purple400*/
+.bg-purple400 {
+    background-color: var(--purple400) !important
+}
+/*Text purple400*/
+.text-purple400 {
+    color: var(--purple400) !important
+}
+/*Background purple500*/
+.bg-purple500 {
+    background-color: var(--purple500) !important
+}
+/*Text purple500*/
+.text-purple500 {
+    color: var(--purple500) !important
+}
+/*Background purple600*/
+.bg-purple600 {
+    background-color: var(--purple600) !important
+}
+/*Text purple600*/
+.text-purple600 {
+    color: var(--purple600) !important
+}
+/*Background purple700*/
+.bg-purple700 {
+    background-color: var(--purple700) !important
+}
+/*Text purple700*/
+.text-purple700 {
+    color: var(--purple700) !important
+}
+/*Background purple800*/
+.bg-purple800 {
+    background-color: var(--purple800) !important
+}
+/*Text purple800*/
+.text-purple800 {
+    color: var(--purple800) !important
+}
+/*Background purple900*/
+.bg-purple900 {
+    background-color: var(--purple900) !important
+}
+/*Text purple900*/
+.text-purple900 {
+    color: var(--purple900) !important
+}
+/*Background purpleA100*/
+.bg-purpleA100 {
+    background-color: var(--purpleA100) !important
+}
+/*Text purpleA100*/
+.text-purpleA100 {
+    color: var(--purpleA100) !important
+}
+/*Background purpleA200*/
+.bg-purpleA200 {
+    background-color: var(--purpleA200) !important
+}
+/*Text purpleA200*/
+.text-purpleA200 {
+    color: var(--purpleA200) !important
+}
+/*Background purpleA400*/
+.bg-purpleA400 {
+    background-color: var(--purpleA400) !important
+}
+/*Text purpleA400*/
+.text-purpleA400 {
+    color: var(--purpleA400) !important
+}
+/*Background purpleA700*/
+.bg-purpleA700 {
+    background-color: var(--purpleA700) !important
+}
+/*Text purpleA700*/
+.text-purpleA700 {
+    color: var(--purpleA700) !important
+}
+/*Background deepPurple50*/
+.bg-deepPurple50 {
+    background-color: var(--deepPurple50) !important
+}
+/*Text deepPurple50*/
+.text-deepPurple50 {
+    color: var(--deepPurple50) !important
+}
+/*Background deepPurple100*/
+.bg-deepPurple100 {
+    background-color: var(--deepPurple100) !important
+}
+/*Text deepPurple100*/
+.text-deepPurple100 {
+    color: var(--deepPurple100) !important
+}
+/*Background deepPurple200*/
+.bg-deepPurple200 {
+    background-color: var(--deepPurple200) !important
+}
+/*Text deepPurple200*/
+.text-deepPurple200 {
+    color: var(--deepPurple200) !important
+}
+/*Background deepPurple300*/
+.bg-deepPurple300 {
+    background-color: var(--deepPurple300) !important
+}
+/*Text deepPurple300*/
+.text-deepPurple300 {
+    color: var(--deepPurple300) !important
+}
+/*Background deepPurple400*/
+.bg-deepPurple400 {
+    background-color: var(--deepPurple400) !important
+}
+/*Text deepPurple400*/
+.text-deepPurple400 {
+    color: var(--deepPurple400) !important
+}
+/*Background deepPurple500*/
+.bg-deepPurple500 {
+    background-color: var(--deepPurple500) !important
+}
+/*Text deepPurple500*/
+.text-deepPurple500 {
+    color: var(--deepPurple500) !important
+}
+/*Background deepPurple600*/
+.bg-deepPurple600 {
+    background-color: var(--deepPurple600) !important
+}
+/*Text deepPurple600*/
+.text-deepPurple600 {
+    color: var(--deepPurple600) !important
+}
+/*Background deepPurple700*/
+.bg-deepPurple700 {
+    background-color: var(--deepPurple700) !important
+}
+/*Text deepPurple700*/
+.text-deepPurple700 {
+    color: var(--deepPurple700) !important
+}
+/*Background deepPurple800*/
+.bg-deepPurple800 {
+    background-color: var(--deepPurple800) !important
+}
+/*Text deepPurple800*/
+.text-deepPurple800 {
+    color: var(--deepPurple800) !important
+}
+/*Background deepPurple900*/
+.bg-deepPurple900 {
+    background-color: var(--deepPurple900) !important
+}
+/*Text deepPurple900*/
+.text-deepPurple900 {
+    color: var(--deepPurple900) !important
+}
+/*Background deepPurpleA100*/
+.bg-deepPurpleA100 {
+    background-color: var(--deepPurpleA100) !important
+}
+/*Text deepPurpleA100*/
+.text-deepPurpleA100 {
+    color: var(--deepPurpleA100) !important
+}
+/*Background deepPurpleA200*/
+.bg-deepPurpleA200 {
+    background-color: var(--deepPurpleA200) !important
+}
+/*Text deepPurpleA200*/
+.text-deepPurpleA200 {
+    color: var(--deepPurpleA200) !important
+}
+/*Background deepPurpleA400*/
+.bg-deepPurpleA400 {
+    background-color: var(--deepPurpleA400) !important
+}
+/*Text deepPurpleA400*/
+.text-deepPurpleA400 {
+    color: var(--deepPurpleA400) !important
+}
+/*Background deepPurpleA700*/
+.bg-deepPurpleA700 {
+    background-color: var(--deepPurpleA700) !important
+}
+/*Text deepPurpleA700*/
+.text-deepPurpleA700 {
+    color: var(--deepPurpleA700) !important
+}
+/*Background indigo50*/
+.bg-indigo50 {
+    background-color: var(--indigo50) !important
+}
+/*Text indigo50*/
+.text-indigo50 {
+    color: var(--indigo50) !important
+}
+/*Background indigo100*/
+.bg-indigo100 {
+    background-color: var(--indigo100) !important
+}
+/*Text indigo100*/
+.text-indigo100 {
+    color: var(--indigo100) !important
+}
+/*Background indigo200*/
+.bg-indigo200 {
+    background-color: var(--indigo200) !important
+}
+/*Text indigo200*/
+.text-indigo200 {
+    color: var(--indigo200) !important
+}
+/*Background indigo300*/
+.bg-indigo300 {
+    background-color: var(--indigo300) !important
+}
+/*Text indigo300*/
+.text-indigo300 {
+    color: var(--indigo300) !important
+}
+/*Background indigo400*/
+.bg-indigo400 {
+    background-color: var(--indigo400) !important
+}
+/*Text indigo400*/
+.text-indigo400 {
+    color: var(--indigo400) !important
+}
+/*Background indigo500*/
+.bg-indigo500 {
+    background-color: var(--indigo500) !important
+}
+/*Text indigo500*/
+.text-indigo500 {
+    color: var(--indigo500) !important
+}
+/*Background indigo600*/
+.bg-indigo600 {
+    background-color: var(--indigo600) !important
+}
+/*Text indigo600*/
+.text-indigo600 {
+    color: var(--indigo600) !important
+}
+/*Background indigo700*/
+.bg-indigo700 {
+    background-color: var(--indigo700) !important
+}
+/*Text indigo700*/
+.text-indigo700 {
+    color: var(--indigo700) !important
+}
+/*Background indigo800*/
+.bg-indigo800 {
+    background-color: var(--indigo800) !important
+}
+/*Text indigo800*/
+.text-indigo800 {
+    color: var(--indigo800) !important
+}
+/*Background indigo900*/
+.bg-indigo900 {
+    background-color: var(--indigo900) !important
+}
+/*Text indigo900*/
+.text-indigo900 {
+    color: var(--indigo900) !important
+}
+/*Background indigoA100*/
+.bg-indigoA100 {
+    background-color: var(--indigoA100) !important
+}
+/*Text indigoA100*/
+.text-indigoA100 {
+    color: var(--indigoA100) !important
+}
+/*Background indigoA200*/
+.bg-indigoA200 {
+    background-color: var(--indigoA200) !important
+}
+/*Text indigoA200*/
+.text-indigoA200 {
+    color: var(--indigoA200) !important
+}
+/*Background indigoA400*/
+.bg-indigoA400 {
+    background-color: var(--indigoA400) !important
+}
+/*Text indigoA400*/
+.text-indigoA400 {
+    color: var(--indigoA400) !important
+}
+/*Background indigoA700*/
+.bg-indigoA700 {
+    background-color: var(--indigoA700) !important
+}
+/*Text indigoA700*/
+.text-indigoA700 {
+    color: var(--indigoA700) !important
+}
+/*Background blue50*/
+.bg-blue50 {
+    background-color: var(--blue50) !important
+}
+/*Text blue50*/
+.text-blue50 {
+    color: var(--blue50) !important
+}
+/*Background blue100*/
+.bg-blue100 {
+    background-color: var(--blue100) !important
+}
+/*Text blue100*/
+.text-blue100 {
+    color: var(--blue100) !important
+}
+/*Background blue200*/
+.bg-blue200 {
+    background-color: var(--blue200) !important
+}
+/*Text blue200*/
+.text-blue200 {
+    color: var(--blue200) !important
+}
+/*Background blue300*/
+.bg-blue300 {
+    background-color: var(--blue300) !important
+}
+/*Text blue300*/
+.text-blue300 {
+    color: var(--blue300) !important
+}
+/*Background blue400*/
+.bg-blue400 {
+    background-color: var(--blue400) !important
+}
+/*Text blue400*/
+.text-blue400 {
+    color: var(--blue400) !important
+}
+/*Background blue500*/
+.bg-blue500 {
+    background-color: var(--blue500) !important
+}
+/*Text blue500*/
+.text-blue500 {
+    color: var(--blue500) !important
+}
+/*Background blue600*/
+.bg-blue600 {
+    background-color: var(--blue600) !important
+}
+/*Text blue600*/
+.text-blue600 {
+    color: var(--blue600) !important
+}
+/*Background blue700*/
+.bg-blue700 {
+    background-color: var(--blue700) !important
+}
+/*Text blue700*/
+.text-blue700 {
+    color: var(--blue700) !important
+}
+/*Background blue800*/
+.bg-blue800 {
+    background-color: var(--blue800) !important
+}
+/*Text blue800*/
+.text-blue800 {
+    color: var(--blue800) !important
+}
+/*Background blue900*/
+.bg-blue900 {
+    background-color: var(--blue900) !important
+}
+/*Text blue900*/
+.text-blue900 {
+    color: var(--blue900) !important
+}
+/*Background blueA100*/
+.bg-blueA100 {
+    background-color: var(--blueA100) !important
+}
+/*Text blueA100*/
+.text-blueA100 {
+    color: var(--blueA100) !important
+}
+/*Background blueA200*/
+.bg-blueA200 {
+    background-color: var(--blueA200) !important
+}
+/*Text blueA200*/
+.text-blueA200 {
+    color: var(--blueA200) !important
+}
+/*Background blueA400*/
+.bg-blueA400 {
+    background-color: var(--blueA400) !important
+}
+/*Text blueA400*/
+.text-blueA400 {
+    color: var(--blueA400) !important
+}
+/*Background blueA700*/
+.bg-blueA700 {
+    background-color: var(--blueA700) !important
+}
+/*Text blueA700*/
+.text-blueA700 {
+    color: var(--blueA700) !important
+}
+/*Background lightBlue50*/
+.bg-lightBlue50 {
+    background-color: var(--lightBlue50) !important
+}
+/*Text lightBlue50*/
+.text-lightBlue50 {
+    color: var(--lightBlue50) !important
+}
+/*Background lightBlue100*/
+.bg-lightBlue100 {
+    background-color: var(--lightBlue100) !important
+}
+/*Text lightBlue100*/
+.text-lightBlue100 {
+    color: var(--lightBlue100) !important
+}
+/*Background lightBlue200*/
+.bg-lightBlue200 {
+    background-color: var(--lightBlue200) !important
+}
+/*Text lightBlue200*/
+.text-lightBlue200 {
+    color: var(--lightBlue200) !important
+}
+/*Background lightBlue300*/
+.bg-lightBlue300 {
+    background-color: var(--lightBlue300) !important
+}
+/*Text lightBlue300*/
+.text-lightBlue300 {
+    color: var(--lightBlue300) !important
+}
+/*Background lightBlue400*/
+.bg-lightBlue400 {
+    background-color: var(--lightBlue400) !important
+}
+/*Text lightBlue400*/
+.text-lightBlue400 {
+    color: var(--lightBlue400) !important
+}
+/*Background lightBlue500*/
+.bg-lightBlue500 {
+    background-color: var(--lightBlue500) !important
+}
+/*Text lightBlue500*/
+.text-lightBlue500 {
+    color: var(--lightBlue500) !important
+}
+/*Background lightBlue600*/
+.bg-lightBlue600 {
+    background-color: var(--lightBlue600) !important
+}
+/*Text lightBlue600*/
+.text-lightBlue600 {
+    color: var(--lightBlue600) !important
+}
+/*Background lightBlue700*/
+.bg-lightBlue700 {
+    background-color: var(--lightBlue700) !important
+}
+/*Text lightBlue700*/
+.text-lightBlue700 {
+    color: var(--lightBlue700) !important
+}
+/*Background lightBlue800*/
+.bg-lightBlue800 {
+    background-color: var(--lightBlue800) !important
+}
+/*Text lightBlue800*/
+.text-lightBlue800 {
+    color: var(--lightBlue800) !important
+}
+/*Background lightBlue900*/
+.bg-lightBlue900 {
+    background-color: var(--lightBlue900) !important
+}
+/*Text lightBlue900*/
+.text-lightBlue900 {
+    color: var(--lightBlue900) !important
+}
+/*Background lightBlueA100*/
+.bg-lightBlueA100 {
+    background-color: var(--lightBlueA100) !important
+}
+/*Text lightBlueA100*/
+.text-lightBlueA100 {
+    color: var(--lightBlueA100) !important
+}
+/*Background lightBlueA200*/
+.bg-lightBlueA200 {
+    background-color: var(--lightBlueA200) !important
+}
+/*Text lightBlueA200*/
+.text-lightBlueA200 {
+    color: var(--lightBlueA200) !important
+}
+/*Background lightBlueA400*/
+.bg-lightBlueA400 {
+    background-color: var(--lightBlueA400) !important
+}
+/*Text lightBlueA400*/
+.text-lightBlueA400 {
+    color: var(--lightBlueA400) !important
+}
+/*Background lightBlueA700*/
+.bg-lightBlueA700 {
+    background-color: var(--lightBlueA700) !important
+}
+/*Text lightBlueA700*/
+.text-lightBlueA700 {
+    color: var(--lightBlueA700) !important
+}
+/*Background cyan50*/
+.bg-cyan50 {
+    background-color: var(--cyan50) !important
+}
+/*Text cyan50*/
+.text-cyan50 {
+    color: var(--cyan50) !important
+}
+/*Background cyan100*/
+.bg-cyan100 {
+    background-color: var(--cyan100) !important
+}
+/*Text cyan100*/
+.text-cyan100 {
+    color: var(--cyan100) !important
+}
+/*Background cyan200*/
+.bg-cyan200 {
+    background-color: var(--cyan200) !important
+}
+/*Text cyan200*/
+.text-cyan200 {
+    color: var(--cyan200) !important
+}
+/*Background cyan300*/
+.bg-cyan300 {
+    background-color: var(--cyan300) !important
+}
+/*Text cyan300*/
+.text-cyan300 {
+    color: var(--cyan300) !important
+}
+/*Background cyan400*/
+.bg-cyan400 {
+    background-color: var(--cyan400) !important
+}
+/*Text cyan400*/
+.text-cyan400 {
+    color: var(--cyan400) !important
+}
+/*Background cyan500*/
+.bg-cyan500 {
+    background-color: var(--cyan500) !important
+}
+/*Text cyan500*/
+.text-cyan500 {
+    color: var(--cyan500) !important
+}
+/*Background cyan600*/
+.bg-cyan600 {
+    background-color: var(--cyan600) !important
+}
+/*Text cyan600*/
+.text-cyan600 {
+    color: var(--cyan600) !important
+}
+/*Background cyan700*/
+.bg-cyan700 {
+    background-color: var(--cyan700) !important
+}
+/*Text cyan700*/
+.text-cyan700 {
+    color: var(--cyan700) !important
+}
+/*Background cyan800*/
+.bg-cyan800 {
+    background-color: var(--cyan800) !important
+}
+/*Text cyan800*/
+.text-cyan800 {
+    color: var(--cyan800) !important
+}
+/*Background cyan900*/
+.bg-cyan900 {
+    background-color: var(--cyan900) !important
+}
+/*Text cyan900*/
+.text-cyan900 {
+    color: var(--cyan900) !important
+}
+/*Background cyanA100*/
+.bg-cyanA100 {
+    background-color: var(--cyanA100) !important
+}
+/*Text cyanA100*/
+.text-cyanA100 {
+    color: var(--cyanA100) !important
+}
+/*Background cyanA200*/
+.bg-cyanA200 {
+    background-color: var(--cyanA200) !important
+}
+/*Text cyanA200*/
+.text-cyanA200 {
+    color: var(--cyanA200) !important
+}
+/*Background cyanA400*/
+.bg-cyanA400 {
+    background-color: var(--cyanA400) !important
+}
+/*Text cyanA400*/
+.text-cyanA400 {
+    color: var(--cyanA400) !important
+}
+/*Background cyanA700*/
+.bg-cyanA700 {
+    background-color: var(--cyanA700) !important
+}
+/*Text cyanA700*/
+.text-cyanA700 {
+    color: var(--cyanA700) !important
+}
+/*Background teal50*/
+.bg-teal50 {
+    background-color: var(--teal50) !important
+}
+/*Text teal50*/
+.text-teal50 {
+    color: var(--teal50) !important
+}
+/*Background teal100*/
+.bg-teal100 {
+    background-color: var(--teal100) !important
+}
+/*Text teal100*/
+.text-teal100 {
+    color: var(--teal100) !important
+}
+/*Background teal200*/
+.bg-teal200 {
+    background-color: var(--teal200) !important
+}
+/*Text teal200*/
+.text-teal200 {
+    color: var(--teal200) !important
+}
+/*Background teal300*/
+.bg-teal300 {
+    background-color: var(--teal300) !important
+}
+/*Text teal300*/
+.text-teal300 {
+    color: var(--teal300) !important
+}
+/*Background teal400*/
+.bg-teal400 {
+    background-color: var(--teal400) !important
+}
+/*Text teal400*/
+.text-teal400 {
+    color: var(--teal400) !important
+}
+/*Background teal500*/
+.bg-teal500 {
+    background-color: var(--teal500) !important
+}
+/*Text teal500*/
+.text-teal500 {
+    color: var(--teal500) !important
+}
+/*Background teal600*/
+.bg-teal600 {
+    background-color: var(--teal600) !important
+}
+/*Text teal600*/
+.text-teal600 {
+    color: var(--teal600) !important
+}
+/*Background teal700*/
+.bg-teal700 {
+    background-color: var(--teal700) !important
+}
+/*Text teal700*/
+.text-teal700 {
+    color: var(--teal700) !important
+}
+/*Background teal800*/
+.bg-teal800 {
+    background-color: var(--teal800) !important
+}
+/*Text teal800*/
+.text-teal800 {
+    color: var(--teal800) !important
+}
+/*Background teal900*/
+.bg-teal900 {
+    background-color: var(--teal900) !important
+}
+/*Text teal900*/
+.text-teal900 {
+    color: var(--teal900) !important
+}
+/*Background tealA100*/
+.bg-tealA100 {
+    background-color: var(--tealA100) !important
+}
+/*Text tealA100*/
+.text-tealA100 {
+    color: var(--tealA100) !important
+}
+/*Background tealA200*/
+.bg-tealA200 {
+    background-color: var(--tealA200) !important
+}
+/*Text tealA200*/
+.text-tealA200 {
+    color: var(--tealA200) !important
+}
+/*Background tealA400*/
+.bg-tealA400 {
+    background-color: var(--tealA400) !important
+}
+/*Text tealA400*/
+.text-tealA400 {
+    color: var(--tealA400) !important
+}
+/*Background tealA700*/
+.bg-tealA700 {
+    background-color: var(--tealA700) !important
+}
+/*Text tealA700*/
+.text-tealA700 {
+    color: var(--tealA700) !important
+}
+/*Background green50*/
+.bg-green50 {
+    background-color: var(--green50) !important
+}
+/*Text green50*/
+.text-green50 {
+    color: var(--green50) !important
+}
+/*Background green100*/
+.bg-green100 {
+    background-color: var(--green100) !important
+}
+/*Text green100*/
+.text-green100 {
+    color: var(--green100) !important
+}
+/*Background green200*/
+.bg-green200 {
+    background-color: var(--green200) !important
+}
+/*Text green200*/
+.text-green200 {
+    color: var(--green200) !important
+}
+/*Background green300*/
+.bg-green300 {
+    background-color: var(--green300) !important
+}
+/*Text green300*/
+.text-green300 {
+    color: var(--green300) !important
+}
+/*Background green400*/
+.bg-green400 {
+    background-color: var(--green400) !important
+}
+/*Text green400*/
+.text-green400 {
+    color: var(--green400) !important
+}
+/*Background green500*/
+.bg-green500 {
+    background-color: var(--green500) !important
+}
+/*Text green500*/
+.text-green500 {
+    color: var(--green500) !important
+}
+/*Background green600*/
+.bg-green600 {
+    background-color: var(--green600) !important
+}
+/*Text green600*/
+.text-green600 {
+    color: var(--green600) !important
+}
+/*Background green700*/
+.bg-green700 {
+    background-color: var(--green700) !important
+}
+/*Text green700*/
+.text-green700 {
+    color: var(--green700) !important
+}
+/*Background green800*/
+.bg-green800 {
+    background-color: var(--green800) !important
+}
+/*Text green800*/
+.text-green800 {
+    color: var(--green800) !important
+}
+/*Background green900*/
+.bg-green900 {
+    background-color: var(--green900) !important
+}
+/*Text green900*/
+.text-green900 {
+    color: var(--green900) !important
+}
+/*Background greenA100*/
+.bg-greenA100 {
+    background-color: var(--greenA100) !important
+}
+/*Text greenA100*/
+.text-greenA100 {
+    color: var(--greenA100) !important
+}
+/*Background greenA200*/
+.bg-greenA200 {
+    background-color: var(--greenA200) !important
+}
+/*Text greenA200*/
+.text-greenA200 {
+    color: var(--greenA200) !important
+}
+/*Background greenA400*/
+.bg-greenA400 {
+    background-color: var(--greenA400) !important
+}
+/*Text greenA400*/
+.text-greenA400 {
+    color: var(--greenA400) !important
+}
+/*Background greenA700*/
+.bg-greenA700 {
+    background-color: var(--greenA700) !important
+}
+/*Text greenA700*/
+.text-greenA700 {
+    color: var(--greenA700) !important
+}
+/*Background lightGreen50*/
+.bg-lightGreen50 {
+    background-color: var(--lightGreen50) !important
+}
+/*Text lightGreen50*/
+.text-lightGreen50 {
+    color: var(--lightGreen50) !important
+}
+/*Background lightGreen100*/
+.bg-lightGreen100 {
+    background-color: var(--lightGreen100) !important
+}
+/*Text lightGreen100*/
+.text-lightGreen100 {
+    color: var(--lightGreen100) !important
+}
+/*Background lightGreen200*/
+.bg-lightGreen200 {
+    background-color: var(--lightGreen200) !important
+}
+/*Text lightGreen200*/
+.text-lightGreen200 {
+    color: var(--lightGreen200) !important
+}
+/*Background lightGreen300*/
+.bg-lightGreen300 {
+    background-color: var(--lightGreen300) !important
+}
+/*Text lightGreen300*/
+.text-lightGreen300 {
+    color: var(--lightGreen300) !important
+}
+/*Background lightGreen400*/
+.bg-lightGreen400 {
+    background-color: var(--lightGreen400) !important
+}
+/*Text lightGreen400*/
+.text-lightGreen400 {
+    color: var(--lightGreen400) !important
+}
+/*Background lightGreen500*/
+.bg-lightGreen500 {
+    background-color: var(--lightGreen500) !important
+}
+/*Text lightGreen500*/
+.text-lightGreen500 {
+    color: var(--lightGreen500) !important
+}
+/*Background lightGreen600*/
+.bg-lightGreen600 {
+    background-color: var(--lightGreen600) !important
+}
+/*Text lightGreen600*/
+.text-lightGreen600 {
+    color: var(--lightGreen600) !important
+}
+/*Background lightGreen700*/
+.bg-lightGreen700 {
+    background-color: var(--lightGreen700) !important
+}
+/*Text lightGreen700*/
+.text-lightGreen700 {
+    color: var(--lightGreen700) !important
+}
+/*Background lightGreen800*/
+.bg-lightGreen800 {
+    background-color: var(--lightGreen800) !important
+}
+/*Text lightGreen800*/
+.text-lightGreen800 {
+    color: var(--lightGreen800) !important
+}
+/*Background lightGreen900*/
+.bg-lightGreen900 {
+    background-color: var(--lightGreen900) !important
+}
+/*Text lightGreen900*/
+.text-lightGreen900 {
+    color: var(--lightGreen900) !important
+}
+/*Background lightGreenA100*/
+.bg-lightGreenA100 {
+    background-color: var(--lightGreenA100) !important
+}
+/*Text lightGreenA100*/
+.text-lightGreenA100 {
+    color: var(--lightGreenA100) !important
+}
+/*Background lightGreenA200*/
+.bg-lightGreenA200 {
+    background-color: var(--lightGreenA200) !important
+}
+/*Text lightGreenA200*/
+.text-lightGreenA200 {
+    color: var(--lightGreenA200) !important
+}
+/*Background lightGreenA400*/
+.bg-lightGreenA400 {
+    background-color: var(--lightGreenA400) !important
+}
+/*Text lightGreenA400*/
+.text-lightGreenA400 {
+    color: var(--lightGreenA400) !important
+}
+/*Background lightGreenA700*/
+.bg-lightGreenA700 {
+    background-color: var(--lightGreenA700) !important
+}
+/*Text lightGreenA700*/
+.text-lightGreenA700 {
+    color: var(--lightGreenA700) !important
+}
+/*Background lime50*/
+.bg-lime50 {
+    background-color: var(--lime50) !important
+}
+/*Text lime50*/
+.text-lime50 {
+    color: var(--lime50) !important
+}
+/*Background lime100*/
+.bg-lime100 {
+    background-color: var(--lime100) !important
+}
+/*Text lime100*/
+.text-lime100 {
+    color: var(--lime100) !important
+}
+/*Background lime200*/
+.bg-lime200 {
+    background-color: var(--lime200) !important
+}
+/*Text lime200*/
+.text-lime200 {
+    color: var(--lime200) !important
+}
+/*Background lime300*/
+.bg-lime300 {
+    background-color: var(--lime300) !important
+}
+/*Text lime300*/
+.text-lime300 {
+    color: var(--lime300) !important
+}
+/*Background lime400*/
+.bg-lime400 {
+    background-color: var(--lime400) !important
+}
+/*Text lime400*/
+.text-lime400 {
+    color: var(--lime400) !important
+}
+/*Background lime500*/
+.bg-lime500 {
+    background-color: var(--lime500) !important
+}
+/*Text lime500*/
+.text-lime500 {
+    color: var(--lime500) !important
+}
+/*Background lime600*/
+.bg-lime600 {
+    background-color: var(--lime600) !important
+}
+/*Text lime600*/
+.text-lime600 {
+    color: var(--lime600) !important
+}
+/*Background lime700*/
+.bg-lime700 {
+    background-color: var(--lime700) !important
+}
+/*Text lime700*/
+.text-lime700 {
+    color: var(--lime700) !important
+}
+/*Background lime800*/
+.bg-lime800 {
+    background-color: var(--lime800) !important
+}
+/*Text lime800*/
+.text-lime800 {
+    color: var(--lime800) !important
+}
+/*Background lime900*/
+.bg-lime900 {
+    background-color: var(--lime900) !important
+}
+/*Text lime900*/
+.text-lime900 {
+    color: var(--lime900) !important
+}
+/*Background limeA100*/
+.bg-limeA100 {
+    background-color: var(--limeA100) !important
+}
+/*Text limeA100*/
+.text-limeA100 {
+    color: var(--limeA100) !important
+}
+/*Background limeA200*/
+.bg-limeA200 {
+    background-color: var(--limeA200) !important
+}
+/*Text limeA200*/
+.text-limeA200 {
+    color: var(--limeA200) !important
+}
+/*Background limeA400*/
+.bg-limeA400 {
+    background-color: var(--limeA400) !important
+}
+/*Text limeA400*/
+.text-limeA400 {
+    color: var(--limeA400) !important
+}
+/*Background limeA700*/
+.bg-limeA700 {
+    background-color: var(--limeA700) !important
+}
+/*Text limeA700*/
+.text-limeA700 {
+    color: var(--limeA700) !important
+}
+/*Background yellow50*/
+.bg-yellow50 {
+    background-color: var(--yellow50) !important
+}
+/*Text yellow50*/
+.text-yellow50 {
+    color: var(--yellow50) !important
+}
+/*Background yellow100*/
+.bg-yellow100 {
+    background-color: var(--yellow100) !important
+}
+/*Text yellow100*/
+.text-yellow100 {
+    color: var(--yellow100) !important
+}
+/*Background yellow200*/
+.bg-yellow200 {
+    background-color: var(--yellow200) !important
+}
+/*Text yellow200*/
+.text-yellow200 {
+    color: var(--yellow200) !important
+}
+/*Background yellow300*/
+.bg-yellow300 {
+    background-color: var(--yellow300) !important
+}
+/*Text yellow300*/
+.text-yellow300 {
+    color: var(--yellow300) !important
+}
+/*Background yellow400*/
+.bg-yellow400 {
+    background-color: var(--yellow400) !important
+}
+/*Text yellow400*/
+.text-yellow400 {
+    color: var(--yellow400) !important
+}
+/*Background yellow500*/
+.bg-yellow500 {
+    background-color: var(--yellow500) !important
+}
+/*Text yellow500*/
+.text-yellow500 {
+    color: var(--yellow500) !important
+}
+/*Background yellow600*/
+.bg-yellow600 {
+    background-color: var(--yellow600) !important
+}
+/*Text yellow600*/
+.text-yellow600 {
+    color: var(--yellow600) !important
+}
+/*Background yellow700*/
+.bg-yellow700 {
+    background-color: var(--yellow700) !important
+}
+/*Text yellow700*/
+.text-yellow700 {
+    color: var(--yellow700) !important
+}
+/*Background yellow800*/
+.bg-yellow800 {
+    background-color: var(--yellow800) !important
+}
+/*Text yellow800*/
+.text-yellow800 {
+    color: var(--yellow800) !important
+}
+/*Background yellow900*/
+.bg-yellow900 {
+    background-color: var(--yellow900) !important
+}
+/*Text yellow900*/
+.text-yellow900 {
+    color: var(--yellow900) !important
+}
+/*Background yellowA100*/
+.bg-yellowA100 {
+    background-color: var(--yellowA100) !important
+}
+/*Text yellowA100*/
+.text-yellowA100 {
+    color: var(--yellowA100) !important
+}
+/*Background yellowA200*/
+.bg-yellowA200 {
+    background-color: var(--yellowA200) !important
+}
+/*Text yellowA200*/
+.text-yellowA200 {
+    color: var(--yellowA200) !important
+}
+/*Background yellowA400*/
+.bg-yellowA400 {
+    background-color: var(--yellowA400) !important
+}
+/*Text yellowA400*/
+.text-yellowA400 {
+    color: var(--yellowA400) !important
+}
+/*Background yellowA700*/
+.bg-yellowA700 {
+    background-color: var(--yellowA700) !important
+}
+/*Text yellowA700*/
+.text-yellowA700 {
+    color: var(--yellowA700) !important
+}
+/*Background amber50*/
+.bg-amber50 {
+    background-color: var(--amber50) !important
+}
+/*Text amber50*/
+.text-amber50 {
+    color: var(--amber50) !important
+}
+/*Background amber100*/
+.bg-amber100 {
+    background-color: var(--amber100) !important
+}
+/*Text amber100*/
+.text-amber100 {
+    color: var(--amber100) !important
+}
+/*Background amber200*/
+.bg-amber200 {
+    background-color: var(--amber200) !important
+}
+/*Text amber200*/
+.text-amber200 {
+    color: var(--amber200) !important
+}
+/*Background amber300*/
+.bg-amber300 {
+    background-color: var(--amber300) !important
+}
+/*Text amber300*/
+.text-amber300 {
+    color: var(--amber300) !important
+}
+/*Background amber400*/
+.bg-amber400 {
+    background-color: var(--amber400) !important
+}
+/*Text amber400*/
+.text-amber400 {
+    color: var(--amber400) !important
+}
+/*Background amber500*/
+.bg-amber500 {
+    background-color: var(--amber500) !important
+}
+/*Text amber500*/
+.text-amber500 {
+    color: var(--amber500) !important
+}
+/*Background amber600*/
+.bg-amber600 {
+    background-color: var(--amber600) !important
+}
+/*Text amber600*/
+.text-amber600 {
+    color: var(--amber600) !important
+}
+/*Background amber700*/
+.bg-amber700 {
+    background-color: var(--amber700) !important
+}
+/*Text amber700*/
+.text-amber700 {
+    color: var(--amber700) !important
+}
+/*Background amber800*/
+.bg-amber800 {
+    background-color: var(--amber800) !important
+}
+/*Text amber800*/
+.text-amber800 {
+    color: var(--amber800) !important
+}
+/*Background amber900*/
+.bg-amber900 {
+    background-color: var(--amber900) !important
+}
+/*Text amber900*/
+.text-amber900 {
+    color: var(--amber900) !important
+}
+/*Background amberA100*/
+.bg-amberA100 {
+    background-color: var(--amberA100) !important
+}
+/*Text amberA100*/
+.text-amberA100 {
+    color: var(--amberA100) !important
+}
+/*Background amberA200*/
+.bg-amberA200 {
+    background-color: var(--amberA200) !important
+}
+/*Text amberA200*/
+.text-amberA200 {
+    color: var(--amberA200) !important
+}
+/*Background amberA400*/
+.bg-amberA400 {
+    background-color: var(--amberA400) !important
+}
+/*Text amberA400*/
+.text-amberA400 {
+    color: var(--amberA400) !important
+}
+/*Background amberA700*/
+.bg-amberA700 {
+    background-color: var(--amberA700) !important
+}
+/*Text amberA700*/
+.text-amberA700 {
+    color: var(--amberA700) !important
+}
+/*Background orange50*/
+.bg-orange50 {
+    background-color: var(--orange50) !important
+}
+/*Text orange50*/
+.text-orange50 {
+    color: var(--orange50) !important
+}
+/*Background orange100*/
+.bg-orange100 {
+    background-color: var(--orange100) !important
+}
+/*Text orange100*/
+.text-orange100 {
+    color: var(--orange100) !important
+}
+/*Background orange200*/
+.bg-orange200 {
+    background-color: var(--orange200) !important
+}
+/*Text orange200*/
+.text-orange200 {
+    color: var(--orange200) !important
+}
+/*Background orange300*/
+.bg-orange300 {
+    background-color: var(--orange300) !important
+}
+/*Text orange300*/
+.text-orange300 {
+    color: var(--orange300) !important
+}
+/*Background orange400*/
+.bg-orange400 {
+    background-color: var(--orange400) !important
+}
+/*Text orange400*/
+.text-orange400 {
+    color: var(--orange400) !important
+}
+/*Background orange500*/
+.bg-orange500 {
+    background-color: var(--orange500) !important
+}
+/*Text orange500*/
+.text-orange500 {
+    color: var(--orange500) !important
+}
+/*Background orange600*/
+.bg-orange600 {
+    background-color: var(--orange600) !important
+}
+/*Text orange600*/
+.text-orange600 {
+    color: var(--orange600) !important
+}
+/*Background orange700*/
+.bg-orange700 {
+    background-color: var(--orange700) !important
+}
+/*Text orange700*/
+.text-orange700 {
+    color: var(--orange700) !important
+}
+/*Background orange800*/
+.bg-orange800 {
+    background-color: var(--orange800) !important
+}
+/*Text orange800*/
+.text-orange800 {
+    color: var(--orange800) !important
+}
+/*Background orange900*/
+.bg-orange900 {
+    background-color: var(--orange900) !important
+}
+/*Text orange900*/
+.text-orange900 {
+    color: var(--orange900) !important
+}
+/*Background orangeA100*/
+.bg-orangeA100 {
+    background-color: var(--orangeA100) !important
+}
+/*Text orangeA100*/
+.text-orangeA100 {
+    color: var(--orangeA100) !important
+}
+/*Background orangeA200*/
+.bg-orangeA200 {
+    background-color: var(--orangeA200) !important
+}
+/*Text orangeA200*/
+.text-orangeA200 {
+    color: var(--orangeA200) !important
+}
+/*Background orangeA400*/
+.bg-orangeA400 {
+    background-color: var(--orangeA400) !important
+}
+/*Text orangeA400*/
+.text-orangeA400 {
+    color: var(--orangeA400) !important
+}
+/*Background orangeA700*/
+.bg-orangeA700 {
+    background-color: var(--orangeA700) !important
+}
+/*Text orangeA700*/
+.text-orangeA700 {
+    color: var(--orangeA700) !important
+}
+/*Background deepOrange50*/
+.bg-deepOrange50 {
+    background-color: var(--deepOrange50) !important
+}
+/*Text deepOrange50*/
+.text-deepOrange50 {
+    color: var(--deepOrange50) !important
+}
+/*Background deepOrange100*/
+.bg-deepOrange100 {
+    background-color: var(--deepOrange100) !important
+}
+/*Text deepOrange100*/
+.text-deepOrange100 {
+    color: var(--deepOrange100) !important
+}
+/*Background deepOrange200*/
+.bg-deepOrange200 {
+    background-color: var(--deepOrange200) !important
+}
+/*Text deepOrange200*/
+.text-deepOrange200 {
+    color: var(--deepOrange200) !important
+}
+/*Background deepOrange300*/
+.bg-deepOrange300 {
+    background-color: var(--deepOrange300) !important
+}
+/*Text deepOrange300*/
+.text-deepOrange300 {
+    color: var(--deepOrange300) !important
+}
+/*Background deepOrange400*/
+.bg-deepOrange400 {
+    background-color: var(--deepOrange400) !important
+}
+/*Text deepOrange400*/
+.text-deepOrange400 {
+    color: var(--deepOrange400) !important
+}
+/*Background deepOrange500*/
+.bg-deepOrange500 {
+    background-color: var(--deepOrange500) !important
+}
+/*Text deepOrange500*/
+.text-deepOrange500 {
+    color: var(--deepOrange500) !important
+}
+/*Background deepOrange600*/
+.bg-deepOrange600 {
+    background-color: var(--deepOrange600) !important
+}
+/*Text deepOrange600*/
+.text-deepOrange600 {
+    color: var(--deepOrange600) !important
+}
+/*Background deepOrange700*/
+.bg-deepOrange700 {
+    background-color: var(--deepOrange700) !important
+}
+/*Text deepOrange700*/
+.text-deepOrange700 {
+    color: var(--deepOrange700) !important
+}
+/*Background deepOrange800*/
+.bg-deepOrange800 {
+    background-color: var(--deepOrange800) !important
+}
+/*Text deepOrange800*/
+.text-deepOrange800 {
+    color: var(--deepOrange800) !important
+}
+/*Background deepOrange900*/
+.bg-deepOrange900 {
+    background-color: var(--deepOrange900) !important
+}
+/*Text deepOrange900*/
+.text-deepOrange900 {
+    color: var(--deepOrange900) !important
+}
+/*Background deepOrangeA100*/
+.bg-deepOrangeA100 {
+    background-color: var(--deepOrangeA100) !important
+}
+/*Text deepOrangeA100*/
+.text-deepOrangeA100 {
+    color: var(--deepOrangeA100) !important
+}
+/*Background deepOrangeA200*/
+.bg-deepOrangeA200 {
+    background-color: var(--deepOrangeA200) !important
+}
+/*Text deepOrangeA200*/
+.text-deepOrangeA200 {
+    color: var(--deepOrangeA200) !important
+}
+/*Background deepOrangeA400*/
+.bg-deepOrangeA400 {
+    background-color: var(--deepOrangeA400) !important
+}
+/*Text deepOrangeA400*/
+.text-deepOrangeA400 {
+    color: var(--deepOrangeA400) !important
+}
+/*Background deepOrangeA700*/
+.bg-deepOrangeA700 {
+    background-color: var(--deepOrangeA700) !important
+}
+/*Text deepOrangeA700*/
+.text-deepOrangeA700 {
+    color: var(--deepOrangeA700) !important
+}
+/*Background brown50*/
+.bg-brown50 {
+    background-color: var(--brown50) !important
+}
+/*Text brown50*/
+.text-brown50 {
+    color: var(--brown50) !important
+}
+/*Background brown100*/
+.bg-brown100 {
+    background-color: var(--brown100) !important
+}
+/*Text brown100*/
+.text-brown100 {
+    color: var(--brown100) !important
+}
+/*Background brown200*/
+.bg-brown200 {
+    background-color: var(--brown200) !important
+}
+/*Text brown200*/
+.text-brown200 {
+    color: var(--brown200) !important
+}
+/*Background brown300*/
+.bg-brown300 {
+    background-color: var(--brown300) !important
+}
+/*Text brown300*/
+.text-brown300 {
+    color: var(--brown300) !important
+}
+/*Background brown400*/
+.bg-brown400 {
+    background-color: var(--brown400) !important
+}
+/*Text brown400*/
+.text-brown400 {
+    color: var(--brown400) !important
+}
+/*Background brown500*/
+.bg-brown500 {
+    background-color: var(--brown500) !important
+}
+/*Text brown500*/
+.text-brown500 {
+    color: var(--brown500) !important
+}
+/*Background brown600*/
+.bg-brown600 {
+    background-color: var(--brown600) !important
+}
+/*Text brown600*/
+.text-brown600 {
+    color: var(--brown600) !important
+}
+/*Background brown700*/
+.bg-brown700 {
+    background-color: var(--brown700) !important
+}
+/*Text brown700*/
+.text-brown700 {
+    color: var(--brown700) !important
+}
+/*Background brown800*/
+.bg-brown800 {
+    background-color: var(--brown800) !important
+}
+/*Text brown800*/
+.text-brown800 {
+    color: var(--brown800) !important
+}
+/*Background brown900*/
+.bg-brown900 {
+    background-color: var(--brown900) !important
+}
+/*Text brown900*/
+.text-brown900 {
+    color: var(--brown900) !important
+}
+/*Background grey50*/
+.bg-grey50 {
+    background-color: var(--grey50) !important
+}
+/*Text grey50*/
+.text-grey50 {
+    color: var(--grey50) !important
+}
+/*Background grey100*/
+.bg-grey100 {
+    background-color: var(--grey100) !important
+}
+/*Text grey100*/
+.text-grey100 {
+    color: var(--grey100) !important
+}
+/*Background grey200*/
+.bg-grey200 {
+    background-color: var(--grey200) !important
+}
+/*Text grey200*/
+.text-grey200 {
+    color: var(--grey200) !important
+}
+/*Background grey300*/
+.bg-grey300 {
+    background-color: var(--grey300) !important
+}
+/*Text grey300*/
+.text-grey300 {
+    color: var(--grey300) !important
+}
+/*Background grey400*/
+.bg-grey400 {
+    background-color: var(--grey400) !important
+}
+/*Text grey400*/
+.text-grey400 {
+    color: var(--grey400) !important
+}
+/*Background grey500*/
+.bg-grey500 {
+    background-color: var(--grey500) !important
+}
+/*Text grey500*/
+.text-grey500 {
+    color: var(--grey500) !important
+}
+/*Background grey600*/
+.bg-grey600 {
+    background-color: var(--grey600) !important
+}
+/*Text grey600*/
+.text-grey600 {
+    color: var(--grey600) !important
+}
+/*Background grey700*/
+.bg-grey700 {
+    background-color: var(--grey700) !important
+}
+/*Text grey700*/
+.text-grey700 {
+    color: var(--grey700) !important
+}
+/*Background grey800*/
+.bg-grey800 {
+    background-color: var(--grey800) !important
+}
+/*Text grey800*/
+.text-grey800 {
+    color: var(--grey800) !important
+}
+/*Background grey900*/
+.bg-grey900 {
+    background-color: var(--grey900) !important
+}
+/*Text grey900*/
+.text-grey900 {
+    color: var(--grey900) !important
+}
+/*Background blueGrey50*/
+.bg-blueGrey50 {
+    background-color: var(--blueGrey50) !important
+}
+/*Text blueGrey50*/
+.text-blueGrey50 {
+    color: var(--blueGrey50) !important
+}
+/*Background blueGrey100*/
+.bg-blueGrey100 {
+    background-color: var(--blueGrey100) !important
+}
+/*Text blueGrey100*/
+.text-blueGrey100 {
+    color: var(--blueGrey100) !important
+}
+/*Background blueGrey200*/
+.bg-blueGrey200 {
+    background-color: var(--blueGrey200) !important
+}
+/*Text blueGrey200*/
+.text-blueGrey200 {
+    color: var(--blueGrey200) !important
+}
+/*Background blueGrey300*/
+.bg-blueGrey300 {
+    background-color: var(--blueGrey300) !important
+}
+/*Text blueGrey300*/
+.text-blueGrey300 {
+    color: var(--blueGrey300) !important
+}
+/*Background blueGrey400*/
+.bg-blueGrey400 {
+    background-color: var(--blueGrey400) !important
+}
+/*Text blueGrey400*/
+.text-blueGrey400 {
+    color: var(--blueGrey400) !important
+}
+/*Background blueGrey500*/
+.bg-blueGrey500 {
+    background-color: var(--blueGrey500) !important
+}
+/*Text blueGrey500*/
+.text-blueGrey500 {
+    color: var(--blueGrey500) !important
+}
+/*Background blueGrey600*/
+.bg-blueGrey600 {
+    background-color: var(--blueGrey600) !important
+}
+/*Text blueGrey600*/
+.text-blueGrey600 {
+    color: var(--blueGrey600) !important
+}
+/*Background blueGrey700*/
+.bg-blueGrey700 {
+    background-color: var(--blueGrey700) !important
+}
+/*Text blueGrey700*/
+.text-blueGrey700 {
+    color: var(--blueGrey700) !important
+}
+/*Background blueGrey800*/
+.bg-blueGrey800 {
+    background-color: var(--blueGrey800) !important
+}
+/*Text blueGrey800*/
+.text-blueGrey800 {
+    color: var(--blueGrey800) !important
+}
+/*Background blueGrey900*/
+.bg-blueGrey900 {
+    background-color: var(--blueGrey900) !important
+}
+/*Text blueGrey900*/
+.text-blueGrey900 {
+    color: var(--blueGrey900) !important
+}
+
+/*Icon color red50*/
+.icon-color-red50 {
+    filter: invert(78%) sepia(22%) saturate(260%) hue-rotate(307deg) brightness(117%) contrast(102%) !important;
+}
+
+/*Icon color red100*/
+.icon-color-red100 {
+    filter: invert(78%) sepia(15%) saturate(1036%) hue-rotate(309deg) brightness(112%) contrast(103%) !important;
+}
+
+/*Icon color red200*/
+.icon-color-red200 {
+    filter: invert(89%) sepia(26%) saturate(7491%) hue-rotate(305deg) brightness(117%) contrast(87%) !important;
+}
+
+/*Icon color red300*/
+.icon-color-red300 {
+    filter: invert(83%) sepia(39%) saturate(5951%) hue-rotate(310deg) brightness(92%) contrast(95%) !important;
+}
+
+/*Icon color red400*/
+.icon-color-red400 {
+    filter: invert(44%) sepia(43%) saturate(2532%) hue-rotate(329deg) brightness(95%) contrast(97%) !important;
+}
+
+/*Icon color red500*/
+.icon-color-red500 {
+    filter: invert(34%) sepia(40%) saturate(5982%) hue-rotate(344deg) brightness(107%) contrast(91%) !important;
+}
+
+/*Icon color red600*/
+.icon-color-red600 {
+    filter: invert(37%) sepia(62%) saturate(6769%) hue-rotate(346deg) brightness(96%) contrast(86%) !important;
+}
+
+/*Icon color red700*/
+.icon-color-red700 {
+    filter: invert(23%) sepia(99%) saturate(5680%) hue-rotate(352deg) brightness(93%) contrast(77%) !important;
+}
+
+/*Icon color red800*/
+.icon-color-red800 {
+    filter: invert(35%) sepia(59%) saturate(5722%) hue-rotate(342deg) brightness(78%) contrast(100%) !important;
+}
+
+/*Icon color red900*/
+.icon-color-red900 {
+    filter: invert(13%) sepia(49%) saturate(5392%) hue-rotate(349deg) brightness(115%) contrast(96%) !important;
+}
+
+/*Icon redA100*/
+.icon-color-redA100 {
+    filter: invert(60%) sepia(6%) saturate(3958%) hue-rotate(315deg) brightness(108%) contrast(101%) !important;
+}
+
+/*Icon color redA200*/
+.icon-color-redA200 {
+    filter: invert(42%) sepia(58%) saturate(3458%) hue-rotate(333deg) brightness(114%) contrast(109%) !important;
+}
+
+/*Icon color redA400*/
+.icon-color-redA400 {
+    filter: invert(22%) sepia(97%) saturate(4993%) hue-rotate(339deg) brightness(102%) contrast(101%) !important;
+}
+
+/*Icon color redA700*/
+.icon-color-redA700 {
+    filter: invert(12%) sepia(100%) saturate(7471%) hue-rotate(12deg) brightness(84%) contrast(117%) !important;
+}
+
+/*Icon color pink50*/
+.icon-color-pink50 {
+    filter: invert(92%) sepia(8%) saturate(518%) hue-rotate(297deg) brightness(99%) contrast(101%) !important;
+}
+
+/*Icon color pink100*/
+.icon-color-pink100 {
+    filter: invert(89%) sepia(54%) saturate(648%) hue-rotate(284deg) brightness(102%) contrast(94%) !important;
+}
+
+/*Icon color pink200*/
+.icon-color-pink200 {
+    filter: invert(82%) sepia(15%) saturate(3115%) hue-rotate(291deg) brightness(102%) contrast(91%) !important;
+}
+
+/*Icon color pink300*/
+.icon-color-pink300 {
+    filter: invert(58%) sepia(59%) saturate(2676%) hue-rotate(304deg) brightness(97%) contrast(93%) !important;
+}
+
+/*Icon color pink400*/
+.icon-color-pink400 {
+    filter: invert(42%) sepia(27%) saturate(7499%) hue-rotate(317deg) brightness(96%) contrast(92%) !important;
+}
+
+/*Icon color pink500*/
+.icon-color-pink500 {
+    filter: invert(40%) sepia(89%) saturate(7496%) hue-rotate(329deg) brightness(95%) contrast(91%) !important;
+}
+
+/*Icon color pink600*/
+.icon-color-pink600 {
+    filter: invert(23%) sepia(100%) saturate(3372%) hue-rotate(325deg) brightness(85%) contrast(99%) !important;
+}
+
+/*Icon color pink700*/
+.icon-color-pink700 {
+    filter: invert(16%) sepia(69%) saturate(3393%) hue-rotate(320deg) brightness(102%) contrast(99%) !important;
+}
+
+/*Icon color pink800*/
+.icon-color-pink800 {
+    filter: invert(13%) sepia(75%) saturate(3454%) hue-rotate(318deg) brightness(110%) contrast(98%) !important;
+}
+
+/*Icon color pink900*/
+.icon-color-pink900 {
+    filter: invert(15%) sepia(30%) saturate(6793%) hue-rotate(310deg) brightness(87%) contrast(103%) !important;
+}
+
+/*Icon color pinkA100*/
+.icon-color-pinkA100 {
+    filter: invert(64%) sepia(22%) saturate(1383%) hue-rotate(297deg) brightness(102%) contrast(101%) !important;
+}
+
+/*Icon color pinkA200*/
+.icon-color-pinkA200 {
+    filter: invert(40%) sepia(23%) saturate(6929%) hue-rotate(317deg) brightness(104%) contrast(101%) !important;
+}
+
+/*Icon color pinkA400*/
+.icon-color-pinkA400 {
+    filter: invert(16%) sepia(98%) saturate(5593%) hue-rotate(330deg) brightness(90%) contrast(115%) !important;
+}
+
+/*Icon color pinkA700*/
+.icon-color-pinkA700 {
+    filter: invert(15%) sepia(88%) saturate(3999%) hue-rotate(321deg) brightness(86%) contrast(96%) !important;
+}
+
+/*Icon color purple50*/
+.icon-color-purple50 {
+    filter: invert(92%) sepia(9%) saturate(249%) hue-rotate(246deg) brightness(98%) contrast(98%) !important;
+}
+
+/*Icon color purple100*/
+.icon-color-purple100 {
+    filter: invert(85%) sepia(18%) saturate(803%) hue-rotate(217deg) brightness(95%) contrast(89%) !important;
+}
+
+/*Icon color purple200*/
+.icon-color-purple200 {
+    filter: invert(71%) sepia(27%) saturate(744%) hue-rotate(233deg) brightness(91%) contrast(84%) !important;
+}
+
+/*Icon color purple300*/
+.icon-color-purple300 {
+    filter: invert(72%) sepia(37%) saturate(5628%) hue-rotate(232deg) brightness(82%) contrast(89%) !important;
+}
+
+/*Icon color purple400*/
+.icon-color-purple400 {
+    filter: invert(32%) sepia(33%) saturate(3126%) hue-rotate(265deg) brightness(96%) contrast(82%) !important;
+}
+
+/*Icon color purple500*/
+.icon-color-purple500 {
+    filter: invert(21%) sepia(87%) saturate(2469%) hue-rotate(278deg) brightness(87%) contrast(95%) !important;
+}
+
+/*Icon color purple600*/
+.icon-color-purple600 {
+    filter: invert(24%) sepia(29%) saturate(6428%) hue-rotate(274deg) brightness(81%) contrast(98%) !important;
+}
+
+/*Icon color purple700*/
+.icon-color-purple700 {
+    filter: invert(19%) sepia(77%) saturate(2067%) hue-rotate(266deg) brightness(94%) contrast(108%) !important;
+}
+
+/*Icon color purple800*/
+.icon-color-purple800 {
+    filter: invert(11%) sepia(56%) saturate(5943%) hue-rotate(274deg) brightness(101%) contrast(94%) !important;
+}
+
+/*Icon color purple900*/
+.icon-color-purple900 {
+    filter: invert(17%) sepia(44%) saturate(3889%) hue-rotate(255deg) brightness(84%) contrast(114%) !important;
+}
+
+/*Icon color purpleA100*/
+.icon-color-purpleA100 {
+    filter: invert(59%) sepia(52%) saturate(1526%) hue-rotate(231deg) brightness(102%) contrast(98%) !important;
+}
+
+/*Icon color purpleA200*/
+.icon-color-purpleA200 {
+    filter: invert(34%) sepia(48%) saturate(4085%) hue-rotate(271deg) brightness(103%) contrast(97%) !important;
+}
+
+/*Icon color purpleA400*/
+.icon-color-purpleA400 {
+    filter: invert(17%) sepia(70%) saturate(7475%) hue-rotate(288deg) brightness(102%) contrast(121%) !important;
+}
+
+/*Icon color purpleA700*/
+.icon-color-purpleA700 {
+    filter: invert(29%) sepia(99%) saturate(7448%) hue-rotate(277deg) brightness(98%) contrast(128%) !important;
+}
+
+/*Icon color deepPurple50*/
+.icon-color-deepPurple50 {
+    filter: invert(95%) sepia(11%) saturate(939%) hue-rotate(191deg) brightness(101%) contrast(93%) !important;
+}
+
+/*Icon color deepPurple100*/
+.icon-color-deepPurple100 {
+    filter: invert(90%) sepia(7%) saturate(2403%) hue-rotate(199deg) brightness(90%) contrast(103%) !important;
+}
+
+/*Icon color deepPurple200*/
+.icon-color-deepPurple200 {
+    filter: invert(72%) sepia(16%) saturate(853%) hue-rotate(218deg) brightness(91%) contrast(88%) !important;
+}
+
+/*Icon color deepPurple300*/
+.icon-color-deepPurple300 {
+    filter: invert(47%) sepia(10%) saturate(2375%) hue-rotate(220deg) brightness(107%) contrast(80%) !important;
+}
+
+/*Icon color deepPurple400*/
+.icon-color-deepPurple400 {
+    filter: invert(48%) sepia(28%) saturate(1576%) hue-rotate(220deg) brightness(78%) contrast(93%) !important;
+}
+
+/*Icon color deepPurple500*/
+.icon-color-deepPurple500 {
+    filter: invert(23%) sepia(55%) saturate(3073%) hue-rotate(249deg) brightness(87%) contrast(88%) !important;
+}
+
+/*Icon color deepPurple600*/
+.icon-color-deepPurple600 {
+    filter: invert(17%) sepia(55%) saturate(4539%) hue-rotate(255deg) brightness(87%) contrast(84%) !important;
+}
+
+/*Icon color deepPurple700*/
+.icon-color-deepPurple700 {
+    filter: invert(11%) sepia(58%) saturate(7472%) hue-rotate(260deg) brightness(85%) contrast(82%) !important;
+}
+
+/*Icon color deepPurple800*/
+.icon-color-deepPurple800 {
+    filter: invert(18%) sepia(92%) saturate(4890%) hue-rotate(254deg) brightness(64%) contrast(92%) !important;
+}
+
+/*Icon color deepPurple900*/
+.icon-color-deepPurple900 {
+    filter: invert(8%) sepia(89%) saturate(4952%) hue-rotate(254deg) brightness(96%) contrast(98%) !important;
+}
+
+/*Icon color deepPurpleA100*/
+.icon-color-deepPurpleA100 {
+    filter: invert(53%) sepia(83%) saturate(1057%) hue-rotate(217deg) brightness(101%) contrast(101%) !important;
+}
+
+/*Icon color deepPurpleA200*/
+.icon-color-deepPurpleA200 {
+    filter: invert(31%) sepia(83%) saturate(1501%) hue-rotate(237deg) brightness(98%) contrast(109%) !important;
+}
+
+/*Icon color deepPurpleA400*/
+.icon-color-deepPurpleA400 {
+    filter: invert(12%) sepia(100%) saturate(5223%) hue-rotate(261deg) brightness(105%) contrast(106%) !important;
+}
+
+/*Icon color deepPurpleA700*/
+.icon-color-deepPurpleA700 {
+    filter: invert(20%) sepia(92%) saturate(6976%) hue-rotate(267deg) brightness(82%) contrast(130%) !important;
+}
+
+/*Icon color indigo50*/
+.icon-color-indigo50 {
+    filter: invert(93%) sepia(8%) saturate(965%) hue-rotate(191deg) brightness(103%) contrast(93%) !important;
+}
+
+/*Icon color indigo100*/
+.icon-color-indigo100 {
+    filter: invert(86%) sepia(7%) saturate(807%) hue-rotate(195deg) brightness(94%) contrast(94%) !important;
+}
+
+/*Icon color indigo200*/
+.icon-color-indigo200 {
+    filter: invert(69%) sepia(47%) saturate(329%) hue-rotate(195deg) brightness(92%) contrast(84%) !important;
+}
+
+/*Icon color indigo300*/
+.icon-color-indigo300 {
+    filter: invert(61%) sepia(8%) saturate(2681%) hue-rotate(194deg) brightness(88%) contrast(78%) !important;
+}
+
+/*Icon color indigo400*/
+.icon-color-indigo400 {
+    filter: invert(43%) sepia(12%) saturate(2657%) hue-rotate(194deg) brightness(94%) contrast(84%) !important;
+}
+
+/*Icon color indigo500*/
+.icon-color-indigo500 {
+    filter: invert(29%) sepia(24%) saturate(3721%) hue-rotate(211deg) brightness(94%) contrast(90%) !important;
+}
+
+/*Icon color indigo600*/
+.icon-color-indigo600 {
+    filter: invert(23%) sepia(69%) saturate(1758%) hue-rotate(217deg) brightness(94%) contrast(89%) !important;
+}
+
+/*Icon color indigo700*/
+.icon-color-indigo700 {
+    filter: invert(22%) sepia(94%) saturate(951%) hue-rotate(209deg) brightness(96%) contrast(104%) !important;
+}
+
+/*Icon color indigo800*/
+.icon-color-indigo800 {
+    filter: invert(17%) sepia(39%) saturate(4093%) hue-rotate(225deg) brightness(95%) contrast(96%) !important;
+}
+
+/*Icon color indigo900*/
+.icon-color-indigo900 {
+    filter: invert(13%) sepia(81%) saturate(1968%) hue-rotate(225deg) brightness(101%) contrast(109%) !important;
+}
+
+/*Icon color indigoA100*/
+.icon-color-indigoA100 {
+    filter: invert(61%) sepia(7%) saturate(3129%) hue-rotate(194deg) brightness(103%) contrast(103%) !important;
+}
+
+/*Icon color indigoA200*/
+.icon-color-indigoA200 {
+    filter: invert(35%) sepia(70%) saturate(1195%) hue-rotate(208deg) brightness(102%) contrast(99%) !important;
+}
+
+/*Icon color indigoA400*/
+.icon-color-indigoA400 {
+    filter: invert(27%) sepia(69%) saturate(3362%) hue-rotate(227deg) brightness(101%) contrast(99%) !important;
+}
+
+/*Icon color indigoA700*/
+.icon-color-indigoA700 {
+    filter: invert(21%) sepia(95%) saturate(3543%) hue-rotate(232deg) brightness(103%) contrast(99%) !important;
+}
+
+/*Icon color blue50*/
+.icon-color-blue50 {
+    filter: invert(89%) sepia(27%) saturate(280%) hue-rotate(182deg) brightness(103%) contrast(98%) !important;
+}
+
+/*Icon color blue100*/
+.icon-color-blue100 {
+    filter: invert(84%) sepia(6%) saturate(1851%) hue-rotate(181deg) brightness(102%) contrast(97%) !important;
+}
+
+/*Icon color blue200*/
+.icon-color-blue200 {
+    filter: invert(75%) sepia(23%) saturate(627%) hue-rotate(170deg) brightness(96%) contrast(103%) !important;
+}
+
+/*Icon color blue300*/
+.icon-color-blue300 {
+    filter: invert(63%) sepia(43%) saturate(730%) hue-rotate(177deg) brightness(99%) contrast(96%) !important;
+}
+
+/*Icon color blue400*/
+.icon-color-blue400 {
+    filter: invert(54%) sepia(93%) saturate(1121%) hue-rotate(181deg) brightness(98%) contrast(96%) !important;
+}
+
+/*Icon color blue500*/
+.icon-color-blue500 {
+    filter: invert(46%) sepia(31%) saturate(5065%) hue-rotate(189deg) brightness(106%) contrast(91%) !important;
+}
+
+/*Icon color blue600*/
+.icon-color-blue600 {
+    filter: invert(52%) sepia(78%) saturate(3546%) hue-rotate(187deg) brightness(91%) contrast(97%) !important;
+}
+
+/*Icon color blue700*/
+.icon-color-blue700 {
+    filter: invert(33%) sepia(35%) saturate(4911%) hue-rotate(196deg) brightness(92%) contrast(81%) !important;
+}
+
+/*Icon color blue800*/
+.icon-color-blue800 {
+    filter: invert(35%) sepia(85%) saturate(1424%) hue-rotate(195deg) brightness(76%) contrast(97%) !important;
+}
+
+/*Icon color blue900*/
+.icon-color-blue900 {
+    filter: invert(14%) sepia(90%) saturate(3001%) hue-rotate(212deg) brightness(99%) contrast(90%) !important;
+}
+
+/*Icon color blueA100*/
+.icon-color-blueA100 {
+    filter: invert(57%) sepia(60%) saturate(499%) hue-rotate(188deg) brightness(106%) contrast(111%) !important;
+}
+
+/*Icon color blueA200*/
+.icon-color-blueA200 {
+    filter: invert(66%) sepia(90%) saturate(4737%) hue-rotate(200deg) brightness(100%) contrast(101%) !important;
+}
+
+/*Icon color blueA400*/
+.icon-color-blueA400 {
+    filter: invert(36%) sepia(24%) saturate(6196%) hue-rotate(209deg) brightness(104%) contrast(101%) !important;
+}
+
+/*Icon color blueA700*/
+.icon-color-blueA700 {
+    filter: invert(30%) sepia(74%) saturate(4582%) hue-rotate(222deg) brightness(104%) contrast(100%) !important;
+}
+
+/*Icon color lightBlue50*/
+.icon-color-lightBlue50 {
+    filter: invert(89%) sepia(7%) saturate(749%) hue-rotate(178deg) brightness(106%) contrast(99%) !important;
+}
+
+/*Icon color lightBlue100*/
+.icon-color-lightBlue100 {
+    filter: invert(76%) sepia(46%) saturate(278%) hue-rotate(173deg) brightness(106%) contrast(98%) !important;
+}
+
+/*Icon color lightBlue200*/
+.icon-color-lightBlue200 {
+    filter: invert(77%) sepia(46%) saturate(593%) hue-rotate(169deg) brightness(94%) contrast(109%) !important;
+}
+
+/*Icon color lightBlue300*/
+.icon-color-lightBlue300 {
+    filter: invert(76%) sepia(56%) saturate(2867%) hue-rotate(169deg) brightness(101%) contrast(94%) !important;
+}
+
+/*Icon color lightBlue400*/
+.icon-color-lightBlue400 {
+    filter: invert(50%) sepia(98%) saturate(855%) hue-rotate(171deg) brightness(104%) contrast(93%) !important;
+}
+
+/*Icon color lightBlue500*/
+.icon-color-lightBlue500 {
+    filter: invert(74%) sepia(62%) saturate(6718%) hue-rotate(167deg) brightness(100%) contrast(98%) !important;
+}
+
+/*Icon color lightBlue600*/
+.icon-color-lightBlue600 {
+    filter: invert(52%) sepia(26%) saturate(7499%) hue-rotate(171deg) brightness(95%) contrast(98%) !important;
+}
+
+/*Icon color lightBlue700*/
+.icon-color-lightBlue700 {
+    filter: invert(39%) sepia(99%) saturate(3338%) hue-rotate(179deg) brightness(95%) contrast(98%) !important;
+}
+
+/*Icon color lightBlue800*/
+.icon-color-lightBlue800 {
+    filter: invert(31%) sepia(81%) saturate(1321%) hue-rotate(177deg) brightness(96%) contrast(98%) !important;
+}
+
+/*Icon color lightBlue900*/
+.icon-color-lightBlue900 {
+    filter: invert(16%) sepia(45%) saturate(6092%) hue-rotate(194deg) brightness(98%) contrast(99%) !important;
+}
+
+/*Icon color lightBlueA100*/
+.icon-color-lightBlueA100 {
+    filter: invert(85%) sepia(4%) saturate(7131%) hue-rotate(170deg) brightness(98%) contrast(107%) !important;
+}
+
+/*Icon color lightBlueA200*/
+.icon-color-lightBlueA200 {
+    filter: invert(74%) sepia(35%) saturate(4807%) hue-rotate(171deg) brightness(103%) contrast(101%) !important;
+}
+
+/*Icon color lightBlueA400*/
+.icon-color-lightBlueA400 {
+    filter: invert(56%) sepia(89%) saturate(2984%) hue-rotate(168deg) brightness(100%) contrast(106%) !important;
+}
+
+/*Icon color lightBlueA700*/
+.icon-color-lightBlueA700 {
+    filter: invert(41%) sepia(94%) saturate(2251%) hue-rotate(178deg) brightness(95%) contrast(101%) !important;
+}
+
+/*Icon color cyan50*/
+.icon-color-cyan50 {
+    filter: invert(93%) sepia(9%) saturate(375%) hue-rotate(156deg) brightness(102%) contrast(96%) !important;
+}
+
+/*Icon color cyan100*/
+.icon-color-cyan100 {
+    filter: invert(83%) sepia(3%) saturate(7157%) hue-rotate(177deg) brightness(116%) contrast(90%) !important;
+}
+
+/*Icon color cyan200*/
+.icon-color-cyan200 {
+    filter: invert(78%) sepia(71%) saturate(312%) hue-rotate(147deg) brightness(98%) contrast(88%) !important;
+}
+
+/*Icon color cyan300*/
+.icon-color-cyan300 {
+    filter: invert(81%) sepia(9%) saturate(2768%) hue-rotate(142deg) brightness(91%) contrast(94%) !important;
+}
+
+/*Icon color cyan400*/
+.icon-color-cyan400 {
+    filter: invert(70%) sepia(74%) saturate(801%) hue-rotate(144deg) brightness(90%) contrast(88%) !important;
+}
+
+/*Icon color cyan500*/
+.icon-color-cyan500 {
+    filter: invert(59%) sepia(99%) saturate(1639%) hue-rotate(141deg) brightness(90%) contrast(102%) !important;
+}
+
+/*Icon color cyan600*/
+.icon-color-cyan600 {
+    filter: invert(53%) sepia(41%) saturate(6393%) hue-rotate(156deg) brightness(99%) contrast(105%) !important;
+}
+
+/*Icon color cyan700*/
+.icon-color-cyan700 {
+    filter: invert(38%) sepia(60%) saturate(6208%) hue-rotate(166deg) brightness(103%) contrast(102%) !important;
+}
+
+/*Icon color cyan800*/
+.icon-color-cyan800 {
+    filter: invert(18%) sepia(75%) saturate(4868%) hue-rotate(174deg) brightness(104%) contrast(103%) !important;
+}
+
+/*Icon color cyan900*/
+.icon-color-cyan900 {
+    filter: invert(20%) sepia(99%) saturate(1204%) hue-rotate(154deg) brightness(101%) contrast(101%) !important;
+}
+
+/*Icon color cyanA100*/
+.icon-color-cyanA100 {
+    filter: invert(88%) sepia(31%) saturate(653%) hue-rotate(133deg) brightness(104%) contrast(104%) !important;
+}
+
+/*Icon color cyanA200*/
+.icon-color-cyanA200 {
+    filter: invert(92%) sepia(72%) saturate(4607%) hue-rotate(123deg) brightness(104%) contrast(106%) !important;
+}
+
+/*Icon color cyanA400*/
+.icon-color-cyanA400 {
+    filter: invert(66%) sepia(58%) saturate(1852%) hue-rotate(142deg) brightness(102%) contrast(109%) !important;
+}
+
+/*Icon color cyanA700*/
+.icon-color-cyanA700 {
+    filter: invert(64%) sepia(74%) saturate(3621%) hue-rotate(148deg) brightness(94%) contrast(101%) !important;
+}
+
+/*Icon color teal50*/
+.icon-color-teal50 {
+    filter: invert(94%) sepia(7%) saturate(284%) hue-rotate(128deg) brightness(101%) contrast(94%) !important;
+}
+
+/*Icon color teal100*/
+.icon-color-teal100 {
+    filter: invert(90%) sepia(21%) saturate(270%) hue-rotate(123deg) brightness(88%) contrast(102%) !important;
+}
+
+/*Icon color teal200*/
+.icon-color-teal200 {
+    filter: invert(92%) sepia(8%) saturate(1642%) hue-rotate(114deg) brightness(83%) contrast(90%) !important;
+}
+
+/*Icon color teal300*/
+.icon-color-teal300 {
+    filter: invert(59%) sepia(46%) saturate(420%) hue-rotate(125deg) brightness(97%) contrast(94%) !important;
+}
+
+/*Icon color teal400*/
+.icon-color-teal400 {
+    filter: invert(51%) sepia(71%) saturate(420%) hue-rotate(125deg) brightness(93%) contrast(91%) !important;
+}
+
+/*Icon color teal500*/
+.icon-color-teal500 {
+    filter: invert(31%) sepia(78%) saturate(1659%) hue-rotate(151deg) brightness(99%) contrast(103%) !important;
+}
+
+/*Icon color teal600*/
+.icon-color-teal600 {
+    filter: invert(24%) sepia(82%) saturate(2416%) hue-rotate(159deg) brightness(98%) contrast(101%) !important;
+}
+
+/*Icon color teal700*/
+.icon-color-teal700 {
+    filter: invert(33%) sepia(95%) saturate(443%) hue-rotate(124deg) brightness(91%) contrast(101%) !important;
+}
+
+/*Icon color teal800*/
+.icon-color-teal800 {
+    filter: invert(14%) sepia(92%) saturate(4166%) hue-rotate(168deg) brightness(90%) contrast(101%) !important;
+}
+
+/*Icon color teal900*/
+.icon-color-teal900 {
+    filter: invert(22%) sepia(14%) saturate(3320%) hue-rotate(127deg) brightness(100%) contrast(103%) !important;
+}
+
+/*Icon color tealA100*/
+.icon-color-tealA100 {
+    filter: invert(88%) sepia(22%) saturate(504%) hue-rotate(105deg) brightness(103%) contrast(101%) !important;
+}
+
+/*Icon color tealA200*/
+.icon-color-tealA200 {
+    filter: invert(85%) sepia(14%) saturate(1344%) hue-rotate(105deg) brightness(100%) contrast(104%) !important;
+}
+
+/*Icon color tealA400*/
+.icon-color-tealA400 {
+    filter: invert(83%) sepia(71%) saturate(549%) hue-rotate(88deg) brightness(94%) contrast(95%) !important;
+}
+
+/*Icon color tealA700*/
+.icon-color-tealA700 {
+    filter: invert(50%) sepia(42%) saturate(4920%) hue-rotate(142deg) brightness(105%) contrast(101%) !important;
+}
+
+/*Icon color green50*/
+.icon-color-green50 {
+    filter: invert(98%) sepia(6%) saturate(385%) hue-rotate(56deg) brightness(99%) contrast(94%) !important;
+}
+
+/*Icon color green100*/
+.icon-color-green100 {
+    filter: invert(93%) sepia(10%) saturate(473%) hue-rotate(68deg) brightness(96%) contrast(90%) !important;
+}
+
+/*Icon color green200*/
+.icon-color-green200 {
+    filter: invert(85%) sepia(9%) saturate(964%) hue-rotate(73deg) brightness(94%) contrast(91%) !important;
+}
+
+/*Icon color green300*/
+.icon-color-green300 {
+    filter: invert(82%) sepia(21%) saturate(671%) hue-rotate(71deg) brightness(85%) contrast(91%) !important;
+}
+
+/*Icon color green400*/
+.icon-color-green400 {
+    filter: invert(69%) sepia(15%) saturate(1269%) hue-rotate(73deg) brightness(92%) contrast(88%) !important;
+}
+
+/*Icon color green500*/
+.icon-color-green500 {
+    filter: invert(51%) sepia(43%) saturate(593%) hue-rotate(73deg) brightness(104%) contrast(90%) !important;
+}
+
+/*Icon color green600*/
+.icon-color-green600 {
+    filter: invert(54%) sepia(10%) saturate(2767%) hue-rotate(73deg) brightness(97%) contrast(84%) !important;
+}
+
+/*Icon color green700*/
+.icon-color-green700 {
+    filter: invert(55%) sepia(10%) saturate(2611%) hue-rotate(73deg) brightness(82%) contrast(92%) !important;
+}
+
+/*Icon color green800*/
+.icon-color-green800 {
+    filter: invert(36%) sepia(12%) saturate(2967%) hue-rotate(73deg) brightness(102%) contrast(78%) !important;
+}
+
+/*Icon color green900*/
+.icon-color-green900 {
+    filter: invert(30%) sepia(14%) saturate(2383%) hue-rotate(74deg) brightness(90%) contrast(93%) !important;
+}
+
+/*Icon color greenA100*/
+.icon-color-greenA100 {
+    filter: invert(90%) sepia(18%) saturate(513%) hue-rotate(76deg) brightness(102%) contrast(93%) !important;
+}
+
+/*Icon color greenA200*/
+.icon-color-greenA200 {
+    filter: invert(98%) sepia(84%) saturate(973%) hue-rotate(70deg) brightness(100%) contrast(89%) !important;
+}
+
+/*Icon color greenA400*/
+.icon-color-greenA400 {
+    filter: invert(76%) sepia(68%) saturate(2880%) hue-rotate(97deg) brightness(96%) contrast(101%) !important;
+}
+
+/*Icon color greenA700*/
+.icon-color-greenA700 {
+    filter: invert(69%) sepia(45%) saturate(4388%) hue-rotate(98deg) brightness(90%) contrast(101%) !important;
+}
+
+/*Icon color lightGreen50*/
+.icon-color-lightGreen50 {
+    filter: invert(90%) sepia(20%) saturate(155%) hue-rotate(56deg) brightness(109%) contrast(94%) !important;
+}
+
+/*Icon color lightGreen100*/
+.icon-color-lightGreen100 {
+    filter: invert(94%) sepia(5%) saturate(1045%) hue-rotate(40deg) brightness(100%) contrast(90%) !important;
+}
+
+/*Icon color lightGreen200*/
+.icon-color-lightGreen200 {
+    filter: invert(97%) sepia(8%) saturate(1394%) hue-rotate(30deg) brightness(94%) contrast(88%) !important;
+}
+
+/*Icon color lightGreen300*/
+.icon-color-lightGreen300 {
+    filter: invert(93%) sepia(8%) saturate(1800%) hue-rotate(33deg) brightness(87%) contrast(93%) !important;
+}
+
+/*Icon color lightGreen400*/
+.icon-color-lightGreen400 {
+    filter: invert(86%) sepia(17%) saturate(1122%) hue-rotate(37deg) brightness(87%) contrast(91%) !important;
+}
+
+/*Icon color lightGreen500*/
+.icon-color-lightGreen500 {
+    filter: invert(65%) sepia(23%) saturate(1055%) hue-rotate(45deg) brightness(107%) contrast(82%) !important;
+}
+
+/*Icon color lightGreen600*/
+.icon-color-lightGreen600 {
+    filter: invert(63%) sepia(37%) saturate(612%) hue-rotate(47deg) brightness(92%) contrast(95%) !important;
+}
+
+/*Icon color lightGreen700*/
+.icon-color-lightGreen700 {
+    filter: invert(56%) sepia(37%) saturate(686%) hue-rotate(49deg) brightness(93%) contrast(90%) !important;
+}
+
+/*Icon color lightGreen800*/
+.icon-color-lightGreen800 {
+    filter: invert(55%) sepia(7%) saturate(3136%) hue-rotate(52deg) brightness(85%) contrast(107%) !important;
+}
+
+/*Icon color lightGreen900*/
+.icon-color-lightGreen900 {
+    filter: invert(34%) sepia(20%) saturate(2148%) hue-rotate(61deg) brightness(85%) contrast(79%) !important;
+}
+
+/*Icon color lightGreenA100*/
+.icon-color-lightGreenA100 {
+    filter: invert(87%) sepia(28%) saturate(566%) hue-rotate(36deg) brightness(102%) contrast(105%) !important;
+}
+
+/*Icon color lightGreenA200*/
+.icon-color-lightGreenA200 {
+    filter: invert(87%) sepia(51%) saturate(547%) hue-rotate(30deg) brightness(101%) contrast(103%) !important;
+}
+
+/*Icon color lightGreenA400*/
+.icon-color-lightGreenA400 {
+    filter: invert(84%) sepia(32%) saturate(3544%) hue-rotate(41deg) brightness(105%) contrast(106%) !important;
+}
+
+/*Icon color lightGreenA700*/
+.icon-color-lightGreenA700 {
+    filter: invert(74%) sepia(44%) saturate(957%) hue-rotate(44deg) brightness(96%) contrast(91%) !important;
+}
+
+/*Icon color lime50*/
+.icon-color-lime50 {
+    filter: invert(96%) sepia(10%) saturate(327%) hue-rotate(23deg) brightness(103%) contrast(97%) !important;
+}
+
+/*Icon color lime100*/
+.icon-color-lime100 {
+    filter: invert(89%) sepia(25%) saturate(292%) hue-rotate(22deg) brightness(106%) contrast(91%) !important;
+}
+
+/*Icon color lime200*/
+.icon-color-lime200 {
+    filter: invert(91%) sepia(10%) saturate(1141%) hue-rotate(17deg) brightness(100%) contrast(98%) !important;
+}
+
+/*Icon color lime300*/
+.icon-color-lime300 {
+    filter: invert(88%) sepia(30%) saturate(656%) hue-rotate(13deg) brightness(102%) contrast(88%) !important;
+}
+
+/*Icon color lime400*/
+.icon-color-lime400 {
+    filter: invert(93%) sepia(30%) saturate(904%) hue-rotate(6deg) brightness(94%) contrast(87%) !important;
+}
+
+/*Icon color lime500*/
+.icon-color-lime500 {
+    filter: invert(91%) sepia(97%) saturate(625%) hue-rotate(6deg) brightness(97%) contrast(77%) !important;
+}
+
+/*Icon color lime600*/
+.icon-color-lime600 {
+    filter: invert(86%) sepia(72%) saturate(522%) hue-rotate(4deg) brightness(86%) contrast(82%) !important;
+}
+
+/*Icon color lime700*/
+.icon-color-lime700 {
+    filter: invert(65%) sepia(96%) saturate(351%) hue-rotate(18deg) brightness(89%) contrast(87%) !important;
+}
+
+/*Icon color lime800*/
+.icon-color-lime800 {
+    filter: invert(50%) sepia(95%) saturate(344%) hue-rotate(21deg) brightness(97%) contrast(89%) !important;
+}
+
+/*Icon color lime900*/
+.icon-color-lime900 {
+    filter: invert(41%) sepia(58%) saturate(539%) hue-rotate(16deg) brightness(95%) contrast(94%) !important;
+}
+
+/*Icon color limeA100*/
+.icon-color-limeA100 {
+    filter: invert(95%) sepia(7%) saturate(2602%) hue-rotate(13deg) brightness(104%) contrast(104%) !important;
+}
+
+/*Icon color limeA200*/
+.icon-color-limeA200 {
+    filter: invert(85%) sepia(77%) saturate(432%) hue-rotate(7deg) brightness(101%) contrast(103%) !important;
+}
+
+/*Icon color limeA400*/
+.icon-color-limeA400 {
+    filter: invert(84%) sepia(93%) saturate(3665%) hue-rotate(16deg) brightness(103%) contrast(106%) !important;
+}
+
+/*Icon color limeA700*/
+.icon-color-limeA700 {
+    filter: invert(81%) sepia(54%) saturate(1567%) hue-rotate(23deg) brightness(100%) contrast(101%) !important;
+}
+
+/*Icon color yellow50*/
+.icon-color-yellow50 {
+    filter: invert(89%) sepia(14%) saturate(342%) hue-rotate(341deg) brightness(107%) contrast(106%) !important;
+}
+
+/*Icon color yellow100*/
+.icon-color-yellow100 {
+    filter: invert(94%) sepia(10%) saturate(1316%) hue-rotate(326deg) brightness(107%) contrast(106%) !important;
+}
+
+/*Icon color yellow200*/
+.icon-color-yellow200 {
+    filter: invert(93%) sepia(11%) saturate(1532%) hue-rotate(339deg) brightness(106%) contrast(105%) !important;
+}
+
+/*Icon color yellow300*/
+.icon-color-yellow300 {
+    filter: invert(100%) sepia(19%) saturate(7330%) hue-rotate(319deg) brightness(112%) contrast(101%) !important;
+}
+
+/*Icon color yellow400*/
+.icon-color-yellow400 {
+    filter: invert(84%) sepia(39%) saturate(648%) hue-rotate(355deg) brightness(105%) contrast(106%) !important;
+}
+
+/*Icon color yellow500*/
+.icon-color-yellow500 {
+    filter: invert(74%) sepia(100%) saturate(329%) hue-rotate(360deg) brightness(106%) contrast(102%) !important;
+}
+
+/*Icon color yellow600*/
+.icon-color-yellow600 {
+    filter: invert(100%) sepia(39%) saturate(6707%) hue-rotate(326deg) brightness(103%) contrast(98%) !important;
+}
+
+/*Icon color yellow700*/
+.icon-color-yellow700 {
+    filter: invert(89%) sepia(19%) saturate(3703%) hue-rotate(334deg) brightness(104%) contrast(97%) !important;
+}
+
+/*Icon color yellow800*/
+.icon-color-yellow800 {
+    filter: invert(69%) sepia(74%) saturate(1013%) hue-rotate(341deg) brightness(102%) contrast(95%) !important;
+}
+
+/*Icon color yellow900*/
+.icon-color-yellow900 {
+    filter: invert(51%) sepia(62%) saturate(1049%) hue-rotate(351deg) brightness(98%) contrast(95%) !important;
+}
+
+/*Icon color yellowA100*/
+.icon-color-yellowA100 {
+    filter: invert(95%) sepia(2%) saturate(7095%) hue-rotate(7deg) brightness(104%) contrast(114%) !important;
+}
+
+/*Icon color yellowA200*/
+.icon-color-yellowA200 {
+    filter: invert(95%) sepia(20%) saturate(5803%) hue-rotate(352deg) brightness(111%) contrast(110%) !important;
+}
+
+/*Icon color yellowA400*/
+.icon-color-yellowA400 {
+    filter: invert(76%) sepia(84%) saturate(618%) hue-rotate(1deg) brightness(105%) contrast(106%) !important;
+}
+
+/*Icon color yellowA700*/
+.icon-color-yellowA700 {
+    filter: invert(76%) sepia(82%) saturate(939%) hue-rotate(357deg) brightness(101%) contrast(107%) !important;
+}
+
+/*Icon color amber50*/
+.icon-color-amber50 {
+    filter: invert(92%) sepia(9%) saturate(826%) hue-rotate(328deg) brightness(106%) contrast(105%) !important;
+}
+
+/*Icon color amber100*/
+.icon-color-amber100 {
+    filter: invert(96%) sepia(3%) saturate(5192%) hue-rotate(323deg) brightness(106%) contrast(101%) !important;
+}
+
+/*Icon color amber200*/
+.icon-color-amber200 {
+    filter: invert(87%) sepia(85%) saturate(431%) hue-rotate(318deg) brightness(102%) contrast(101%) !important;
+}
+
+/*Icon color amber300*/
+.icon-color-amber300 {
+    filter: invert(90%) sepia(74%) saturate(687%) hue-rotate(321deg) brightness(101%) contrast(101%) !important;
+}
+
+/*Icon color amber400*/
+.icon-color-amber400 {
+    filter: invert(82%) sepia(69%) saturate(2777%) hue-rotate(334deg) brightness(106%) contrast(104%) !important;
+}
+
+/*Icon color amber500*/
+.icon-color-amber500 {
+    filter: invert(65%) sepia(92%) saturate(435%) hue-rotate(358deg) brightness(100%) contrast(108%) !important;
+}
+
+/*Icon color amber600*/
+.icon-color-amber600 {
+    filter: invert(73%) sepia(14%) saturate(3254%) hue-rotate(353deg) brightness(100%) contrast(111%) !important;
+}
+
+/*Icon color amber700*/
+.icon-color-amber700 {
+    filter: invert(52%) sepia(100%) saturate(519%) hue-rotate(359deg) brightness(103%) contrast(105%) !important;
+}
+
+/*Icon color amber800*/
+.icon-color-amber800 {
+    filter: invert(66%) sepia(28%) saturate(6562%) hue-rotate(360deg) brightness(102%) contrast(105%) !important;
+}
+
+/*Icon color amber900*/
+.icon-color-amber900 {
+    filter: invert(55%) sepia(88%) saturate(3891%) hue-rotate(2deg) brightness(103%) contrast(107%) !important;
+}
+
+/*Icon color amberA100*/
+.icon-color-amberA100 {
+    filter: invert(94%) sepia(8%) saturate(2679%) hue-rotate(336deg) brightness(101%) contrast(105%) !important;
+}
+
+/*Icon color amberA200*/
+.icon-color-amberA200 {
+    filter: invert(92%) sepia(89%) saturate(5813%) hue-rotate(321deg) brightness(103%) contrast(102%) !important;
+}
+
+/*Icon color amberA400*/
+.icon-color-amberA400 {
+    filter: invert(82%) sepia(53%) saturate(4335%) hue-rotate(4deg) brightness(109%) contrast(102%) !important;
+}
+
+/*Icon color amberA700*/
+.icon-color-amberA700 {
+    filter: invert(75%) sepia(71%) saturate(3538%) hue-rotate(360deg) brightness(105%) contrast(106%) !important;
+}
+
+/*Icon color orange50*/
+.icon-color-orange50 {
+    filter: invert(99%) sepia(99%) saturate(670%) hue-rotate(297deg) brightness(106%) contrast(108%) !important;
+}
+
+/*Icon color orange100*/
+.icon-color-orange100 {
+    filter: invert(97%) sepia(6%) saturate(5030%) hue-rotate(302deg) brightness(110%) contrast(123%) !important;
+}
+
+/*Icon color orange200*/
+.icon-color-orange200 {
+    filter: invert(87%) sepia(63%) saturate(6993%) hue-rotate(304deg) brightness(109%) contrast(101%) !important;
+}
+
+/*Icon color orange300*/
+.icon-color-orange300 {
+    filter: invert(68%) sepia(74%) saturate(427%) hue-rotate(341deg) brightness(102%) contrast(101%) !important;
+}
+
+/*Icon color orange400*/
+.icon-color-orange400 {
+    filter: invert(79%) sepia(14%) saturate(6744%) hue-rotate(338deg) brightness(103%) contrast(102%) !important;
+}
+
+/*Icon color orange500*/
+.icon-color-orange500 {
+    filter: invert(75%) sepia(60%) saturate(4425%) hue-rotate(358deg) brightness(99%) contrast(108%) !important;
+}
+
+/*Icon color orange600*/
+.icon-color-orange600 {
+    filter: invert(77%) sepia(48%) saturate(6658%) hue-rotate(3deg) brightness(99%) contrast(105%) !important;
+}
+
+/*Icon color orange700*/
+.icon-color-orange700 {
+    filter: invert(53%) sepia(26%) saturate(5243%) hue-rotate(4deg) brightness(100%) contrast(101%) !important;
+}
+
+/*Icon color orange800*/
+.icon-color-orange800 {
+    filter: invert(50%) sepia(37%) saturate(5464%) hue-rotate(4deg) brightness(97%) contrast(101%) !important;
+}
+
+/*Icon color orange900*/
+.icon-color-orange900 {
+    filter: invert(29%) sepia(98%) saturate(2273%) hue-rotate(13deg) brightness(101%) contrast(101%) !important;
+}
+
+/*Icon color orangeA100*/
+.icon-color-orangeA100 {
+    filter: invert(91%) sepia(54%) saturate(786%) hue-rotate(309deg) brightness(103%) contrast(104%) !important;
+}
+
+/*Icon color orangeA200*/
+.icon-color-orangeA200 {
+    filter: invert(91%) sepia(23%) saturate(6908%) hue-rotate(327deg) brightness(103%) contrast(104%) !important;
+}
+
+/*Icon color orangeA400*/
+.icon-color-orangeA400 {
+    filter: invert(62%) sepia(25%) saturate(3469%) hue-rotate(358deg) brightness(98%) contrast(109%) !important;
+}
+
+/*Icon color orangeA700*/
+.icon-color-orangeA700 {
+    filter: invert(43%) sepia(81%) saturate(1913%) hue-rotate(0deg) brightness(102%) contrast(107%) !important;
+}
+
+/*Icon color deepOrange50*/
+.icon-color-deepOrange50 {
+    filter: invert(84%) sepia(4%) saturate(883%) hue-rotate(315deg) brightness(112%) contrast(97%) !important;
+}
+
+/*Icon color deepOrange100*/
+.icon-color-deepOrange100 {
+    filter: invert(85%) sepia(22%) saturate(692%) hue-rotate(313deg) brightness(101%) contrast(103%) !important;
+}
+
+/*Icon color deepOrange200*/
+.icon-color-deepOrange200 {
+    filter: invert(86%) sepia(18%) saturate(1818%) hue-rotate(304deg) brightness(101%) contrast(106%) !important;
+}
+
+/*Icon color deepOrange300*/
+.icon-color-deepOrange300 {
+    filter: invert(76%) sepia(53%) saturate(4386%) hue-rotate(321deg) brightness(110%) contrast(107%) !important;
+}
+
+/*Icon color deepOrange400*/
+.icon-color-deepOrange400 {
+    filter: invert(51%) sepia(54%) saturate(1567%) hue-rotate(331deg) brightness(106%) contrast(115%) !important;
+}
+
+/*Icon color deepOrange500*/
+.icon-color-deepOrange500 {
+    filter: invert(41%) sepia(63%) saturate(2266%) hue-rotate(344deg) brightness(105%) contrast(110%) !important;
+}
+
+/*Icon color deepOrange600*/
+.icon-color-deepOrange600 {
+    filter: invert(39%) sepia(98%) saturate(2517%) hue-rotate(349deg) brightness(97%) contrast(97%) !important;
+}
+
+/*Icon color deepOrange700*/
+.icon-color-deepOrange700 {
+    filter: invert(49%) sepia(93%) saturate(5728%) hue-rotate(357deg) brightness(97%) contrast(85%) !important;
+}
+
+/*Icon color deepOrange800*/
+.icon-color-deepOrange800 {
+    filter: invert(33%) sepia(22%) saturate(7234%) hue-rotate(356deg) brightness(88%) contrast(91%) !important;
+}
+
+/*Icon color deepOrange900*/
+.icon-color-deepOrange900 {
+    filter: invert(28%) sepia(80%) saturate(1923%) hue-rotate(355deg) brightness(81%) contrast(98%) !important;
+}
+
+/*Icon color deepOrangeA100*/
+.icon-color-deepOrangeA100 {
+    filter: invert(62%) sepia(20%) saturate(934%) hue-rotate(326deg) brightness(108%) contrast(104%) !important;
+}
+
+/*Icon color deepOrangeA200*/
+.icon-color-deepOrangeA200 {
+    filter: invert(58%) sepia(84%) saturate(3093%) hue-rotate(335deg) brightness(105%) contrast(101%) !important;
+}
+
+/*Icon color deepOrangeA400*/
+.icon-color-deepOrangeA400 {
+    filter: invert(30%) sepia(66%) saturate(5774%) hue-rotate(8deg) brightness(108%) contrast(102%) !important;
+}
+
+/*Icon color deepOrangeA700*/
+.icon-color-deepOrangeA700 {
+    filter: invert(25%) sepia(94%) saturate(5233%) hue-rotate(15deg) brightness(95%) contrast(104%) !important;
+}
+
+/*Icon color brown50*/
+.icon-color-brown50 {
+    filter: invert(99%) sepia(1%) saturate(1153%) hue-rotate(317deg) brightness(88%) contrast(116%) !important;
+}
+
+/*Icon color brown100*/
+.icon-color-brown100 {
+    filter: invert(98%) sepia(44%) saturate(400%) hue-rotate(295deg) brightness(89%) contrast(89%) !important;
+}
+
+/*Icon color brown200*/
+.icon-color-brown200 {
+    filter: invert(80%) sepia(9%) saturate(371%) hue-rotate(329deg) brightness(85%) contrast(92%) !important;
+}
+
+/*Icon color brown300*/
+.icon-color-brown300 {
+    filter: invert(56%) sepia(6%) saturate(1088%) hue-rotate(330deg) brightness(100%) contrast(80%) !important;
+}
+
+/*Icon color brown400*/
+.icon-color-brown400 {
+    filter: invert(48%) sepia(15%) saturate(660%) hue-rotate(330deg) brightness(91%) contrast(90%) !important;
+}
+
+/*Icon color brown500*/
+.icon-color-brown500 {
+    filter: invert(34%) sepia(21%) saturate(829%) hue-rotate(330deg) brightness(93%) contrast(81%) !important;
+}
+
+/*Icon color brown600*/
+.icon-color-brown600 {
+    filter: invert(28%) sepia(26%) saturate(646%) hue-rotate(329deg) brightness(98%) contrast(86%) !important;
+}
+
+/*Icon color brown700*/
+.icon-color-brown700 {
+    filter: invert(25%) sepia(9%) saturate(2120%) hue-rotate(327deg) brightness(91%) contrast(84%) !important;
+}
+
+/*Icon color brown800*/
+.icon-color-brown800 {
+    filter: invert(19%) sepia(6%) saturate(3197%) hue-rotate(323deg) brightness(93%) contrast(86%) !important;
+}
+
+/*Icon color brown900*/
+.icon-color-brown900 {
+    filter: invert(10%) sepia(10%) saturate(3926%) hue-rotate(323deg) brightness(88%) contrast(80%) !important;
+}
+
+/*Icon color grey50*/
+.icon-color-grey50 {
+    filter: invert(99%) sepia(2%) saturate(550%) hue-rotate(345deg) brightness(118%) contrast(96%) !important;
+}
+
+/*Icon color grey100*/
+.icon-color-grey100 {
+    filter: invert(98%) sepia(3%) saturate(189%) hue-rotate(269deg) brightness(117%) contrast(92%) !important;
+}
+
+/*Icon color grey200*/
+.icon-color-grey200 {
+    filter: invert(100%) sepia(70%) saturate(52%) hue-rotate(233deg) brightness(117%) contrast(87%) !important;
+}
+
+/*Icon color grey300*/
+.icon-color-grey300 {
+    filter: invert(99%) sepia(1%) saturate(252%) hue-rotate(191deg) brightness(109%) contrast(76%) !important;
+}
+
+/*Icon color grey400*/
+.icon-color-grey400 {
+    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(91%) contrast(91%) !important;
+}
+
+/*Icon color grey500*/
+.icon-color-grey500 {
+    filter: invert(74%) sepia(0%) saturate(1209%) hue-rotate(216deg) brightness(85%) contrast(93%) !important;
+}
+
+/*Icon color grey600*/
+.icon-color-grey600 {
+    filter: invert(48%) sepia(12%) saturate(0%) hue-rotate(208deg) brightness(93%) contrast(90%) !important;
+}
+
+/*Icon color grey700*/
+.icon-color-grey700 {
+    filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(144deg) brightness(92%) contrast(92%) !important;
+}
+
+/*Icon color grey800*/
+.icon-color-grey800 {
+    filter: invert(25%) sepia(0%) saturate(1608%) hue-rotate(218deg) brightness(99%) contrast(96%) !important;
+}
+
+/*Icon color grey900*/
+.icon-color-grey900 {
+    filter: invert(8%) sepia(1%) saturate(0%) hue-rotate(35deg) brightness(97%) contrast(87%) !important;
+}
+
+/*Icon color blueGrey50*/
+.icon-color-blueGrey50 {
+    filter: invert(100%) sepia(65%) saturate(486%) hue-rotate(177deg) brightness(102%) contrast(89%) !important;
+}
+
+/*Icon color blueGrey100*/
+.icon-color-blueGrey100 {
+    filter: invert(95%) sepia(8%) saturate(178%) hue-rotate(153deg) brightness(88%) contrast(97%) !important;
+}
+
+/*Icon color blueGrey200*/
+.icon-color-blueGrey200 {
+    filter: invert(96%) sepia(2%) saturate(3180%) hue-rotate(170deg) brightness(86%) contrast(77%) !important;
+}
+
+/*Icon color blueGrey300*/
+.icon-color-blueGrey300 {
+    filter: invert(71%) sepia(22%) saturate(224%) hue-rotate(155deg) brightness(86%) contrast(89%) !important;
+}
+
+/*Icon color blueGrey400*/
+.icon-color-blueGrey400 {
+    filter: invert(55%) sepia(7%) saturate(993%) hue-rotate(155deg) brightness(99%) contrast(89%) !important;
+}
+
+/*Icon color blueGrey500*/
+.icon-color-blueGrey500 {
+    filter: invert(53%) sepia(8%) saturate(1212%) hue-rotate(155deg) brightness(87%) contrast(86%) !important;
+}
+
+/*Icon color blueGrey600*/
+.icon-color-blueGrey600 {
+    filter: invert(42%) sepia(11%) saturate(835%) hue-rotate(154deg) brightness(93%) contrast(93%) !important;
+}
+
+/*Icon color blueGrey700*/
+.icon-color-blueGrey700 {
+    filter: invert(32%) sepia(38%) saturate(274%) hue-rotate(154deg) brightness(94%) contrast(91%) !important;
+}
+
+/*Icon color blueGrey800*/
+.icon-color-blueGrey800 {
+    filter: invert(24%) sepia(31%) saturate(356%) hue-rotate(155deg) brightness(93%) contrast(88%) !important;
+}
+
+/*Icon color blueGrey900*/
+.icon-color-blueGrey900 {
+    filter: invert(17%) sepia(16%) saturate(722%) hue-rotate(155deg) brightness(91%) contrast(92%) !important;
+}
+
+/* Icon color red50:hover() */
+a > .icon-color-red50:hover, button > .icon-color-red50:hover {
+    filter: invert(83%) sepia(29%) saturate(76%) hue-rotate(302deg) brightness(88%) contrast(109%) !important;
+}
+
+/* Icon color red100:hover() */
+a > .icon-color-red100:hover, button > .icon-color-red100:hover {
+    filter: invert(68%) sepia(41%) saturate(171%) hue-rotate(306deg) brightness(97%) contrast(106%) !important;
+}
+
+/* Icon color red200:hover() */
+a > .icon-color-red200:hover, button > .icon-color-red200:hover {
+    filter: invert(96%) sepia(11%) saturate(6854%) hue-rotate(295deg) brightness(83%) contrast(91%) !important;
+}
+
+/* Icon color red300:hover() */
+a > .icon-color-red300:hover, button > .icon-color-red300:hover {
+    filter: invert(75%) sepia(26%) saturate(7406%) hue-rotate(313deg) brightness(82%) contrast(86%) !important;
+}
+
+/* Icon color red400:hover() */
+a > .icon-color-red400:hover, button > .icon-color-red400:hover {
+    filter: invert(37%) sepia(31%) saturate(5043%) hue-rotate(337deg) brightness(99%) contrast(87%) !important;
+}
+
+/* Icon color red500:hover() */
+a > .icon-color-red500:hover, button > .icon-color-red500:hover {
+    filter: invert(47%) sepia(42%) saturate(7451%) hue-rotate(340deg) brightness(81%) contrast(98%) !important;
+}
+
+/* Icon color red600:hover() */
+a > .icon-color-red600:hover, button > .icon-color-red600:hover {
+    filter: invert(17%) sepia(80%) saturate(2282%) hue-rotate(343deg) brightness(127%) contrast(88%) !important;
+}
+
+/* Icon color red700:hover() */
+a > .icon-color-red700:hover, button > .icon-color-red700:hover {
+    filter: invert(29%) sepia(24%) saturate(4704%) hue-rotate(334deg) brightness(81%) contrast(105%) !important;
+}
+
+/* Icon color red800:hover() */
+a > .icon-color-red800:hover, button > .icon-color-red800:hover {
+    filter: invert(15%) sepia(93%) saturate(3037%) hue-rotate(349deg) brightness(87%) contrast(87%) !important;
+}
+
+/* Icon color red900:hover() */
+a > .icon-color-red900:hover, button > .icon-color-red900:hover {
+    filter: invert(18%) sepia(74%) saturate(2657%) hue-rotate(343deg) brightness(78%) contrast(105%) !important;
+}
+
+/* Icon color redA100:hover() */
+a > .icon-color-redA100:hover, button > .icon-color-redA100:hover {
+    filter: invert(56%) sepia(50%) saturate(640%) hue-rotate(314deg) brightness(97%) contrast(104%) !important;
+}
+
+/* Icon color redA200:hover() */
+a > .icon-color-redA200:hover, button > .icon-color-redA200:hover {
+    filter: invert(42%) sepia(81%) saturate(761%) hue-rotate(318deg) brightness(88%) contrast(127%) !important;
+}
+
+/* Icon color redA400:hover() */
+a > .icon-color-redA400:hover, button > .icon-color-redA400:hover {
+    filter: invert(28%) sepia(89%) saturate(6226%) hue-rotate(339deg) brightness(89%) contrast(102%) !important;
+}
+
+/* Icon color redA700:hover() */
+a > .icon-color-redA700:hover, button > .icon-color-redA700:hover {
+    filter: invert(15%) sepia(82%) saturate(5045%) hue-rotate(356deg) brightness(63%) contrast(120%) !important;
+}
+
+/* Icon color pink50:hover() */
+a > .icon-color-pink50:hover, button > .icon-color-pink50:hover {
+    filter: invert(93%) sepia(3%) saturate(1310%) hue-rotate(294deg) brightness(83%) contrast(101%) !important;
+}
+
+/* Icon color pink100:hover() */
+a > .icon-color-pink100:hover, button > .icon-color-pink100:hover {
+    filter: invert(77%) sepia(45%) saturate(296%) hue-rotate(297deg) brightness(84%) contrast(96%) !important;
+}
+
+/* Icon color pink200:hover() */
+a > .icon-color-pink200:hover, button > .icon-color-pink200:hover {
+    filter: invert(62%) sepia(51%) saturate(437%) hue-rotate(294deg) brightness(86%) contrast(91%) !important;
+}
+
+/* Icon color pink300:hover() */
+a > .icon-color-pink300:hover, button > .icon-color-pink300:hover {
+    filter: invert(49%) sepia(75%) saturate(747%) hue-rotate(301deg) brightness(83%) contrast(92%) !important;
+}
+
+/* Icon color pink400:hover() */
+a > .icon-color-pink400:hover, button > .icon-color-pink400:hover {
+    filter: invert(39%) sepia(59%) saturate(1105%) hue-rotate(298deg) brightness(76%) contrast(104%) !important;
+}
+
+/* Icon color pink500:hover() */
+a > .icon-color-pink500:hover, button > .icon-color-pink500:hover {
+    filter: invert(24%) sepia(69%) saturate(5826%) hue-rotate(328deg) brightness(80%) contrast(93%) !important;
+}
+
+/* Icon color pink600:hover() */
+a > .icon-color-pink600:hover, button > .icon-color-pink600:hover {
+    filter: invert(22%) sepia(80%) saturate(4964%) hue-rotate(327deg) brightness(72%) contrast(93%) !important;
+}
+
+/* Icon color pink700:hover() */
+a > .icon-color-pink700:hover, button > .icon-color-pink700:hover {
+    filter: invert(15%) sepia(41%) saturate(5542%) hue-rotate(320deg) brightness(96%) contrast(98%) !important;
+}
+
+/* Icon color pink800:hover() */
+a > .icon-color-pink800:hover, button > .icon-color-pink800:hover {
+    filter: invert(18%) sepia(34%) saturate(6559%) hue-rotate(317deg) brightness(72%) contrast(100%) !important;
+}
+
+/* Icon color pink900:hover() */
+a > .icon-color-pink900:hover, button > .icon-color-pink900:hover {
+    filter: invert(13%) sepia(59%) saturate(4304%) hue-rotate(312deg) brightness(71%) contrast(100%) !important;
+}
+
+/* Icon color pinkA100:hover() */
+a > .icon-color-pinkA100:hover, button > .icon-color-pinkA100:hover {
+    filter: invert(63%) sepia(79%) saturate(524%) hue-rotate(296deg) brightness(85%) contrast(102%) !important;
+}
+
+/* Icon color pinkA200:hover() */
+a > .icon-color-pinkA200:hover, button > .icon-color-pinkA200:hover {
+    filter: invert(40%) sepia(65%) saturate(2985%) hue-rotate(317deg) brightness(87%) contrast(104%) !important;
+}
+
+/* Icon color pinkA400:hover() */
+a > .icon-color-pinkA400:hover, button > .icon-color-pinkA400:hover {
+    filter: invert(22%) sepia(98%) saturate(7457%) hue-rotate(332deg) brightness(77%) contrast(109%) !important;
+}
+
+/* Icon color pinkA700:hover() */
+a > .icon-color-pinkA700:hover, button > .icon-color-pinkA700:hover {
+    filter: invert(17%) sepia(82%) saturate(6183%) hue-rotate(324deg) brightness(65%) contrast(92%) !important;
+}
+
+/* Icon color purple50:hover() */
+a > .icon-color-purple50:hover, button > .icon-color-purple50:hover {
+    filter: invert(89%) sepia(18%) saturate(124%) hue-rotate(245deg) brightness(86%) contrast(95%) !important;
+}
+
+/* Icon color purple100:hover() */
+a > .icon-color-purple100:hover, button > .icon-color-purple100:hover {
+    filter: invert(81%) sepia(38%) saturate(323%) hue-rotate(224deg) brightness(80%) contrast(90%) !important;
+}
+
+/* Icon color purple200:hover() */
+a > .icon-color-purple200:hover, button > .icon-color-purple200:hover {
+    filter: invert(73%) sepia(17%) saturate(877%) hue-rotate(242deg) brightness(72%) contrast(94%) !important;
+}
+
+/* Icon color purple300:hover() */
+a > .icon-color-purple300:hover, button > .icon-color-purple300:hover {
+    filter: invert(59%) sepia(88%) saturate(2220%) hue-rotate(237deg) brightness(70%) contrast(81%) !important;
+}
+
+/* Icon color purple400:hover() */
+a > .icon-color-purple400:hover, button > .icon-color-purple400:hover {
+    filter: invert(42%) sepia(27%) saturate(1588%) hue-rotate(247deg) brightness(73%) contrast(98%) !important;
+}
+
+/* Icon color purple500:hover() */
+a > .icon-color-purple500:hover, button > .icon-color-purple500:hover {
+    filter: invert(26%) sepia(66%) saturate(2213%) hue-rotate(271deg) brightness(71%) contrast(105%) !important;
+}
+
+/* Icon color purple600:hover() */
+a > .icon-color-purple600:hover, button > .icon-color-purple600:hover {
+    filter: invert(20%) sepia(64%) saturate(3298%) hue-rotate(276deg) brightness(72%) contrast(96%) !important;
+}
+
+/* Icon color purple700:hover() */
+a > .icon-color-purple700:hover, button > .icon-color-purple700:hover {
+    filter: invert(18%) sepia(37%) saturate(5478%) hue-rotate(271deg) brightness(80%) contrast(100%) !important;
+}
+
+/* Icon color purple800:hover() */
+a > .icon-color-purple800:hover, button > .icon-color-purple800:hover {
+    filter: invert(19%) sepia(30%) saturate(5939%) hue-rotate(266deg) brightness(72%) contrast(106%) !important;
+}
+
+/* Icon color purple900:hover() */
+a > .icon-color-purple900:hover, button > .icon-color-purple900:hover {
+    filter: invert(20%) sepia(27%) saturate(6456%) hue-rotate(256deg) brightness(60%) contrast(113%) !important;
+}
+
+/* Icon color purpleA100:hover() */
+a > .icon-color-purpleA100:hover, button > .icon-color-purpleA100:hover {
+    filter: invert(60%) sepia(31%) saturate(1272%) hue-rotate(229deg) brightness(86%) contrast(98%) !important;
+}
+
+/* Icon color purpleA200:hover() */
+a > .icon-color-purpleA200:hover, button > .icon-color-purpleA200:hover {
+    filter: invert(32%) sepia(53%) saturate(3167%) hue-rotate(271deg) brightness(90%) contrast(97%) !important;
+}
+
+/* Icon color purpleA400:hover() */
+a > .icon-color-purpleA400:hover, button > .icon-color-purpleA400:hover {
+    filter: invert(37%) sepia(99%) saturate(6773%) hue-rotate(284deg) brightness(81%) contrast(130%) !important;
+}
+
+/* Icon color purpleA700:hover() */
+a > .icon-color-purpleA700:hover, button > .icon-color-purpleA700:hover {
+    filter: invert(10%) sepia(94%) saturate(7238%) hue-rotate(281deg) brightness(88%) contrast(116%) !important;
+}
+
+/* Icon color deepPurple50:hover() */
+a > .icon-color-deepPurple50:hover, button > .icon-color-deepPurple50:hover {
+    filter: invert(86%) sepia(11%) saturate(971%) hue-rotate(203deg) brightness(95%) contrast(93%) !important;
+}
+
+/* Icon color deepPurple100:hover() */
+a > .icon-color-deepPurple100:hover, button > .icon-color-deepPurple100:hover {
+    filter: invert(100%) sepia(61%) saturate(5779%) hue-rotate(183deg) brightness(75%) contrast(104%) !important;
+}
+
+/* Icon color deepPurple200:hover() */
+a > .icon-color-deepPurple200:hover, button > .icon-color-deepPurple200:hover {
+    filter: invert(71%) sepia(28%) saturate(731%) hue-rotate(212deg) brightness(75%) contrast(89%) !important;
+}
+
+/* Icon color deepPurple300:hover() */
+a > .icon-color-deepPurple300:hover, button > .icon-color-deepPurple300:hover {
+    filter: invert(52%) sepia(19%) saturate(1121%) hue-rotate(220deg) brightness(80%) contrast(91%) !important;
+}
+
+/* Icon color deepPurple400:hover() */
+a > .icon-color-deepPurple400:hover, button > .icon-color-deepPurple400:hover {
+    filter: invert(43%) sepia(10%) saturate(4010%) hue-rotate(222deg) brightness(72%) contrast(84%) !important;
+}
+
+/* Icon color deepPurple500:hover() */
+a > .icon-color-deepPurple500:hover, button > .icon-color-deepPurple500:hover {
+    filter: invert(22%) sepia(53%) saturate(3064%) hue-rotate(249deg) brightness(77%) contrast(89%) !important;
+}
+
+/* Icon color deepPurple600:hover() */
+a > .icon-color-deepPurple600:hover, button > .icon-color-deepPurple600:hover {
+    filter: invert(19%) sepia(86%) saturate(1892%) hue-rotate(246deg) brightness(80%) contrast(95%) !important;
+}
+
+/* Icon color deepPurple700:hover() */
+a > .icon-color-deepPurple700:hover, button > .icon-color-deepPurple700:hover {
+    filter: invert(15%) sepia(68%) saturate(3341%) hue-rotate(251deg) brightness(82%) contrast(94%) !important;
+}
+
+/* Icon color deepPurple800:hover() */
+a > .icon-color-deepPurple800:hover, button > .icon-color-deepPurple800:hover {
+    filter: invert(17%) sepia(59%) saturate(3323%) hue-rotate(246deg) brightness(76%) contrast(102%) !important;
+}
+
+/* Icon color deepPurple900:hover() */
+a > .icon-color-deepPurple900:hover, button > .icon-color-deepPurple900:hover {
+    filter: invert(13%) sepia(99%) saturate(3774%) hue-rotate(252deg) brightness(50%) contrast(101%) !important;
+}
+
+/* Icon color deepPurpleA100:hover() */
+a > .icon-color-deepPurpleA100:hover, button > .icon-color-deepPurpleA100:hover {
+    filter: invert(54%) sepia(85%) saturate(1216%) hue-rotate(217deg) brightness(86%) contrast(101%) !important;
+}
+
+/* Icon color deepPurpleA200:hover() */
+a > .icon-color-deepPurpleA200:hover, button > .icon-color-deepPurpleA200:hover {
+    filter: invert(48%) sepia(64%) saturate(7055%) hue-rotate(242deg) brightness(84%) contrast(105%) !important;
+}
+
+/* Icon color deepPurpleA400:hover() */
+a > .icon-color-deepPurpleA400:hover, button > .icon-color-deepPurpleA400:hover {
+    filter: invert(15%) sepia(81%) saturate(4117%) hue-rotate(256deg) brightness(92%) contrast(118%) !important;
+}
+
+/* Icon color deepPurpleA700:hover() */
+a > .icon-color-deepPurpleA700:hover, button > .icon-color-deepPurpleA700:hover {
+    filter: invert(14%) sepia(90%) saturate(6726%) hue-rotate(268deg) brightness(68%) contrast(125%) !important;
+}
+
+/* Icon color indigo50:hover() */
+a > .icon-color-indigo50:hover, button > .icon-color-indigo50:hover {
+    filter: invert(88%) sepia(8%) saturate(256%) hue-rotate(195deg) brightness(92%) contrast(93%) !important;
+}
+
+/* Icon color indigo100:hover() */
+a > .icon-color-indigo100:hover, button > .icon-color-indigo100:hover {
+    filter: invert(87%) sepia(3%) saturate(2340%) hue-rotate(196deg) brightness(79%) contrast(95%) !important;
+}
+
+/* Icon color indigo200:hover() */
+a > .icon-color-indigo200:hover, button > .icon-color-indigo200:hover {
+    filter: invert(73%) sepia(18%) saturate(690%) hue-rotate(194deg) brightness(78%) contrast(83%) !important;
+}
+
+/* Icon color indigo300:hover() */
+a > .icon-color-indigo300:hover, button > .icon-color-indigo300:hover {
+    filter: invert(64%) sepia(27%) saturate(3017%) hue-rotate(199deg) brightness(72%) contrast(80%) !important;
+}
+
+/* Icon color indigo400:hover() */
+a > .icon-color-indigo400:hover, button > .icon-color-indigo400:hover {
+    filter: invert(40%) sepia(18%) saturate(1714%) hue-rotate(194deg) brightness(86%) contrast(84%) !important;
+}
+
+/* Icon color indigo500:hover() */
+a > .icon-color-indigo500:hover, button > .icon-color-indigo500:hover {
+    filter: invert(28%) sepia(37%) saturate(2847%) hue-rotate(214deg) brightness(74%) contrast(87%) !important;
+}
+
+/* Icon color indigo600:hover() */
+a > .icon-color-indigo600:hover, button > .icon-color-indigo600:hover {
+    filter: invert(25%) sepia(23%) saturate(3930%) hue-rotate(212deg) brightness(87%) contrast(94%) !important;
+}
+
+/* Icon color indigo700:hover() */
+a > .icon-color-indigo700:hover, button > .icon-color-indigo700:hover {
+    filter: invert(20%) sepia(56%) saturate(3046%) hue-rotate(224deg) brightness(68%) contrast(89%) !important;
+}
+
+/* Icon color indigo800:hover() */
+a > .icon-color-indigo800:hover, button > .icon-color-indigo800:hover {
+    filter: invert(16%) sepia(89%) saturate(1669%) hue-rotate(221deg) brightness(85%) contrast(100%) !important;
+}
+
+/* Icon color indigo900:hover() */
+a > .icon-color-indigo900:hover, button > .icon-color-indigo900:hover {
+    filter: invert(8%) sepia(73%) saturate(5531%) hue-rotate(239deg) brightness(71%) contrast(94%) !important;
+}
+
+/* Icon color indigoA100:hover() */
+a > .icon-color-indigoA100:hover, button > .icon-color-indigoA100:hover {
+    filter: invert(61%) sepia(64%) saturate(1967%) hue-rotate(200deg) brightness(88%) contrast(101%) !important;
+}
+
+/* Icon color indigoA200:hover() */
+a > .icon-color-indigoA200:hover, button > .icon-color-indigoA200:hover {
+    filter: invert(47%) sepia(89%) saturate(4474%) hue-rotate(220deg) brightness(87%) contrast(99%) !important;
+}
+
+/* Icon color indigoA400:hover() */
+a > .icon-color-indigoA400:hover, button > .icon-color-indigoA400:hover {
+    filter: invert(28%) sepia(65%) saturate(4200%) hue-rotate(228deg) brightness(87%) contrast(99%) !important;
+}
+
+/* Icon color indigoA700:hover() */
+a > .icon-color-indigoA700:hover, button > .icon-color-indigoA700:hover {
+    filter: invert(20%) sepia(100%) saturate(3305%) hue-rotate(233deg) brightness(89%) contrast(99%) !important;
+}
+
+/* Icon color blue50:hover() */
+a > .icon-color-blue50:hover, button > .icon-color-blue50:hover {
+    filter: invert(85%) sepia(19%) saturate(155%) hue-rotate(169deg) brightness(92%) contrast(98%) !important;
+}
+
+/* Icon color blue100:hover() */
+a > .icon-color-blue100:hover, button > .icon-color-blue100:hover {
+    filter: invert(84%) sepia(18%) saturate(732%) hue-rotate(181deg) brightness(86%) contrast(97%) !important;
+}
+
+/* Icon color blue200:hover() */
+a > .icon-color-blue200:hover, button > .icon-color-blue200:hover {
+    filter: invert(84%) sepia(15%) saturate(3958%) hue-rotate(178deg) brightness(88%) contrast(95%) !important;
+}
+
+/* Icon color blue300:hover() */
+a > .icon-color-blue300:hover, button > .icon-color-blue300:hover {
+    filter: invert(83%) sepia(29%) saturate(6614%) hue-rotate(178deg) brightness(85%) contrast(93%) !important;
+}
+
+/* Icon color blue400:hover() */
+a > .icon-color-blue400:hover, button > .icon-color-blue400:hover {
+    filter: invert(55%) sepia(24%) saturate(1369%) hue-rotate(167deg) brightness(88%) contrast(92%) !important;
+}
+
+/* Icon color blue500:hover() */
+a > .icon-color-blue500:hover, button > .icon-color-blue500:hover {
+    filter: invert(45%) sepia(60%) saturate(1190%) hue-rotate(178deg) brightness(83%) contrast(95%) !important;
+}
+
+/* Icon color blue600:hover() */
+a > .icon-color-blue600:hover, button > .icon-color-blue600:hover {
+    filter: invert(50%) sepia(57%) saturate(3427%) hue-rotate(187deg) brightness(75%) contrast(99%) !important;
+}
+
+/* Icon color blue700:hover() */
+a > .icon-color-blue700:hover, button > .icon-color-blue700:hover {
+    filter: invert(48%) sepia(51%) saturate(4602%) hue-rotate(192deg) brightness(68%) contrast(97%) !important;
+}
+
+/* Icon color blue800:hover() */
+a > .icon-color-blue800:hover, button > .icon-color-blue800:hover {
+    filter: invert(29%) sepia(41%) saturate(2822%) hue-rotate(194deg) brightness(81%) contrast(93%) !important;
+}
+
+/* Icon color blue900:hover() */
+a > .icon-color-blue900:hover, button > .icon-color-blue900:hover {
+    filter: invert(19%) sepia(98%) saturate(1765%) hue-rotate(206deg) brightness(75%) contrast(98%) !important;
+}
+
+/* Icon color blueA100:hover() */
+a > .icon-color-blueA100:hover, button > .icon-color-blueA100:hover {
+    filter: invert(62%) sepia(73%) saturate(563%) hue-rotate(188deg) brightness(84%) contrast(107%) !important;
+}
+
+/* Icon color blueA200:hover() */
+a > .icon-color-blueA200:hover, button > .icon-color-blueA200:hover {
+    filter: invert(51%) sepia(96%) saturate(2945%) hue-rotate(201deg) brightness(86%) contrast(104%) !important;
+}
+
+/* Icon color blueA400:hover() */
+a > .icon-color-blueA400:hover, button > .icon-color-blueA400:hover {
+    filter: invert(37%) sepia(87%) saturate(2805%) hue-rotate(208deg) brightness(87%) contrast(102%) !important;
+}
+
+/* Icon color blueA700:hover() */
+a > .icon-color-blueA700:hover, button > .icon-color-blueA700:hover {
+    filter: invert(31%) sepia(90%) saturate(2081%) hue-rotate(216deg) brightness(80%) contrast(112%) !important;
+}
+
+/* Icon color lightBlue50:hover() */
+a > .icon-color-lightBlue50:hover, button > .icon-color-lightBlue50:hover {
+    filter: invert(99%) sepia(31%) saturate(2349%) hue-rotate(173deg) brightness(88%) contrast(99%) !important;
+}
+
+/* Icon color lightBlue100:hover() */
+a > .icon-color-lightBlue100:hover, button > .icon-color-lightBlue100:hover {
+    filter: invert(77%) sepia(38%) saturate(270%) hue-rotate(164deg) brightness(90%) contrast(98%) !important;
+}
+
+/* Icon color lightBlue200:hover() */
+a > .icon-color-lightBlue200:hover, button > .icon-color-lightBlue200:hover {
+    filter: invert(65%) sepia(52%) saturate(533%) hue-rotate(177deg) brightness(96%) contrast(96%) !important;
+}
+
+/* Icon color lightBlue300:hover() */
+a > .icon-color-lightBlue300:hover, button > .icon-color-lightBlue300:hover {
+    filter: invert(65%) sepia(60%) saturate(1046%) hue-rotate(170deg) brightness(88%) contrast(94%) !important;
+}
+
+/* Icon color lightBlue400:hover() */
+a > .icon-color-lightBlue400:hover, button > .icon-color-lightBlue400:hover {
+    filter: invert(61%) sepia(53%) saturate(2886%) hue-rotate(170deg) brightness(89%) contrast(93%) !important;
+}
+
+/* Icon color lightBlue500:hover() */
+a > .icon-color-lightBlue500:hover, button > .icon-color-lightBlue500:hover {
+    filter: invert(52%) sepia(56%) saturate(4031%) hue-rotate(168deg) brightness(87%) contrast(98%) !important;
+}
+
+/* Icon color lightBlue600:hover() */
+a > .icon-color-lightBlue600:hover, button > .icon-color-lightBlue600:hover {
+    filter: invert(50%) sepia(61%) saturate(3951%) hue-rotate(171deg) brightness(81%) contrast(98%) !important;
+}
+
+/* Icon color lightBlue700:hover() */
+a > .icon-color-lightBlue700:hover, button > .icon-color-lightBlue700:hover {
+    filter: invert(32%) sepia(93%) saturate(2947%) hue-rotate(181deg) brightness(83%) contrast(98%) !important;
+}
+
+/* Icon color lightBlue800:hover() */
+a > .icon-color-lightBlue800:hover, button > .icon-color-lightBlue800:hover {
+    filter: invert(28%) sepia(90%) saturate(1326%) hue-rotate(179deg) brightness(83%) contrast(98%) !important;
+}
+
+/* Icon color lightBlue900:hover() */
+a > .icon-color-lightBlue900:hover, button > .icon-color-lightBlue900:hover {
+    filter: invert(22%) sepia(49%) saturate(2746%) hue-rotate(188deg) brightness(85%) contrast(99%) !important;
+}
+
+/* Icon color lightBlueA100:hover() */
+a > .icon-color-lightBlueA100:hover, button > .icon-color-lightBlueA100:hover {
+    filter: invert(71%) sepia(36%) saturate(822%) hue-rotate(176deg) brightness(89%) contrast(108%) !important;
+}
+
+/* Icon color lightBlueA200:hover() */
+a > .icon-color-lightBlueA200:hover, button > .icon-color-lightBlueA200:hover {
+    filter: invert(64%) sepia(78%) saturate(1269%) hue-rotate(169deg) brightness(85%) contrast(103%) !important;
+}
+
+/* Icon color lightBlueA400:hover() */
+a > .icon-color-lightBlueA400:hover, button > .icon-color-lightBlueA400:hover {
+    filter: invert(71%) sepia(57%) saturate(7322%) hue-rotate(174deg) brightness(93%) contrast(105%) !important;
+}
+
+/* Icon color lightBlueA700:hover() */
+a > .icon-color-lightBlueA700:hover, button > .icon-color-lightBlueA700:hover {
+    filter: invert(36%) sepia(99%) saturate(2734%) hue-rotate(182deg) brightness(88%) contrast(100%) !important;
+}
+
+/* Icon color cyan50:hover() */
+a > .icon-color-cyan50:hover, button > .icon-color-cyan50:hover {
+    filter: invert(87%) sepia(30%) saturate(104%) hue-rotate(146deg) brightness(89%) contrast(96%) !important;
+}
+
+/* Icon color cyan100:hover() */
+a > .icon-color-cyan100:hover, button > .icon-color-cyan100:hover {
+    filter: invert(92%) sepia(9%) saturate(1024%) hue-rotate(142deg) brightness(84%) contrast(91%) !important;
+}
+
+/* Icon color cyan200:hover() */
+a > .icon-color-cyan200:hover, button > .icon-color-cyan200:hover {
+    filter: invert(78%) sepia(52%) saturate(325%) hue-rotate(138deg) brightness(82%) contrast(90%) !important;
+}
+
+/* Icon color cyan300:hover() */
+a > .icon-color-cyan300:hover, button > .icon-color-cyan300:hover {
+    filter: invert(79%) sepia(44%) saturate(771%) hue-rotate(150deg) brightness(77%) contrast(91%) !important;
+}
+
+/* Icon color cyan400:hover() */
+a > .icon-color-cyan400:hover, button > .icon-color-cyan400:hover {
+    filter: invert(85%) sepia(41%) saturate(4210%) hue-rotate(142deg) brightness(77%) contrast(84%) !important;
+}
+
+/* Icon color cyan500:hover() */
+a > .icon-color-cyan500:hover, button > .icon-color-cyan500:hover {
+    filter: invert(52%) sepia(91%) saturate(1304%) hue-rotate(145deg) brightness(80%) contrast(101%) !important;
+}
+
+/* Icon color cyan600:hover() */
+a > .icon-color-cyan600:hover, button > .icon-color-cyan600:hover {
+    filter: invert(43%) sepia(58%) saturate(1778%) hue-rotate(154deg) brightness(82%) contrast(101%) !important;
+}
+
+/* Icon color cyan700:hover() */
+a > .icon-color-cyan700:hover, button > .icon-color-cyan700:hover {
+    filter: invert(40%) sepia(16%) saturate(4891%) hue-rotate(152deg) brightness(84%) contrast(101%) !important;
+}
+
+/* Icon color cyan800:hover() */
+a > .icon-color-cyan800:hover, button > .icon-color-cyan800:hover {
+    filter: invert(28%) sepia(56%) saturate(2227%) hue-rotate(159deg) brightness(88%) contrast(101%) !important;
+}
+
+/* Icon color cyan900:hover() */
+a > .icon-color-cyan900:hover, button > .icon-color-cyan900:hover {
+    filter: invert(20%) sepia(79%) saturate(2369%) hue-rotate(164deg) brightness(72%) contrast(101%) !important;
+}
+
+/* Icon color cyanA100:hover() */
+a > .icon-color-cyanA100:hover, button > .icon-color-cyanA100:hover {
+    filter: invert(88%) sepia(15%) saturate(1305%) hue-rotate(140deg) brightness(89%) contrast(106%) !important;
+}
+
+/* Icon color cyanA200:hover() */
+a > .icon-color-cyanA200:hover, button > .icon-color-cyanA200:hover {
+    filter: invert(89%) sepia(83%) saturate(3420%) hue-rotate(121deg) brightness(90%) contrast(102%) !important;
+}
+
+/* Icon color cyanA400:hover() */
+a > .icon-color-cyanA400:hover, button > .icon-color-cyanA400:hover {
+    filter: invert(66%) sepia(75%) saturate(2404%) hue-rotate(144deg) brightness(91%) contrast(107%) !important;
+}
+
+/* Icon color cyanA700:hover() */
+a > .icon-color-cyanA700:hover, button > .icon-color-cyanA700:hover {
+    filter: invert(53%) sepia(46%) saturate(850%) hue-rotate(140deg) brightness(82%) contrast(105%) !important;
+}
+
+/* Icon color teal50:hover() */
+a > .icon-color-teal50:hover, button > .icon-color-teal50:hover {
+    filter: invert(92%) sepia(11%) saturate(188%) hue-rotate(128deg) brightness(86%) contrast(96%) !important;
+}
+
+/* Icon color teal100:hover() */
+a > .icon-color-teal100:hover, button > .icon-color-teal100:hover {
+    filter: invert(92%) sepia(12%) saturate(475%) hue-rotate(121deg) brightness(74%) contrast(100%) !important;
+}
+
+/* Icon color teal200:hover() */
+a > .icon-color-teal200:hover, button > .icon-color-teal200:hover {
+    filter: invert(76%) sepia(53%) saturate(234%) hue-rotate(125deg) brightness(75%) contrast(88%) !important;
+}
+
+/* Icon color teal300:hover() */
+a > .icon-color-teal300:hover, button > .icon-color-teal300:hover {
+    filter: invert(61%) sepia(86%) saturate(270%) hue-rotate(125deg) brightness(74%) contrast(82%) !important;
+}
+
+/* Icon color teal400:hover() */
+a > .icon-color-teal400:hover, button > .icon-color-teal400:hover {
+    filter: invert(52%) sepia(96%) saturate(348%) hue-rotate(125deg) brightness(72%) contrast(85%) !important;
+}
+
+/* Icon color teal500:hover() */
+a > .icon-color-teal500:hover, button > .icon-color-teal500:hover {
+    filter: invert(40%) sepia(63%) saturate(1183%) hue-rotate(138deg) brightness(76%) contrast(104%) !important;
+}
+
+/* Icon color teal600:hover() */
+a > .icon-color-teal600:hover, button > .icon-color-teal600:hover {
+    filter: invert(26%) sepia(51%) saturate(5532%) hue-rotate(163deg) brightness(82%) contrast(102%) !important;
+}
+
+/* Icon color teal700:hover() */
+a > .icon-color-teal700:hover, button > .icon-color-teal700:hover {
+    filter: invert(21%) sepia(71%) saturate(3103%) hue-rotate(161deg) brightness(80%) contrast(101%) !important;
+}
+
+/* Icon color teal800:hover() */
+a > .icon-color-teal800:hover, button > .icon-color-teal800:hover {
+    filter: invert(31%) sepia(13%) saturate(4788%) hue-rotate(135deg) brightness(76%) contrast(101%) !important;
+}
+
+/* Icon color teal900:hover() */
+a > .icon-color-teal900:hover, button > .icon-color-teal900:hover {
+    filter: invert(22%) sepia(11%) saturate(4800%) hue-rotate(129deg) brightness(85%) contrast(101%) !important;
+}
+
+/* Icon color tealA100:hover() */
+a > .icon-color-tealA100:hover, button > .icon-color-tealA100:hover {
+    filter: invert(93%) sepia(17%) saturate(770%) hue-rotate(91deg) brightness(89%) contrast(101%) !important;
+}
+
+/* Icon color tealA200:hover() */
+a > .icon-color-tealA200:hover, button > .icon-color-tealA200:hover {
+    filter: invert(98%) sepia(56%) saturate(1151%) hue-rotate(81deg) brightness(89%) contrast(102%) !important;
+}
+
+/* Icon color tealA400:hover() */
+a > .icon-color-tealA400:hover, button > .icon-color-tealA400:hover {
+    filter: invert(68%) sepia(45%) saturate(703%) hue-rotate(112deg) brightness(86%) contrast(94%) !important;
+}
+
+/* Icon color tealA700:hover() */
+a > .icon-color-tealA700:hover, button > .icon-color-tealA700:hover {
+    filter: invert(57%) sepia(15%) saturate(6357%) hue-rotate(133deg) brightness(80%) contrast(101%) !important;
+}
+
+/* Icon color green50:hover() */
+a > .icon-color-green50:hover, button > .icon-color-green50:hover {
+    filter: invert(88%) sepia(8%) saturate(308%) hue-rotate(73deg) brightness(96%) contrast(92%) !important;
+}
+
+/* Icon color green100:hover() */
+a > .icon-color-green100:hover, button > .icon-color-green100:hover {
+    filter: invert(97%) sepia(5%) saturate(1127%) hue-rotate(59deg) brightness(82%) contrast(85%) !important;
+}
+
+/* Icon color green200:hover() */
+a > .icon-color-green200:hover, button > .icon-color-green200:hover {
+    filter: invert(81%) sepia(24%) saturate(383%) hue-rotate(73deg) brightness(84%) contrast(85%) !important;
+}
+
+/* Icon color green300:hover() */
+a > .icon-color-green300:hover, button > .icon-color-green300:hover {
+    filter: invert(74%) sepia(41%) saturate(341%) hue-rotate(73deg) brightness(74%) contrast(94%) !important;
+}
+
+/* Icon color green400:hover() */
+a > .icon-color-green400:hover, button > .icon-color-green400:hover {
+    filter: invert(66%) sepia(26%) saturate(748%) hue-rotate(73deg) brightness(79%) contrast(88%) !important;
+}
+
+/* Icon color green500:hover() */
+a > .icon-color-green500:hover, button > .icon-color-green500:hover {
+    filter: invert(55%) sepia(8%) saturate(3660%) hue-rotate(73deg) brightness(94%) contrast(66%) !important;
+}
+
+/* Icon color green600:hover() */
+a > .icon-color-green600:hover, button > .icon-color-green600:hover {
+    filter: invert(57%) sepia(12%) saturate(2012%) hue-rotate(73deg) brightness(74%) contrast(93%) !important;
+}
+
+/* Icon color green700:hover() */
+a > .icon-color-green700:hover, button > .icon-color-green700:hover {
+    filter: invert(47%) sepia(12%) saturate(1958%) hue-rotate(73deg) brightness(81%) contrast(102%) !important;
+}
+
+/* Icon color green800:hover() */
+a > .icon-color-green800:hover, button > .icon-color-green800:hover {
+    filter: invert(37%) sepia(12%) saturate(2488%) hue-rotate(73deg) brightness(88%) contrast(89%) !important;
+}
+
+/* Icon color green900:hover() */
+a > .icon-color-green900:hover, button > .icon-color-green900:hover {
+    filter: invert(29%) sepia(13%) saturate(2540%) hue-rotate(74deg) brightness(81%) contrast(93%) !important;
+}
+
+/* Icon color greenA100:hover() */
+a > .icon-color-greenA100:hover, button > .icon-color-greenA100:hover {
+    filter: invert(92%) sepia(9%) saturate(1034%) hue-rotate(76deg) brightness(87%) contrast(93%) !important;
+}
+
+/* Icon color greenA200:hover() */
+a > .icon-color-greenA200:hover, button > .icon-color-greenA200:hover {
+    filter: invert(95%) sepia(89%) saturate(737%) hue-rotate(65deg) brightness(100%) contrast(88%) !important;
+}
+
+/* Icon color greenA400:hover() */
+a > .icon-color-greenA400:hover, button > .icon-color-greenA400:hover {
+    filter: invert(61%) sepia(100%) saturate(1501%) hue-rotate(102deg) brightness(85%) contrast(102%) !important;
+}
+
+/* Icon color greenA700:hover() */
+a > .icon-color-greenA700:hover, button > .icon-color-greenA700:hover {
+    filter: invert(47%) sepia(87%) saturate(997%) hue-rotate(107deg) brightness(82%) contrast(102%) !important;
+}
+
+/* Icon color lightGreen50:hover() */
+a > .icon-color-lightGreen50:hover, button > .icon-color-lightGreen50:hover {
+    filter: invert(88%) sepia(17%) saturate(155%) hue-rotate(54deg) brightness(95%) contrast(94%) !important;
+}
+
+/* Icon color lightGreen100:hover() */
+a > .icon-color-lightGreen100:hover, button > .icon-color-lightGreen100:hover {
+    filter: invert(82%) sepia(23%) saturate(213%) hue-rotate(45deg) brightness(93%) contrast(94%) !important;
+}
+
+/* Icon color lightGreen200:hover() */
+a > .icon-color-lightGreen200:hover, button > .icon-color-lightGreen200:hover {
+    filter: invert(89%) sepia(20%) saturate(464%) hue-rotate(39deg) brightness(78%) contrast(94%) !important;
+}
+
+/* Icon color lightGreen300:hover() */
+a > .icon-color-lightGreen300:hover, button > .icon-color-lightGreen300:hover {
+    filter: invert(91%) sepia(10%) saturate(1478%) hue-rotate(34deg) brightness(76%) contrast(86%) !important;
+}
+
+/* Icon color lightGreen400:hover() */
+a > .icon-color-lightGreen400:hover, button > .icon-color-lightGreen400:hover {
+    filter: invert(82%) sepia(14%) saturate(1320%) hue-rotate(42deg) brightness(76%) contrast(90%) !important;
+}
+
+/* Icon color lightGreen500:hover() */
+a > .icon-color-lightGreen500:hover, button > .icon-color-lightGreen500:hover {
+    filter: invert(76%) sepia(13%) saturate(1674%) hue-rotate(44deg) brightness(76%) contrast(89%) !important;
+}
+
+/* Icon color lightGreen600:hover() */
+a > .icon-color-lightGreen600:hover, button > .icon-color-lightGreen600:hover {
+    filter: invert(63%) sepia(20%) saturate(1120%) hue-rotate(47deg) brightness(81%) contrast(92%) !important;
+}
+
+/* Icon color lightGreen700:hover() */
+a > .icon-color-lightGreen700:hover, button > .icon-color-lightGreen700:hover {
+    filter: invert(50%) sepia(97%) saturate(291%) hue-rotate(49deg) brightness(76%) contrast(89%) !important;
+}
+
+/* Icon color lightGreen800:hover() */
+a > .icon-color-lightGreen800:hover, button > .icon-color-lightGreen800:hover {
+    filter: invert(56%) sepia(13%) saturate(5360%) hue-rotate(58deg) brightness(62%) contrast(63%) !important;
+}
+
+/* Icon color lightGreen900:hover() */
+a > .icon-color-lightGreen900:hover, button > .icon-color-lightGreen900:hover {
+    filter: invert(30%) sepia(59%) saturate(606%) hue-rotate(58deg) brightness(79%) contrast(86%) !important;
+}
+
+/* Icon color lightGreenA100:hover() */
+a > .icon-color-lightGreenA100:hover, button > .icon-color-lightGreenA100:hover {
+    filter: invert(94%) sepia(11%) saturate(1415%) hue-rotate(32deg) brightness(85%) contrast(104%) !important;
+}
+
+/* Icon color lightGreenA200:hover() */
+a > .icon-color-lightGreenA200:hover, button > .icon-color-lightGreenA200:hover {
+    filter: invert(80%) sepia(93%) saturate(315%) hue-rotate(29deg) brightness(82%) contrast(109%) !important;
+}
+
+/* Icon color lightGreenA400:hover() */
+a > .icon-color-lightGreenA400:hover, button > .icon-color-lightGreenA400:hover {
+    filter: invert(82%) sepia(45%) saturate(4117%) hue-rotate(45deg) brightness(99%) contrast(101%) !important;
+}
+
+/* Icon color lightGreenA700:hover() */
+a > .icon-color-lightGreenA700:hover, button > .icon-color-lightGreenA700:hover {
+    filter: invert(70%) sepia(39%) saturate(877%) hue-rotate(49deg) brightness(79%) contrast(106%) !important;
+}
+
+/* Icon color lime50:hover() */
+a > .icon-color-lime50:hover, button > .icon-color-lime50:hover {
+    filter: invert(88%) sepia(23%) saturate(124%) hue-rotate(33deg) brightness(94%) contrast(97%) !important;
+}
+
+/* Icon color lime100:hover() */
+a > .icon-color-lime100:hover, button > .icon-color-lime100:hover {
+    filter: invert(96%) sepia(88%) saturate(283%) hue-rotate(16deg) brightness(90%) contrast(91%) !important;
+}
+
+/* Icon color lime200:hover() */
+a > .icon-color-lime200:hover, button > .icon-color-lime200:hover {
+    filter: invert(95%) sepia(11%) saturate(1294%) hue-rotate(12deg) brightness(89%) contrast(87%) !important;
+}
+
+/* Icon color lime300:hover() */
+a > .icon-color-lime300:hover, button > .icon-color-lime300:hover {
+    filter: invert(98%) sepia(88%) saturate(784%) hue-rotate(6deg) brightness(80%) contrast(91%) !important;
+}
+
+/* Icon color lime400:hover() */
+a > .icon-color-lime400:hover, button > .icon-color-lime400:hover {
+    filter: invert(90%) sepia(48%) saturate(576%) hue-rotate(6deg) brightness(77%) contrast(91%) !important;
+}
+
+/* Icon color lime500:hover() */
+a > .icon-color-lime500:hover, button > .icon-color-lime500:hover {
+    filter: invert(85%) sepia(98%) saturate(403%) hue-rotate(6deg) brightness(76%) contrast(89%) !important;
+}
+
+/* Icon color lime600:hover() */
+a > .icon-color-lime600:hover, button > .icon-color-lime600:hover {
+    filter: invert(69%) sepia(99%) saturate(306%) hue-rotate(18deg) brightness(76%) contrast(102%) !important;
+}
+
+/* Icon color lime700:hover() */
+a > .icon-color-lime700:hover, button > .icon-color-lime700:hover {
+    filter: invert(74%) sepia(17%) saturate(1829%) hue-rotate(19deg) brightness(79%) contrast(80%) !important;
+}
+
+/* Icon color lime800:hover() */
+a > .icon-color-lime800:hover, button > .icon-color-lime800:hover {
+    filter: invert(58%) sepia(9%) saturate(3382%) hue-rotate(21deg) brightness(86%) contrast(83%) !important;
+}
+
+/* Icon color lime900:hover() */
+a > .icon-color-lime900:hover, button > .icon-color-lime900:hover {
+    filter: invert(39%) sepia(96%) saturate(324%) hue-rotate(16deg) brightness(79%) contrast(101%) !important;
+}
+
+/* Icon color limeA100:hover() */
+a > .icon-color-limeA100:hover, button > .icon-color-limeA100:hover {
+    filter: invert(90%) sepia(5%) saturate(3491%) hue-rotate(17deg) brightness(93%) contrast(102%) !important;
+}
+
+/* Icon color limeA200:hover() */
+a > .icon-color-limeA200:hover, button > .icon-color-limeA200:hover {
+    filter: invert(89%) sepia(100%) saturate(482%) hue-rotate(8deg) brightness(87%) contrast(101%) !important;
+}
+
+/* Icon color limeA400:hover() */
+a > .icon-color-limeA400:hover, button > .icon-color-limeA400:hover {
+    filter: invert(95%) sepia(62%) saturate(3194%) hue-rotate(15deg) brightness(85%) contrast(105%) !important;
+}
+
+/* Icon color limeA700:hover() */
+a > .icon-color-limeA700:hover, button > .icon-color-limeA700:hover {
+    filter: invert(78%) sepia(38%) saturate(1114%) hue-rotate(23deg) brightness(87%) contrast(101%) !important;
+}
+
+/* Icon color yellow50:hover() */
+a > .icon-color-yellow50:hover, button > .icon-color-yellow50:hover {
+    filter: invert(98%) sepia(86%) saturate(346%) hue-rotate(308deg) brightness(90%) contrast(101%) !important;
+}
+
+/* Icon color yellow100:hover() */
+a > .icon-color-yellow100:hover, button > .icon-color-yellow100:hover {
+    filter: invert(91%) sepia(23%) saturate(487%) hue-rotate(334deg) brightness(89%) contrast(107%) !important;
+}
+
+/* Icon color yellow200:hover() */
+a > .icon-color-yellow200:hover, button > .icon-color-yellow200:hover {
+    filter: invert(94%) sepia(10%) saturate(1430%) hue-rotate(348deg) brightness(88%) contrast(104%) !important;
+}
+
+/* Icon color yellow300:hover() */
+a > .icon-color-yellow300:hover, button > .icon-color-yellow300:hover {
+    filter: invert(89%) sepia(32%) saturate(748%) hue-rotate(340deg) brightness(93%) contrast(101%) !important;
+}
+
+/* Icon color yellow400:hover() */
+a > .icon-color-yellow400:hover, button > .icon-color-yellow400:hover {
+    filter: invert(87%) sepia(22%) saturate(1262%) hue-rotate(343deg) brightness(96%) contrast(103%) !important;
+}
+
+/* Icon color yellow500:hover() */
+a > .icon-color-yellow500:hover, button > .icon-color-yellow500:hover {
+    filter: invert(92%) sepia(16%) saturate(1869%) hue-rotate(352deg) brightness(89%) contrast(101%) !important;
+}
+
+/* Icon color yellow600:hover() */
+a > .icon-color-yellow600:hover, button > .icon-color-yellow600:hover {
+    filter: invert(81%) sepia(83%) saturate(860%) hue-rotate(329deg) brightness(93%) contrast(98%) !important;
+}
+
+/* Icon color yellow700:hover() */
+a > .icon-color-yellow700:hover, button > .icon-color-yellow700:hover {
+    filter: invert(86%) sepia(45%) saturate(2553%) hue-rotate(336deg) brightness(92%) contrast(97%) !important;
+}
+
+/* Icon color yellow800:hover() */
+a > .icon-color-yellow800:hover, button > .icon-color-yellow800:hover {
+    filter: invert(79%) sepia(19%) saturate(3625%) hue-rotate(339deg) brightness(84%) contrast(97%) !important;
+}
+
+/* Icon color yellow900:hover() */
+a > .icon-color-yellow900:hover, button > .icon-color-yellow900:hover {
+    filter: invert(51%) sepia(88%) saturate(1308%) hue-rotate(352deg) brightness(84%) contrast(93%) !important;
+}
+
+/* Icon color yellowA100:hover() */
+a > .icon-color-yellowA100:hover, button > .icon-color-yellowA100:hover {
+    filter: invert(98%) sepia(28%) saturate(1702%) hue-rotate(347deg) brightness(94%) contrast(106%) !important;
+}
+
+/* Icon color yellowA200:hover() */
+a > .icon-color-yellowA200:hover, button > .icon-color-yellowA200:hover {
+    filter: invert(100%) sepia(63%) saturate(6985%) hue-rotate(357deg) brightness(90%) contrast(105%) !important;
+}
+
+/* Icon color yellowA400:hover() */
+a > .icon-color-yellowA400:hover, button > .icon-color-yellowA400:hover {
+    filter: invert(76%) sepia(90%) saturate(1187%) hue-rotate(360deg) brightness(92%) contrast(109%) !important;
+}
+
+/* Icon color yellowA700:hover() */
+a > .icon-color-yellowA700:hover, button > .icon-color-yellowA700:hover {
+    filter: invert(88%) sepia(26%) saturate(4660%) hue-rotate(358deg) brightness(90%) contrast(106%) !important;
+}
+
+/* Icon color amber50:hover() */
+a > .icon-color-amber50:hover, button > .icon-color-amber50:hover {
+    filter: invert(98%) sepia(53%) saturate(817%) hue-rotate(300deg) brightness(92%) contrast(105%) !important;
+}
+
+/* Icon color amber100:hover() */
+a > .icon-color-amber100:hover, button > .icon-color-amber100:hover {
+    filter: invert(85%) sepia(19%) saturate(545%) hue-rotate(352deg) brightness(91%) contrast(103%) !important;
+}
+
+/* Icon color amber200:hover() */
+a > .icon-color-amber200:hover, button > .icon-color-amber200:hover {
+    filter: invert(77%) sepia(82%) saturate(256%) hue-rotate(346deg) brightness(87%) contrast(101%) !important;
+}
+
+/* Icon color amber300:hover() */
+a > .icon-color-amber300:hover, button > .icon-color-amber300:hover {
+    filter: invert(82%) sepia(75%) saturate(482%) hue-rotate(330deg) brightness(86%) contrast(101%) !important;
+}
+
+/* Icon color amber400:hover() */
+a > .icon-color-amber400:hover, button > .icon-color-amber400:hover {
+    filter: invert(90%) sepia(34%) saturate(2568%) hue-rotate(332deg) brightness(86%) contrast(102%) !important;
+}
+
+/* Icon color amber500:hover() */
+a > .icon-color-amber500:hover, button > .icon-color-amber500:hover {
+    filter: invert(71%) sepia(55%) saturate(749%) hue-rotate(350deg) brightness(89%) contrast(106%) !important;
+}
+
+/* Icon color amber600:hover() */
+a > .icon-color-amber600:hover, button > .icon-color-amber600:hover {
+    filter: invert(63%) sepia(59%) saturate(693%) hue-rotate(360deg) brightness(87%) contrast(102%) !important;
+}
+
+/* Icon color amber700:hover() */
+a > .icon-color-amber700:hover, button > .icon-color-amber700:hover {
+    filter: invert(67%) sepia(65%) saturate(2784%) hue-rotate(359deg) brightness(87%) contrast(103%) !important;
+}
+
+/* Icon color amber800:hover() */
+a > .icon-color-amber800:hover, button > .icon-color-amber800:hover {
+    filter: invert(57%) sepia(88%) saturate(2973%) hue-rotate(4deg) brightness(94%) contrast(102%) !important;
+}
+
+/* Icon color amber900:hover() */
+a > .icon-color-amber900:hover, button > .icon-color-amber900:hover {
+    filter: invert(43%) sepia(98%) saturate(1556%) hue-rotate(359deg) brightness(86%) contrast(109%) !important;
+}
+
+/* Icon color amberA100:hover() */
+a > .icon-color-amberA100:hover, button > .icon-color-amberA100:hover {
+    filter: invert(88%) sepia(19%) saturate(1085%) hue-rotate(343deg) brightness(89%) contrast(105%) !important;
+}
+
+/* Icon color amberA200:hover() */
+a > .icon-color-amberA200:hover, button > .icon-color-amberA200:hover {
+    filter: invert(77%) sepia(97%) saturate(610%) hue-rotate(325deg) brightness(96%) contrast(102%) !important;
+}
+
+/* Icon color amberA400:hover() */
+a > .icon-color-amberA400:hover, button > .icon-color-amberA400:hover {
+    filter: invert(86%) sepia(35%) saturate(5469%) hue-rotate(1deg) brightness(90%) contrast(102%) !important;
+}
+
+/* Icon color amberA700:hover() */
+a > .icon-color-amberA700:hover, button > .icon-color-amberA700:hover {
+    filter: invert(59%) sepia(95%) saturate(836%) hue-rotate(359deg) brightness(87%) contrast(105%) !important;
+}
+
+/* Icon color orange50:hover() */
+a > .icon-color-orange50:hover, button > .icon-color-orange50:hover {
+    filter: invert(95%) sepia(9%) saturate(1319%) hue-rotate(308deg) brightness(90%) contrast(105%) !important;
+}
+
+/* Icon color orange100:hover() */
+a > .icon-color-orange100:hover, button > .icon-color-orange100:hover {
+    filter: invert(89%) sepia(73%) saturate(1550%) hue-rotate(297deg) brightness(102%) contrast(115%) !important;
+}
+
+/* Icon color orange200:hover() */
+a > .icon-color-orange200:hover, button > .icon-color-orange200:hover {
+    filter: invert(87%) sepia(25%) saturate(967%) hue-rotate(326deg) brightness(86%) contrast(101%) !important;
+}
+
+/* Icon color orange300:hover() */
+a > .icon-color-orange300:hover, button > .icon-color-orange300:hover {
+    filter: invert(85%) sepia(9%) saturate(3373%) hue-rotate(329deg) brightness(83%) contrast(105%) !important;
+}
+
+/* Icon color orange400:hover() */
+a > .icon-color-orange400:hover, button > .icon-color-orange400:hover {
+    filter: invert(81%) sepia(25%) saturate(6229%) hue-rotate(340deg) brightness(91%) contrast(101%) !important;
+}
+
+/* Icon color orange500:hover() */
+a > .icon-color-orange500:hover, button > .icon-color-orange500:hover {
+    filter: invert(82%) sepia(48%) saturate(6907%) hue-rotate(1deg) brightness(88%) contrast(106%) !important;
+}
+
+/* Icon color orange600:hover() */
+a > .icon-color-orange600:hover, button > .icon-color-orange600:hover {
+    filter: invert(56%) sepia(86%) saturate(2013%) hue-rotate(2deg) brightness(84%) contrast(102%) !important;
+}
+
+/* Icon color orange700:hover() */
+a > .icon-color-orange700:hover, button > .icon-color-orange700:hover {
+    filter: invert(45%) sepia(90%) saturate(1992%) hue-rotate(10deg) brightness(89%) contrast(105%) !important;
+}
+
+/* Icon color orange800:hover() */
+a > .icon-color-orange800:hover, button > .icon-color-orange800:hover {
+    filter: invert(43%) sepia(42%) saturate(2354%) hue-rotate(6deg) brightness(83%) contrast(102%) !important;
+}
+
+/* Icon color orange900:hover() */
+a > .icon-color-orange900:hover, button > .icon-color-orange900:hover {
+    filter: invert(38%) sepia(72%) saturate(3714%) hue-rotate(7deg) brightness(81%) contrast(101%) !important;
+}
+
+/* Icon color orangeA100:hover() */
+a > .icon-color-orangeA100:hover, button > .icon-color-orangeA100:hover {
+    filter: invert(91%) sepia(18%) saturate(1428%) hue-rotate(321deg) brightness(87%) contrast(102%) !important;
+}
+
+/* Icon color orangeA200:hover() */
+a > .icon-color-orangeA200:hover, button > .icon-color-orangeA200:hover {
+    filter: invert(80%) sepia(59%) saturate(2215%) hue-rotate(328deg) brightness(90%) contrast(101%) !important;
+}
+
+/* Icon color orangeA400:hover() */
+a > .icon-color-orangeA400:hover, button > .icon-color-orangeA400:hover {
+    filter: invert(66%) sepia(51%) saturate(4236%) hue-rotate(359deg) brightness(88%) contrast(108%) !important;
+}
+
+/* Icon color orangeA700:hover() */
+a > .icon-color-orangeA700:hover, button > .icon-color-orangeA700:hover {
+    filter: invert(53%) sepia(28%) saturate(6196%) hue-rotate(359deg) brightness(82%) contrast(106%) !important;
+}
+
+/* Icon color deepOrange50:hover() */
+a > .icon-color-deepOrange50:hover, button > .icon-color-deepOrange50:hover {
+    filter: invert(85%) sepia(15%) saturate(296%) hue-rotate(314deg) brightness(95%) contrast(97%) !important;
+}
+
+/* Icon color deepOrange100:hover() */
+a > .icon-color-deepOrange100:hover, button > .icon-color-deepOrange100:hover {
+    filter: invert(94%) sepia(48%) saturate(1942%) hue-rotate(292deg) brightness(97%) contrast(110%) !important;
+}
+
+/* Icon color deepOrange200:hover() */
+a > .icon-color-deepOrange200:hover, button > .icon-color-deepOrange200:hover {
+    filter: invert(88%) sepia(35%) saturate(6547%) hue-rotate(312deg) brightness(108%) contrast(122%) !important;
+}
+
+/* Icon color deepOrange300:hover() */
+a > .icon-color-deepOrange300:hover, button > .icon-color-deepOrange300:hover {
+    filter: invert(70%) sepia(13%) saturate(4843%) hue-rotate(318deg) brightness(90%) contrast(101%) !important;
+}
+
+/* Icon color deepOrange400:hover() */
+a > .icon-color-deepOrange400:hover, button > .icon-color-deepOrange400:hover {
+    filter: invert(79%) sepia(50%) saturate(7300%) hue-rotate(332deg) brightness(88%) contrast(101%) !important;
+}
+
+/* Icon color deepOrange500:hover() */
+a > .icon-color-deepOrange500:hover, button > .icon-color-deepOrange500:hover {
+    filter: invert(44%) sepia(32%) saturate(5005%) hue-rotate(346deg) brightness(87%) contrast(101%) !important;
+}
+
+/* Icon color deepOrange600:hover() */
+a > .icon-color-deepOrange600:hover, button > .icon-color-deepOrange600:hover {
+    filter: invert(41%) sepia(39%) saturate(4690%) hue-rotate(350deg) brightness(83%) contrast(96%) !important;
+}
+
+/* Icon color deepOrange700:hover() */
+a > .icon-color-deepOrange700:hover, button > .icon-color-deepOrange700:hover {
+    filter: invert(32%) sepia(98%) saturate(2725%) hue-rotate(356deg) brightness(81%) contrast(87%) !important;
+}
+
+/* Icon color deepOrange800:hover() */
+a > .icon-color-deepOrange800:hover, button > .icon-color-deepOrange800:hover {
+    filter: invert(34%) sepia(87%) saturate(3102%) hue-rotate(356deg) brightness(73%) contrast(91%) !important;
+}
+
+/* Icon color deepOrange900:hover() */
+a > .icon-color-deepOrange900:hover, button > .icon-color-deepOrange900:hover {
+    filter: invert(21%) sepia(95%) saturate(1750%) hue-rotate(356deg) brightness(85%) contrast(97%) !important;
+}
+
+/* Icon color deepOrangeA100:hover() */
+a > .icon-color-deepOrangeA100:hover, button > .icon-color-deepOrangeA100:hover {
+    filter: invert(77%) sepia(77%) saturate(1415%) hue-rotate(307deg) brightness(90%) contrast(101%) !important;
+}
+
+/* Icon color deepOrangeA200:hover() */
+a > .icon-color-deepOrangeA200:hover, button > .icon-color-deepOrangeA200:hover {
+    filter: invert(53%) sepia(62%) saturate(2143%) hue-rotate(334deg) brightness(87%) contrast(101%) !important;
+}
+
+/* Icon color deepOrangeA400:hover() */
+a > .icon-color-deepOrangeA400:hover, button > .icon-color-deepOrangeA400:hover {
+    filter: invert(29%) sepia(38%) saturate(5614%) hue-rotate(4deg) brightness(88%) contrast(108%) !important;
+}
+
+/* Icon color deepOrangeA700:hover() */
+a > .icon-color-deepOrangeA700:hover, button > .icon-color-deepOrangeA700:hover {
+    filter: invert(25%) sepia(49%) saturate(3617%) hue-rotate(358deg) brightness(80%) contrast(110%) !important;
+}
+
+/* Icon color brown50:hover() */
+a > .icon-color-brown50:hover, button > .icon-color-brown50:hover {
+    filter: invert(92%) sepia(24%) saturate(115%) hue-rotate(317deg) brightness(89%) contrast(88%) !important;
+}
+
+/* Icon color brown100:hover() */
+a > .icon-color-brown100:hover, button > .icon-color-brown100:hover {
+    filter: invert(94%) sepia(6%) saturate(383%) hue-rotate(327deg) brightness(77%) contrast(82%) !important;
+}
+
+/* Icon color brown200:hover() */
+a > .icon-color-brown200:hover, button > .icon-color-brown200:hover {
+    filter: invert(74%) sepia(20%) saturate(185%) hue-rotate(329deg) brightness(77%) contrast(86%) !important;
+}
+
+/* Icon color brown300:hover() */
+a > .icon-color-brown300:hover, button > .icon-color-brown300:hover {
+    filter: invert(60%) sepia(11%) saturate(566%) hue-rotate(330deg) brightness(76%) contrast(89%) !important;
+}
+
+/* Icon color brown400:hover() */
+a > .icon-color-brown400:hover, button > .icon-color-brown400:hover {
+    filter: invert(48%) sepia(3%) saturate(2855%) hue-rotate(330deg) brightness(78%) contrast(89%) !important;
+}
+
+/* Icon color brown500:hover() */
+a > .icon-color-brown500:hover, button > .icon-color-brown500:hover {
+    filter: invert(33%) sepia(15%) saturate(1064%) hue-rotate(330deg) brightness(83%) contrast(84%) !important;
+}
+
+/* Icon color brown600:hover() */
+a > .icon-color-brown600:hover, button > .icon-color-brown600:hover {
+    filter: invert(29%) sepia(40%) saturate(427%) hue-rotate(329deg) brightness(80%) contrast(87%) !important;
+}
+
+/* Icon color brown700:hover() */
+a > .icon-color-brown700:hover, button > .icon-color-brown700:hover {
+    filter: invert(17%) sepia(8%) saturate(3529%) hue-rotate(327deg) brightness(86%) contrast(70%) !important;
+}
+
+/* Icon color brown800:hover() */
+a > .icon-color-brown800:hover, button > .icon-color-brown800:hover {
+    filter: invert(16%) sepia(9%) saturate(2633%) hue-rotate(324deg) brightness(80%) contrast(81%) !important;
+}
+
+/* Icon color brown900:hover() */
+a > .icon-color-brown900:hover, button > .icon-color-brown900:hover {
+    filter: invert(11%) sepia(6%) saturate(5320%) hue-rotate(321deg) brightness(73%) contrast(83%) !important;
+}
+
+/* Icon color grey50:hover() */
+a > .icon-color-grey50:hover, button > .icon-color-grey50:hover {
+    filter: invert(96%) sepia(1%) saturate(131%) hue-rotate(192deg) brightness(99%) contrast(96%) !important;
+}
+
+/* Icon color grey100:hover() */
+a > .icon-color-grey100:hover, button > .icon-color-grey100:hover {
+    filter: invert(100%) sepia(4%) saturate(18%) hue-rotate(37deg) brightness(98%) contrast(92%) !important;
+}
+
+/* Icon color grey200:hover() */
+a > .icon-color-grey200:hover, button > .icon-color-grey200:hover {
+    filter: invert(100%) sepia(1%) saturate(11%) hue-rotate(266deg) brightness(99%) contrast(87%) !important;
+}
+
+/* Icon color grey300:hover() */
+a > .icon-color-grey300:hover, button > .icon-color-grey300:hover {
+    filter: invert(100%) sepia(4%) saturate(1181%) hue-rotate(186deg) brightness(94%) contrast(76%) !important;
+}
+
+/* Icon color grey400:hover() */
+a > .icon-color-grey400:hover, button > .icon-color-grey400:hover {
+    filter: invert(88%) sepia(0%) saturate(447%) hue-rotate(257deg) brightness(69%) contrast(102%) !important;
+}
+
+/* Icon color grey500:hover() */
+a > .icon-color-grey500:hover, button > .icon-color-grey500:hover {
+    filter: invert(73%) sepia(0%) saturate(613%) hue-rotate(210deg) brightness(71%) contrast(91%) !important;
+}
+
+/* Icon color grey600:hover() */
+a > .icon-color-grey600:hover, button > .icon-color-grey600:hover {
+    filter: invert(52%) sepia(0%) saturate(1484%) hue-rotate(139deg) brightness(72%) contrast(89%) !important;
+}
+
+/* Icon color grey700:hover() */
+a > .icon-color-grey700:hover, button > .icon-color-grey700:hover {
+    filter: invert(37%) sepia(0%) saturate(522%) hue-rotate(143deg) brightness(78%) contrast(76%) !important;
+}
+
+/* Icon color grey800:hover() */
+a > .icon-color-grey800:hover, button > .icon-color-grey800:hover {
+    filter: invert(17%) sepia(0%) saturate(1683%) hue-rotate(164deg) brightness(83%) contrast(72%) !important;
+}
+
+/* Icon color grey900:hover() */
+a > .icon-color-grey900:hover, button > .icon-color-grey900:hover {
+    filter: invert(8%) sepia(20%) saturate(0%) hue-rotate(204deg) brightness(83%) contrast(90%) !important;
+}
+
+/* Icon color blueGrey50:hover() */
+a > .icon-color-blueGrey50:hover, button > .icon-color-blueGrey50:hover {
+    filter: invert(89%) sepia(4%) saturate(135%) hue-rotate(162deg) brightness(94%) contrast(91%) !important;
+}
+
+/* Icon color blueGrey100:hover() */
+a > .icon-color-blueGrey100:hover, button > .icon-color-blueGrey100:hover {
+    filter: invert(94%) sepia(13%) saturate(120%) hue-rotate(153deg) brightness(78%) contrast(87%) !important;
+}
+
+/* Icon color blueGrey200:hover() */
+a > .icon-color-blueGrey200:hover, button > .icon-color-blueGrey200:hover {
+    filter: invert(81%) sepia(14%) saturate(205%) hue-rotate(155deg) brightness(76%) contrast(89%) !important;
+}
+
+/* Icon color blueGrey300:hover() */
+a > .icon-color-blueGrey300:hover, button > .icon-color-blueGrey300:hover {
+    filter: invert(67%) sepia(26%) saturate(187%) hue-rotate(155deg) brightness(75%) contrast(91%) !important;
+}
+
+/* Icon color blueGrey400:hover() */
+a > .icon-color-blueGrey400:hover, button > .icon-color-blueGrey400:hover {
+    filter: invert(53%) sepia(25%) saturate(271%) hue-rotate(155deg) brightness(84%) contrast(92%) !important;
+}
+
+/* Icon color blueGrey500:hover() */
+a > .icon-color-blueGrey500:hover, button > .icon-color-blueGrey500:hover {
+    filter: invert(49%) sepia(5%) saturate(2235%) hue-rotate(155deg) brightness(79%) contrast(83%) !important;
+}
+
+/* Icon color blueGrey600:hover() */
+a > .icon-color-blueGrey600:hover, button > .icon-color-blueGrey600:hover {
+    filter: invert(41%) sepia(20%) saturate(475%) hue-rotate(154deg) brightness(79%) contrast(92%) !important;
+}
+
+/* Icon color blueGrey700:hover() */
+a > .icon-color-blueGrey700:hover, button > .icon-color-blueGrey700:hover {
+    filter: invert(34%) sepia(9%) saturate(1104%) hue-rotate(155deg) brightness(77%) contrast(90%) !important;
+}
+
+/* Icon color blueGrey800:hover() */
+a > .icon-color-blueGrey800:hover, button > .icon-color-blueGrey800:hover {
+    filter: invert(23%) sepia(29%) saturate(395%) hue-rotate(156deg) brightness(81%) contrast(87%) !important;
+}
+
+/* Icon color blueGrey900:hover() */
+a > .icon-color-blueGrey900:hover, button > .icon-color-blueGrey900:hover {
+    filter: invert(17%) sepia(21%) saturate(593%) hue-rotate(155deg) brightness(70%) contrast(90%) !important;
+}
+
+/*Icon sizes*/
+.icon-display-1 {
+    font-size: 6rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.icon-display-2 {
+    font-size: 5.5rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.icon-display-3 {
+    font-size: 4.5rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.icon-display-4 {
+    font-size: 3.5rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.icon-display-h3 {
+    font-size: 1.75rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.icon-display-text {
+    font-size: 1rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+}

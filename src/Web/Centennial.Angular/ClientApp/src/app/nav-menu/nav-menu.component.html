@@ -1,0 +1,27 @@
+<header>
+
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mat-elevation-z6 p-0">
+    <mat-toolbar color="primary">
+      <a mat-button [routerLink]="['/']">
+        <span class="mat-button-wrapper">
+          <img src="assets/images/logo_light.svg" height="30" style="margin: 0 4px 3px 0" alt="Centennial" />
+          <span>Centennial</span>
+        </span>
+        <span matripple="" class="mat-ripple mat-button-ripple"></span>
+        <span class="mat-button-focus-overlay"></span>
+      </a>
+      <span class="example-spacer"></span>
+      <!--<button mat-icon-button class="example-icon favorite-icon" aria-label="Favorite">
+          <mat-icon>favorite</mat-icon>
+      </button>-->
+      <!--<button mat-icon-button class="example-icon" aria-label="Share">
+          <mat-icon>share</mat-icon>
+      </button>-->
+      <app-identity></app-identity>
+    </mat-toolbar>
+
+  </nav>
+  <component-page-header></component-page-header>
+
+
+</header>

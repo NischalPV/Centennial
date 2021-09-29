@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  seq:
+    image: datalust/seq:latest
+    container_name: Seq
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: RabbitMQ
+
+  centennial.api:
+    image: ${REGISTRY:-nischalvarasadait}/centennial.api:${PLATFORM:-linux}-${TAG:-dev}
+    build:
+      context: .
+      dockerfile: src/Services/Centennial.Api/Dockerfile
+    depends_on:
+      - rabbitmq
+
+  centennial.identity:
+    image: ${REGISTRY:-nischalvarasadait}/centennial.identity:${PLATFORM:-linux}-${TAG:-dev}
+    build:
+      context: .
+      dockerfile: src/Services/Centennial.Identity/Dockerfile
+
+
+  centennial.angular:
+    image: ${REGISTRY:-nischalvarasadait}/centennial.angular:${PLATFORM:-linux}-${TAG:-dev}
+    build:
+      context: .
+      dockerfile: src/Web/Centennial.Angular/Dockerfile
+

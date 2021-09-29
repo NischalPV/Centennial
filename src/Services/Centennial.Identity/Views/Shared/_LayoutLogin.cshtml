@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Centennial</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/theme.reset.css" />
+    <link rel="stylesheet" href="~/css/theme.widgets.home.css" />
+    <link rel="stylesheet" href="~/css/theme.whitemode.css" />
+    <link rel="stylesheet" href="~/css/theme.universal.css" />
+    <link rel="stylesheet" href="~/css/material.css" />
+    <link rel="stylesheet" href="~/css/fabric.css" />
+</head>
+<body>
+    <div>
+        <main role="main">
+            <div class="outer">
+                <div class="middle">
+                    <div class="inner fade-in-lightbox">
+                        <div class="lightbox-cover"></div>
+                        <div>
+                            <span class="h4 text-grey600 logotext">Centennial</span>
+                        </div>
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer text-white" style="line-height: 30px">
+        <div class="container-fluid" style="font-size:0.8em">
+            &copy; @DateTime.UtcNow.Year | Centennial
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true" crossorigin="anonymous"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
