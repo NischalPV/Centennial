@@ -6,19 +6,34 @@ using MediatR;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Data;
+using Microsoft.EntityFrameworkCore.Design;
+using Centennial.Api.Infrastructure.EntityConfigurations;
 
 namespace Centennial.Api.Data
 {
     public class CentennialDbContext: DbContext, IUnitOfWork
     {
+        private readonly IMediator _mediator;
+        private IDbContextTransaction _currentTransaction;
+
         public CentennialDbContext(DbContextOptions<CentennialDbContext> options): base(options)
         {
+        }
+
+        public CentennialDbContext(DbContextOptions<CentennialDbContext> options, IMediator mediator) : base(options)
+        {
+            _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
+
+
+            System.Diagnostics.Debug.WriteLine("CentennialDbContext::ctor ->" + this.GetHashCode());
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
             MasterData.SeedUsingMigration(builder);
+
+            builder.ApplyConfiguration(new ClientRequestEntityTypeConfiguration());
         }
 
         public DbSet<Status> Statuses { get; set; }
@@ -37,8 +52,7 @@ namespace Centennial.Api.Data
         public DbSet<RawMaterial> RawMaterials { get; set; }
         public DbSet<ProductionProcess> ProductionProcesses { get; set; }
 
-        private readonly IMediator _mediator;
-        private IDbContextTransaction _currentTransaction;
+        
 
         public IDbContextTransaction GetCurrentTransaction() => _currentTransaction;
 

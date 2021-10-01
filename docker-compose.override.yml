@@ -18,6 +18,9 @@ services:
       - ASPNETCORE_URLS=http://+:80
       - IdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
       - ExternalIdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - EventBusConnection=${CENTENNIAL_AZURE_SERVICE_BUS:-rabbitmq}
+      - EventBusUserName=${CENTENNIAL_SERVICE_BUS_USERNAME}
+      - EventBusPassword=${CENTENNIAL_SERVICE_BUS_PASSWORD}
       - TZ=Asia/Kolkata
     ports:
       - "6002:80"

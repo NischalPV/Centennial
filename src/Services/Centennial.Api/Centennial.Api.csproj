@@ -32,6 +32,15 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.10" />
     <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.3" />
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.2.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0" />
+    <PackageReference Include="Serilog.Sinks.Http" Version="7.2.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.0.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +68,25 @@
     <None Remove="Events\" />
     <None Remove="Interfaces\Employee\" />
     <None Remove="Repositories\Employee\" />
+    <None Remove="Application\" />
+    <None Remove="Application\Behaviours\" />
+    <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="Dapper" />
+    <None Remove="Factories\" />
+    <None Remove="Application\IntegrationEvents\" />
+    <None Remove="Serilog.AspNetCore" />
+    <None Remove="Serilog.Enrichers.Environment" />
+    <None Remove="Serilog.Settings.Configuration" />
+    <None Remove="Serilog.Sinks.Console" />
+    <None Remove="Serilog.Sinks.Http" />
+    <None Remove="Serilog.Sinks.Seq" />
+    <None Remove="Entities\Idempotency\" />
+    <None Remove="Infrastructure\EntityConfigurations\" />
+    <None Remove="Infrastructure\Idempotency\" />
+    <None Remove="Infrastructure\AutofacModules\" />
+    <None Remove="Autofac.Extensions.DependencyInjection" />
+    <None Remove="Application\IntegrationEvents\Events\" />
+    <None Remove="Application\IntegrationEvents\EventHandlers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -81,5 +109,26 @@
     <Folder Include="Events\" />
     <Folder Include="Interfaces\Employee\" />
     <Folder Include="Repositories\Employee\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Behaviours\" />
+    <Folder Include="Factories\" />
+    <Folder Include="Application\IntegrationEvents\" />
+    <Folder Include="Entities\Idempotency\" />
+    <Folder Include="Infrastructure\EntityConfigurations\" />
+    <Folder Include="Infrastructure\Idempotency\" />
+    <Folder Include="Infrastructure\AutofacModules\" />
+    <Folder Include="Application\IntegrationEvents\Events\" />
+    <Folder Include="Application\IntegrationEvents\EventHandlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\EventBus\EventBus\EventBus.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BuildingBlocks\EventBus\EventBusRabbitMQ\EventBusRabbitMQ\EventBusRabbitMQ.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BuildingBlocks\EventBus\IntegrationEventLogEF\IntegrationEventLogEF\IntegrationEventLogEF.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
