@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Centennial.Api/Centennial.Api.csproj", "Centennial.Api/"]
+COPY ["Centennial.Api.csproj", "Centennial.Api/"]
 RUN dotnet restore "Centennial.Api/Centennial.Api.csproj"
 COPY . .
 WORKDIR "/src/Centennial.Api"
