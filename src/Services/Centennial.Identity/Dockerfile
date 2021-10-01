@@ -6,10 +6,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY "Centennial.Identity.csproj", "Centennial.Identity/"
+COPY "Services/Centennial.Identity.csproj", "Services/Centennial.Identity/"
 RUN dotnet restore "Centennial.Identity/Centennial.Identity.csproj"
 COPY . .
-WORKDIR "/src/Centennial.Identity"
+WORKDIR "/src/Services/Centennial.Identity"
 RUN dotnet build "Centennial.Identity.csproj" -c Release -o /app/build
 
 FROM build AS publish
