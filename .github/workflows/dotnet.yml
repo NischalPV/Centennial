@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Centennial.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build Centennial.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test Centennial.sln --no-build --verbosity normal
