@@ -8,8 +8,9 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["Centennial.Identity.csproj", "Centennial.Identity/"]
 RUN dotnet restore "Centennial.Identity/Centennial.Identity.csproj"
-COPY . .
+
 WORKDIR "/src/Centennial.Identity"
+COPY . .
 RUN dotnet build "Centennial.Identity.csproj" -c Release -o /app/build
 
 FROM build AS publish
