@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration development --aot",
     "build:ssr": "ng run Centennial.Angular:server:dev",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

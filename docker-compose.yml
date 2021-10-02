@@ -9,13 +9,6 @@ services:
     image: rabbitmq:3-management-alpine
     container_name: RabbitMQ
 
-  centennial.api:
-    image: ${REGISTRY:-nischalvarasadait}/centennial.api:${PLATFORM:-linux}-${TAG:-dev}
-    build:
-      context: .
-      dockerfile: src/Services/Centennial.Api/Dockerfile
-    depends_on:
-      - rabbitmq
 
   centennial.identity:
     image: ${REGISTRY:-nischalvarasadait}/centennial.identity:${PLATFORM:-linux}-${TAG:-dev}
@@ -23,10 +16,22 @@ services:
       context: .
       dockerfile: src/Services/Centennial.Identity/Dockerfile
 
+  centennial.api:
+    image: ${REGISTRY:-nischalvarasadait}/centennial.api:${PLATFORM:-linux}-${TAG:-dev}
+    build:
+      context: .
+      dockerfile: src/Services/Centennial.Api/Dockerfile
+    depends_on:
+      - centennial.identity
+      - rabbitmq
 
   centennial.angular:
     image: ${REGISTRY:-nischalvarasadait}/centennial.angular:${PLATFORM:-linux}-${TAG:-dev}
     build:
       context: .
       dockerfile: src/Web/Centennial.Angular/Dockerfile
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:14.18}
+    depends_on:
+      - centennial.identity
 
