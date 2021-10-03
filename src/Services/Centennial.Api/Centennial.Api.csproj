@@ -41,6 +41,9 @@
     <PackageReference Include="Serilog.Sinks.Http" Version="7.2.0" />
     <PackageReference Include="Serilog.Sinks.Seq" Version="5.0.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="System.Runtime.Handles" Version="4.3.0" />
+    <PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -87,6 +90,9 @@
     <None Remove="Autofac.Extensions.DependencyInjection" />
     <None Remove="Application\IntegrationEvents\Events\" />
     <None Remove="Application\IntegrationEvents\EventHandlers\" />
+    <None Remove="System.Runtime.Handles" />
+    <None Remove="System.Text.Encoding.Extensions" />
+    <None Remove="System.IO.FileSystem.Primitives" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
