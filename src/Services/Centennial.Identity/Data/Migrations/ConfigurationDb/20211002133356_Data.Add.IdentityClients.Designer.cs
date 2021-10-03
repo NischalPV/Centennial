@@ -4,14 +4,16 @@ using Centennial.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Centennial.Identity.Data.Migrations.ConfigurationDb
 {
     [DbContext(typeof(ConfigurationDbContext))]
-    partial class ConfigurationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211002133356_Data.Add.IdentityClients")]
+    partial class DataAddIdentityClients
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -507,9 +509,9 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                             AuthorizationCodeLifetime = 300,
                             BackChannelLogoutSessionRequired = true,
                             ClientClaimsPrefix = "client_",
-                            ClientId = "centennial-angular--prod",
+                            ClientId = "centennial-angular",
                             ClientName = "Centennial Angular Frontend OpenId Client",
-                            ClientUri = "https://centennial-web.azurewebsites.net",
+                            ClientUri = "http://219.91.186.71:6003",
                             Created = new DateTime(2021, 6, 25, 11, 7, 29, 917, DateTimeKind.Utc).AddTicks(7870),
                             Description = "Production",
                             DeviceCodeLifetime = 300,
@@ -579,7 +581,7 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                             AuthorizationCodeLifetime = 300,
                             BackChannelLogoutSessionRequired = true,
                             ClientClaimsPrefix = "client_",
-                            ClientId = "centennial-api--prod",
+                            ClientId = "centennial-api",
                             ClientName = "Centennail API Swagger UI",
                             Created = new DateTime(2021, 6, 25, 11, 7, 29, 917, DateTimeKind.Utc).AddTicks(7870),
                             Description = "Production",
@@ -661,7 +663,7 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                         {
                             Id = 2,
                             ClientId = 3,
-                            Origin = "https://centennial-web.azurewebsites.net"
+                            Origin = "http://219.91.186.71:6003"
                         });
                 });
 
@@ -773,13 +775,13 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                         {
                             Id = 3,
                             ClientId = 3,
-                            PostLogoutRedirectUri = "https://centennial-web.azurewebsites.net/"
+                            PostLogoutRedirectUri = "http://219.91.186.71:6003/"
                         },
                         new
                         {
                             Id = 4,
                             ClientId = 4,
-                            PostLogoutRedirectUri = "https://centennial-api.azurewebsites.net/swagger/"
+                            PostLogoutRedirectUri = "http://219.91.186.71:6002/swagger/"
                         });
                 });
 
@@ -848,13 +850,13 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                         {
                             Id = 3,
                             ClientId = 3,
-                            RedirectUri = "https://centennial-web.azurewebsites.net/"
+                            RedirectUri = "http://219.91.186.71:6003/"
                         },
                         new
                         {
                             Id = 4,
                             ClientId = 4,
-                            RedirectUri = "https://centennial-api.azurewebsites.net/swagger/oauth2-redirect.html"
+                            RedirectUri = "http://219.91.186.71:6002/swagger/oauth2-redirect.html"
                         });
                 });
 

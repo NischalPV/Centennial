@@ -271,6 +271,55 @@ namespace Centennial.Identity.Configuration
                     DeviceCodeLifetime = 300,
                     NonEditable = false,
                 },
+
+                new Client()
+                {
+                    Id = 3,
+                    Enabled = true,
+                    ClientId = "centennial-angular--prod",
+                    ProtocolType = "oidc",
+                    RequireClientSecret = true,
+                    ClientName = "Centennial Angular Frontend OpenId Client",
+                    Description = "Production",
+                    ClientUri = $"https://centennial-web.azurewebsites.net",
+                    LogoUri = null,
+                    RequireConsent = false,
+                    AllowRememberConsent = true,
+                    AlwaysIncludeUserClaimsInIdToken = false,
+                    RequirePkce = true,
+                    AllowPlainTextPkce = false,
+                    RequireRequestObject = false,
+                    AllowAccessTokensViaBrowser = true,
+                    FrontChannelLogoutSessionRequired = true,
+                    FrontChannelLogoutUri = null,
+                    BackChannelLogoutSessionRequired = true,
+                    BackChannelLogoutUri = null,
+                    AllowOfflineAccess = false,
+                    IdentityTokenLifetime = 300,
+                    AllowedIdentityTokenSigningAlgorithms = null,
+                    AccessTokenLifetime = 3600,
+                    AuthorizationCodeLifetime = 300,
+                    ConsentLifetime = null,
+                    AbsoluteRefreshTokenLifetime = 2592000,
+                    SlidingRefreshTokenLifetime = 1296000,
+                    RefreshTokenUsage = 1,
+                    UpdateAccessTokenClaimsOnRefresh = false,
+                    RefreshTokenExpiration = 1,
+                    AccessTokenType = 0,
+                    EnableLocalLogin = true,
+                    IncludeJwtId = true,
+                    AlwaysSendClientClaims = false,
+                    ClientClaimsPrefix = "client_",
+                    PairWiseSubjectSalt = null,
+                    Created = new DateTime(2021, 6, 25, 11, 7, 29, 917, DateTimeKind.Utc).AddTicks(7870),
+                    Updated = null,
+                    LastAccessed = null,
+                    UserSsoLifetime = null,
+                    UserCodeType = null,
+                    DeviceCodeLifetime = 300,
+                    NonEditable = false,
+                },
+
                 new Client()
                 {
                     Id = 2,
@@ -280,6 +329,53 @@ namespace Centennial.Identity.Configuration
                     RequireClientSecret = true,
                     ClientName = "Centennail API Swagger UI",
                     Description = null,
+                    ClientUri = null,
+                    LogoUri = null,
+                    RequireConsent = false,
+                    AllowRememberConsent = true,
+                    AlwaysIncludeUserClaimsInIdToken = false,
+                    RequirePkce = true,
+                    AllowPlainTextPkce = false,
+                    RequireRequestObject = false,
+                    AllowAccessTokensViaBrowser = true,
+                    FrontChannelLogoutSessionRequired = true,
+                    FrontChannelLogoutUri = null,
+                    BackChannelLogoutSessionRequired = true,
+                    BackChannelLogoutUri = null,
+                    AllowOfflineAccess = false,
+                    IdentityTokenLifetime = 300,
+                    AllowedIdentityTokenSigningAlgorithms = null,
+                    AccessTokenLifetime = 3600,
+                    AuthorizationCodeLifetime = 300,
+                    ConsentLifetime = null,
+                    AbsoluteRefreshTokenLifetime = 2592000,
+                    SlidingRefreshTokenLifetime = 1296000,
+                    RefreshTokenUsage = 1,
+                    UpdateAccessTokenClaimsOnRefresh = false,
+                    RefreshTokenExpiration = 1,
+                    AccessTokenType = 0,
+                    EnableLocalLogin = true,
+                    IncludeJwtId = true,
+                    AlwaysSendClientClaims = false,
+                    ClientClaimsPrefix = "client_",
+                    PairWiseSubjectSalt = null,
+                    Created = new DateTime(2021, 6, 25, 11, 7, 29, 917, DateTimeKind.Utc).AddTicks(7870),
+                    Updated = null,
+                    LastAccessed = null,
+                    UserSsoLifetime = null,
+                    UserCodeType = null,
+                    DeviceCodeLifetime = 300,
+                    NonEditable = false,
+                },
+                new Client()
+                {
+                    Id = 4,
+                    Enabled = true,
+                    ClientId = "centennial-api--prod",
+                    ProtocolType = "oidc",
+                    RequireClientSecret = true,
+                    ClientName = "Centennail API Swagger UI",
+                    Description = "Production",
                     ClientUri = null,
                     LogoUri = null,
                     RequireConsent = false,
@@ -335,6 +431,12 @@ namespace Centennial.Identity.Configuration
                     ClientId = 1,
                     Origin = $"http://localhost:6003"
                 },
+                new ClientCorsOrigin()
+                {
+                    Id = 2,
+                    ClientId = 3,
+                    Origin = $"https://centennial-web.azurewebsites.net"
+                },
             };
         }
 
@@ -361,6 +463,19 @@ namespace Centennial.Identity.Configuration
                 },
                 new ClientScope()
                 {
+                    Id = 5,
+                    ClientId = 3,
+                    Scope = IdentityServerConstants.StandardScopes.OpenId
+                },
+
+                new ClientScope()
+                {
+                    Id = 6,
+                    ClientId = 3,
+                    Scope = IdentityServerConstants.StandardScopes.Profile
+                },
+                new ClientScope()
+                {
                     Id = 3,
                     ClientId = 1,
                     Scope = "API"
@@ -371,7 +486,19 @@ namespace Centennial.Identity.Configuration
                     ClientId = 2,
                     Scope = "API"
                 },
-                
+                new ClientScope()
+                {
+                    Id = 7,
+                    ClientId = 3,
+                    Scope = "API"
+                },
+                new ClientScope()
+                {
+                    Id = 8,
+                    ClientId = 4,
+                    Scope = "API"
+                },
+
             };
         }
 
@@ -393,6 +520,18 @@ namespace Centennial.Identity.Configuration
                 {
                     Id = 2,
                     ClientId = 2,
+                    GrantType = "implicit"
+                },
+                new ClientGrantType()
+                {
+                    Id = 3,
+                    ClientId = 3,
+                    GrantType = "implicit"
+                },
+                new ClientGrantType()
+                {
+                    Id = 4,
+                    ClientId = 4,
                     GrantType = "implicit"
                 },
             };
@@ -418,6 +557,18 @@ namespace Centennial.Identity.Configuration
                     ClientId = 2,
                     PostLogoutRedirectUri = $"http://localhost:6002/swagger/"
                 },
+                new ClientPostLogoutRedirectUri()
+                {
+                    Id = 3,
+                    ClientId = 3,
+                    PostLogoutRedirectUri = $"https://centennial-web.azurewebsites.net/"
+                },
+                new ClientPostLogoutRedirectUri()
+                {
+                    Id = 4,
+                    ClientId = 4,
+                    PostLogoutRedirectUri = $"https://centennial-api.azurewebsites.net/swagger/"
+                },
             };
         }
 
@@ -440,6 +591,18 @@ namespace Centennial.Identity.Configuration
                     Id = 2,
                     ClientId = 2,
                     RedirectUri = $"http://localhost:6002/swagger/oauth2-redirect.html"
+                },
+                new ClientRedirectUri()
+                {
+                    Id = 3,
+                    ClientId = 3,
+                    RedirectUri = $"https://centennial-web.azurewebsites.net/"
+                },
+                new ClientRedirectUri()
+                {
+                    Id = 4,
+                    ClientId = 4,
+                    RedirectUri = $"https://centennial-api.azurewebsites.net/swagger/oauth2-redirect.html"
                 },
             };
 

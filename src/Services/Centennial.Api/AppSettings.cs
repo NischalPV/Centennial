@@ -5,6 +5,7 @@ namespace Centennial.Api
     {
         public string IdentityUrl { get; set; }
         public string EventBusConnection { get; set; }
+        public string OAuthClientId { get; set; }
 
     }
 }

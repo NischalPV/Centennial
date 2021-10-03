@@ -17,6 +17,7 @@ export class SecurityService {
   private authenticationSource = new Subject<boolean>();
   authenticationChallenge$ = this.authenticationSource.asObservable();
   private authorityUrl = '';
+  private oAuthClientId = '';
 
   public IsAuthorized: boolean;
   public UserData: any;
@@ -29,7 +30,8 @@ export class SecurityService {
     this.storage = _storageService;
 
     this._configurationService.settingsLoaded$.subscribe(x => {
-      this.authorityUrl = this._configurationService.serverSettings.identityUrl
+      this.authorityUrl = this._configurationService.serverSettings.identityUrl;
+      this.oAuthClientId = this._configurationService.serverSettings.oAuthClientId;
       this.storage.store('IdentityUrl', this.authorityUrl);
     });
 
@@ -80,7 +82,7 @@ export class SecurityService {
     this.ResetAuthorizationData();
 
     let authorizationUrl = this.authorityUrl + '/connect/authorize';
-    let client_id = 'centennial-angular';
+    let client_id = this.oAuthClientId;
     let redirect_uri = location.origin + '/';
     let response_type = 'id_token token';
     let scope = 'openid profile';

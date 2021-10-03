@@ -67,9 +67,6 @@
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Remove="appsettings.Production.json" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Certificates\centennial.pfx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>

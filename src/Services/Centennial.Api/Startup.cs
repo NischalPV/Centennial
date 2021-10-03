@@ -77,6 +77,7 @@ namespace Centennial.Api
             // this.AutofacContainer = app.ApplicationServices.GetAutofacRoot();
 
             var pathBase = Configuration["PATH_BASE"];
+            var oAuthClientId = Configuration["OAuthClientId"];
 
             if (env.IsDevelopment())
             {
@@ -100,7 +101,7 @@ namespace Centennial.Api
                .UseSwaggerUI(c =>
                {
                    c.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "Centennial.API V1");
-                   c.OAuthClientId("centennial-api");
+                   c.OAuthClientId($"{oAuthClientId}");
                    c.OAuthAppName("Centennial API Swagger UI");
                });
 

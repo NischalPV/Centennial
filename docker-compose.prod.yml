@@ -15,10 +15,10 @@ services:
 
   centennial.identity:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
-      - WebApiUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:6002
-      - AngularUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:6003
+      - WebApiUrl=http://${CENTENNIAL_PROD_EXTERNAL_DNS_NAME_OR_IP}:6002
+      - AngularUrl=http://${CENTENNIAL_PROD_EXTERNAL_DNS_NAME_OR_IP}:6003
       - TZ=Asia/Kolkata
     ports:
       - "5000:80"
@@ -30,14 +30,14 @@ services:
 
   centennial.api:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
-      - IdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
-      - ExternalIdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
-      - EventBusConnection=${CENTENNIAL_AZURE_SERVICE_BUS:-rabbitmq}
+      - IdentityUrl=http://${CENTENNIAL_PROD_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - ExternalIdentityUrl=http://${CENTENNIAL_PROD_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - EventBusConnection=${CENTENNIAL_PROD_SERVICE_BUS}
       - EventBusUserName=${CENTENNIAL_SERVICE_BUS_USERNAME}
       - EventBusPassword=${CENTENNIAL_SERVICE_BUS_PASSWORD}
-      - OAuthClientId=centennial-api
+      - OAuthClientId=centennial-api--prod
       - TZ=Asia/Kolkata
     ports:
       - "6002:80"
@@ -50,14 +50,14 @@ services:
 
   centennial.angular:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
-      - IdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
-      - ExternalIdentityUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:5000
-      - WebApiUrl=http://${CENTENNIAL_EXTERNAL_DNS_NAME_OR_IP}:6002
+      - IdentityUrl=http://${CENTENNIAL_PROD_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - ExternalIdentityUrl=http://${CENTENNIAL_PROD_EXTERNAL_DNS_NAME_OR_IP}:5000
+      - WebApiUrl=http://${CENTENNIAL_PROD_EXTERNAL_DNS_NAME_OR_IP}:6002
       - TZ=Asia/Kolkata
       - ApiVersion=v1
-      - OAuthClientId=centennial-angular
+      - OAuthClientId=centennial-angular--prod
     ports:
       - "6003:80"
     volumes:
