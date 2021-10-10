@@ -17,7 +17,8 @@ import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
+  host: { 'class': 'w-100 mt-3' }
 })
 export class ProductsComponent implements OnInit {
 

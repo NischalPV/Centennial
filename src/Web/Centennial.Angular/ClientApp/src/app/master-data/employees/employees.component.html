@@ -1,6 +1,29 @@
 <p *ngIf="!employees"><em>Loading...</em></p>
-
-<div class="container-fluid">
+<div class=" container-fluid d-lg-none">
+    <div *ngIf="employees">
+        <div class="col-12 shadow-sm">
+            <mat-card *ngFor="let employee of employees" class="my-2">
+                <mat-card-header>
+                    <mat-card-title>{{employee.name}}</mat-card-title>
+                    <mat-card-subtitle>{{employee.createdDate}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-divider inset></mat-divider>
+                <mat-card-actions>
+                    <button mat-icon-button class="icon-color-indigo500" aria-label="Edit Employee">
+                        <mat-icon fontSet="material-icons-two-tone">edit</mat-icon>
+                    </button>
+                    <button mat-icon-button class="icon-color-teal500" aria-label="View Details">
+                        <mat-icon fontSet="material-icons-two-tone">info</mat-icon>
+                    </button>
+                    <button mat-icon-button class="icon-color-red500" aria-label="Delete Material" (click)="deleteEmployee(employee.id)">
+                        <mat-icon fontSet="material-icons-two-tone">delete</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-none d-lg-block">
   <div class="row">
     <div class="col-3 border-end text-center">
       <h1 class="font-weight-thin fs-2">

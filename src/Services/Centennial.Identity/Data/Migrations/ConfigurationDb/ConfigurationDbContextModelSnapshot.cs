@@ -473,7 +473,7 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                             ClientClaimsPrefix = "client_",
                             ClientId = "centennial-angular",
                             ClientName = "Centennial Angular Frontend OpenId Client",
-                            ClientUri = "http://localhost:6003",
+                            ClientUri = "https://localhost:6004",
                             Created = new DateTime(2021, 6, 25, 11, 7, 29, 917, DateTimeKind.Utc).AddTicks(7870),
                             DeviceCodeLifetime = 300,
                             EnableLocalLogin = true,
@@ -655,7 +655,7 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                         {
                             Id = 1,
                             ClientId = 1,
-                            Origin = "http://localhost:6003"
+                            Origin = "https://localhost:6004"
                         },
                         new
                         {
@@ -761,7 +761,7 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                         {
                             Id = 1,
                             ClientId = 1,
-                            PostLogoutRedirectUri = "http://localhost:6003/"
+                            PostLogoutRedirectUri = "https://localhost:6004/"
                         },
                         new
                         {
@@ -836,7 +836,7 @@ namespace Centennial.Identity.Data.Migrations.ConfigurationDb
                         {
                             Id = 1,
                             ClientId = 1,
-                            RedirectUri = "http://localhost:6003/"
+                            RedirectUri = "https://localhost:6004/"
                         },
                         new
                         {

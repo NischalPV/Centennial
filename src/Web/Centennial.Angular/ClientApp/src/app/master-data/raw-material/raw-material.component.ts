@@ -19,7 +19,8 @@ import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 @Component({
   selector: 'app-raw-material',
   templateUrl: './raw-material.component.html',
-  styleUrls: ['./raw-material.component.css']
+  styleUrls: ['./raw-material.component.css'],
+  host: { 'class': 'w-100 mt-3' }
 })
 export class RawMaterialComponent implements OnInit {
 

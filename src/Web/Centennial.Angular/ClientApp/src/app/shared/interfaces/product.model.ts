@@ -1,4 +1,5 @@
 import { IMaterial } from './material.model';
+import { IProductPriceRecords } from './product-price-records.model';
 import { IProductionProcess } from './production-process.model';
 
 export interface IProduct {
@@ -15,5 +16,5 @@ export interface IProduct {
   updatedBy: string;
   material: IMaterial;
   productionProcesses: IProductionProcess[];
-
+  productPriceRecords: IProductPriceRecords[];
 }

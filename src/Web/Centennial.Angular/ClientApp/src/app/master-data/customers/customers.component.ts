@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { catchError, filter } from 'rxjs/operators';
-import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 
 import { ICustomer } from '../../shared/interfaces/customer.model';
 import { CustomersService } from '../shared/services/customers.service';
@@ -11,30 +11,43 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { ComponentPageTitle } from '../../shared/classes/component-page-title';
+import { FieldsErrorMatcher } from '../../shared/classes/fields-error-matcher';
 
 @Component({
   selector: 'app-customers',
   templateUrl: './customers.component.html',
-  styleUrls: ['./customers.component.css']
+  styleUrls: ['./customers.component.css'],
+  host: { 'class': 'w-100 mt-3' }
 })
 export class CustomersComponent implements OnInit {
 
   public customers: ICustomer[];
   errorReceived: boolean;
   readonly formControl: AbstractControl;
-  public displayedColumns: string[] = ['sn', 'name', 'phoneNumber', 'createdDate', 'action'];
+  public displayedColumns: string[] = ['sn', 'name', 'phoneNumber', 'email', 'gstin', 'createdDate', 'action'];
   public datasource = new MatTableDataSource<ICustomer>();
+  public gstMatcher = new FieldsErrorMatcher();
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
 
   constructor(private service: CustomersService, private configurationService: ConfigurationService, private formBuilder: FormBuilder, public _componentPageTitle: ComponentPageTitle) { }
 
+  private checkGsts: ValidatorFn = (group: AbstractControl): ValidationErrors | null => {
+    let gst = group.get('gstNumber')?.value
+    let confirmGst = group?.get('gstNumberConfirm')?.value;
+    return gst === confirmGst ? null : { notSame: true };
+  }
+
   public createCustomerForm = this.formBuilder.group({
     name: ['', Validators.required],
     phoneNumber: ['', Validators.required],
-    address: ['']
-  })
+    address: [''],
+    email: ['', Validators.email],
+    gstNumber: ['', [Validators.minLength(15), Validators.required]],
+    gstNumberConfirm: ['', [Validators.required]]
+  },
+    { validators: this.checkGsts })
 
   ngOnInit(): void {
 
@@ -55,9 +68,12 @@ export class CustomersComponent implements OnInit {
   }
 
   public onSubmit(): void {
-    console.log(this.createCustomerForm.value);
-    this.postCustomer(this.createCustomerForm.value);
-    this.createCustomerForm.reset();
+
+    if (!this.createCustomerForm.invalid) {
+      console.log(this.createCustomerForm.value);
+      this.postCustomer(this.createCustomerForm.value);
+      this.createCustomerForm.reset();
+    }
   }
 
   public applyFilter(event: Event) {
@@ -103,6 +119,8 @@ export class CustomersComponent implements OnInit {
         console.log("customers received: " + this.customers.length);
       });
   }
+
+  
 
   private handleError(error: any) {
     this.errorReceived = true;

@@ -14,7 +14,7 @@ export class ComponentPageHeader implements OnInit {
   ngOnInit(): void {
   }
 
-  //@Output() toggleSidenav = new EventEmitter<void>();
+  @Output() toggleSidenav = new EventEmitter<void>();
 
   getTitle() {
     return this._componentPageTitle.title;

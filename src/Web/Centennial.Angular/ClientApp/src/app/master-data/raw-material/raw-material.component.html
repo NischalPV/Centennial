@@ -1,6 +1,36 @@
 <p *ngIf="!rawMaterials"><em>Loading...</em></p>
-
-<div class="container-fluid">
+<div class=" container-fluid d-lg-none">
+    <div *ngIf="rawMaterials">
+        <div class="col-12 shadow-sm">
+            <mat-card *ngFor="let rm of rawMaterials" class="my-2">
+                <mat-card-header>
+                    <mat-card-title>{{rm.name}}</mat-card-title>
+                    <mat-card-subtitle>{{rm.material.name}} | {{rm.size}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="pe-1 fw-bolder mb-0">
+                        Created date:
+                    </p>
+                    <p>{{rm.createdDate}}</p>
+                   
+                </mat-card-content>
+                <mat-divider inset></mat-divider>
+                <mat-card-actions>
+                    <button mat-icon-button class="icon-color-indigo500" aria-label="Edit Raw material">
+                        <mat-icon fontSet="material-icons-two-tone">edit</mat-icon>
+                    </button>
+                    <button mat-icon-button class="icon-color-teal500" aria-label="View Details">
+                        <mat-icon fontSet="material-icons-two-tone">info</mat-icon>
+                    </button>
+                    <button mat-icon-button class="icon-color-red500" aria-label="Delete Raw Material" (click)="deleteRawMaterial(rm.id)">
+                        <mat-icon fontSet="material-icons-two-tone">delete</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-none d-lg-block">
   <div class="row">
     <div class="col-3 border-end text-center">
       <h1 class="font-weight-thin fs-2">

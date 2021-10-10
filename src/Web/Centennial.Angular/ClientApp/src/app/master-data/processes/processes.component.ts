@@ -15,7 +15,8 @@ import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 @Component({
   selector: 'app-processes',
   templateUrl: './processes.component.html',
-  styleUrls: ['./processes.component.css']
+  styleUrls: ['./processes.component.css'],
+  host: { 'class': 'w-100 mt-3' }
 })
 export class ProcessesComponent implements OnInit {
 

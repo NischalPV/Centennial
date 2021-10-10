@@ -24,6 +24,7 @@ namespace Centennial.Api.Repositories
         {
             return await _context.Products
                 .Include(m => m.Material)
+                .Include(m => m.ProductionProcesses)
                 .Where(p => p.IsActive).ToListAsync();
         }
 
@@ -31,6 +32,7 @@ namespace Centennial.Api.Repositories
         {
             return await _context.Products
                 .Include(m => m.Material)
+                .Include(m => m.ProductionProcesses)
                 .Where(p => p.IsActive && p.Id == id).SingleOrDefaultAsync();
         }
 

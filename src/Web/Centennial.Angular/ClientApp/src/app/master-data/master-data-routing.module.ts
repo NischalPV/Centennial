@@ -7,6 +7,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
 import { RawMaterialComponent } from './raw-material/raw-material.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { ProductionProcessesComponent } from './production-processes/production-processes.component';
 
 const routes: Routes = [
   { path: 'masterdata/processes', component: ProcessesComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'masterdata/products', component: ProductsComponent },
   { path: 'masterdata/rawmaterials', component: RawMaterialComponent },
   { path: 'masterdata/employees', component: EmployeesComponent },
+  { path: 'masterdata/productionprocesses:id', component: ProductionProcessesComponent }
 ];
 
 @NgModule({

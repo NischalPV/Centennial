@@ -233,7 +233,7 @@ namespace Centennial.Identity.Configuration
                     RequireClientSecret = true,
                     ClientName = "Centennial Angular Frontend OpenId Client",
                     Description = null,
-                    ClientUri = $"http://localhost:6003",
+                    ClientUri = $"https://localhost:6004",
                     LogoUri = null,
                     RequireConsent = false,
                     AllowRememberConsent = true,
@@ -429,7 +429,7 @@ namespace Centennial.Identity.Configuration
                 {
                     Id = 1,
                     ClientId = 1,
-                    Origin = $"http://localhost:6003"
+                    Origin = $"https://localhost:6004"
                 },
                 new ClientCorsOrigin()
                 {
@@ -549,7 +549,7 @@ namespace Centennial.Identity.Configuration
                 {
                     Id = 1,
                     ClientId = 1,
-                    PostLogoutRedirectUri = $"http://localhost:6003/"
+                    PostLogoutRedirectUri = $"https://localhost:6004/"
                 },
                 new ClientPostLogoutRedirectUri()
                 {
@@ -584,7 +584,7 @@ namespace Centennial.Identity.Configuration
                 {
                     Id = 1,
                     ClientId = 1,
-                    RedirectUri = $"http://localhost:6003/"
+                    RedirectUri = $"https://localhost:6004/"
                 },
                 new ClientRedirectUri()
                 {

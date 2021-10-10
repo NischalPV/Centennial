@@ -1,0 +1,5 @@
+.docs-component-viewer-nav .docs-component-viewer-nav-content {
+  width: 240px;
+  height: calc(100vh - 56px);
+  overflow: auto;
+}

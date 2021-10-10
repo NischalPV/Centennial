@@ -15,7 +15,8 @@ import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
-  styleUrls: ['./employees.component.css']
+  styleUrls: ['./employees.component.css'],
+  host: {'class': 'w-100 mt-3'}
 })
 export class EmployeesComponent implements OnInit {
 

@@ -7,6 +7,7 @@ import { SecurityService } from '../../../shared/services/security.service';
 import { ConfigurationService } from '../../../shared/services/configuration.service';
 
 import { IProduct } from '../../../shared/interfaces/product.model';
+import { IProductionProcess } from '../../../shared/interfaces/production-process.model';
 
 @Injectable({
   providedIn: 'root'
@@ -50,5 +51,10 @@ export class ProductsService {
     return this.dataService.delete(url).pipe(tap((res: any) => {
       return res;
     }));
+  }
+
+  postProductionProcesses(id: string, productionProcesses: IProductionProcess[]): Observable<IProduct> {
+    let url = `${this.webApiUrl}/api/${this.apiVersion}/products/${id}`;
+    return this.dataService.post(url, productionProcesses).pipe<IProduct>(tap((res: any) => { return res; }));
   }
 }

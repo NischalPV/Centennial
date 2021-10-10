@@ -1,6 +1,6 @@
 <header>
 
-  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mat-elevation-z6 p-0">
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mat-elevation-z6 p-0 docs-navbar-header">
     <mat-toolbar color="primary">
       <a mat-button [routerLink]="['/']">
         <span class="mat-button-wrapper">
@@ -17,11 +17,10 @@
       <!--<button mat-icon-button class="example-icon" aria-label="Share">
           <mat-icon>share</mat-icon>
       </button>-->
-      <app-identity></app-identity>
+      <div class="d-none d-md-block">
+          <app-identity></app-identity>
+      </div>
     </mat-toolbar>
 
   </nav>
-  <component-page-header></component-page-header>
-
-
 </header>

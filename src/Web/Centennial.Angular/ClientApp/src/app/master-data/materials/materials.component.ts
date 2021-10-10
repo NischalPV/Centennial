@@ -15,7 +15,8 @@ import { ComponentPageTitle } from '../../shared/classes/component-page-title';
 @Component({
   selector: 'app-materials',
   templateUrl: './materials.component.html',
-  styleUrls: ['./materials.component.css']
+  styleUrls: ['./materials.component.css'],
+  host: { 'class': 'w-100 mt-3' }
 })
 export class MaterialsComponent implements OnInit {
 

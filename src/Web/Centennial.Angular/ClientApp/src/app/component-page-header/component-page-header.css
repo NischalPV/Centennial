@@ -23,3 +23,31 @@ h1 {
     padding: 28px 8px;
     font-size: 20px;
   }
+
+.component-page-header {
+  display: flex;
+  align-items: center
+}
+
+.sidenav-toggle {
+  padding: 0;
+  margin: 8px;
+  min-width: 64px;
+  display: none
+}
+
+@media (max-width: 959px) {
+  .sidenav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+}
+
+.sidenav-toggle mat-icon {
+  font-size: 30px;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  color: #fff
+}

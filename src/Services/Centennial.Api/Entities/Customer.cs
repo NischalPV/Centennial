@@ -12,6 +12,14 @@ namespace Centennial.Api.Entities
         [Phone]
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
+
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [MinLength(15)]
+        public string GSTNumber { get; set; }
+
         public string CreatedBy { get; set; }
 
         private Customer()
@@ -27,11 +35,12 @@ namespace Centennial.Api.Entities
             CreatedDate = createdDate ?? DateTime.UtcNow;
         }
 
-        public Customer(string id, string name, string phoneNumber, string createdBy, DateTime createdDate, bool isActive)
+        public Customer(string id, string name, string phoneNumber, string gstNumber, string createdBy, DateTime createdDate, bool isActive)
         {
             Id = id;
             Name = name;
             PhoneNumber = phoneNumber;
+            GSTNumber = gstNumber;
             CreatedBy = createdBy;
             CreatedDate = createdDate;
             IsActive = isActive;

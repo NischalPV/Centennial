@@ -1,4 +1,6 @@
-<header class="docs-primary-header component-page-header mb-3">
- 
-  <h1>{{getTitle()}} </h1>
+<header class="docs-primary-header component-page-header">
+    <button mat-button class="sidenav-toggle" (click)="toggleSidenav.emit()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <h1>{{getTitle()}} </h1>
 </header>

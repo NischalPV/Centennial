@@ -21,6 +21,7 @@ using Centennial.Identity.Devspaces;
 using Microsoft.AspNetCore.DataProtection;
 using StackExchange.Redis;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Centennial.Identity
 {
@@ -98,7 +99,27 @@ namespace Centennial.Identity
                         sqlOptions.EnableRetryOnFailure(maxRetryCount: 15, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null);
                     });
             })
-            .Services.AddTransient<IProfileService, ProfileService>();
+            .Services.AddTransient<IProfileService, ProfileService>()
+            //.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            //.AddCookie(o => {
+            //    o.CookieManager = new ChunkingCookieManager();
+            //    o.Cookie.HttpOnly = true;
+            //    o.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
+            //    o.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.None;
+            //});
+            ;
+
+            //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            //.AddCookie(o =>
+            //{
+            //    o.CookieManager = new ChunkingCookieManager();
+            //    o.Cookie.HttpOnly = true;
+            //    o.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Lax;
+            //    o.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.SameAsRequest;
+            //});
+
+
+
 
             //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -145,7 +166,11 @@ namespace Centennial.Identity
             // Fix a problem with chrome. Chrome enabled a new feature "Cookies without SameSite must be secure", 
             // the coockies shold be expided from https, but in eShop, the internal comunicacion in aks and docker compose is http.
             // To avoid this problem, the policy of cookies shold be in Lax mode.
-            app.UseCookiePolicy(new CookiePolicyOptions { MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.Lax });
+            app.UseCookiePolicy(new CookiePolicyOptions {
+                HttpOnly = Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy.None,
+                Secure = Microsoft.AspNetCore.Http.CookieSecurePolicy.SameAsRequest,
+                MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.Lax,
+            });
 
 
             app.UseRouting();

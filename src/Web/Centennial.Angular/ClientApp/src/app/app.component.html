@@ -1,42 +1,47 @@
 <body [ngClass]="{'bg-login': !Authenticated}">
-    <app-nav-menu></app-nav-menu>
-    <div class="container-fluid">
-        <router-outlet *ngIf="Authenticated"></router-outlet>
-        <div *ngIf="!Authenticated">
-            <main role="main">
-                <div class="outer">
-                    <div class="middle">
-                        <div class="inner fade-in-lightbox">
-                            <div class="lightbox-cover"></div>
-                            <div>
-                                <span class="h4 text-grey600 font-weight-light">Centennial</span>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <section class="text-title text-center">
-                                            <div role="heading">
-                                                <p class="h2">
-                                                    <i class="ms-Icon ms-Icon--Warning text-danger" title="Not Set" aria-hidden="true"></i>
-                                                </p>
-                                                Unauthorized
-                                            </div>
-                                            <div class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="control-label h5 font-weight-normal text-red600">Please login to continue</label>
+    <div style="display:flex; flex-direction:column; height:100vh;">
+        <app-nav-menu class="mat-elevation-z6" style="z-index:2;"></app-nav-menu>
+
+        <app-component-sidenav *ngIf="Authenticated"></app-component-sidenav>
+        <div class="container-fluid" *ngIf="!Authenticated">
+            <!--<router-outlet *ngIf="Authenticated"></router-outlet>-->
+            <div>
+                <main role="main">
+                    <div class="outer">
+                        <div class="middle">
+                            <div class="inner fade-in-lightbox">
+                                <div class="lightbox-cover"></div>
+                                <div>
+                                    <span class="h4 text-grey600 font-weight-light">Centennial</span>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <section class="text-title text-center">
+                                                <div role="heading">
+                                                    <p class="h2">
+                                                        <i class="ms-Icon ms-Icon--Warning text-danger" title="Not Set" aria-hidden="true"></i>
+                                                    </p>
+                                                    Unauthorized
                                                 </div>
-                                                <div class="pt-3">
-                                                    <button class="btn btn-block btn-primary rounded-0" (click)="login()">Login</button>
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="control-label h5 font-weight-normal text-red600">Please login to continue</label>
+                                                    </div>
+                                                    <div class="pt-3">
+                                                        <button class="btn btn-block btn-primary rounded-0" (click)="login()">Login</button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </section>
+                                            </section>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
     </div>
+
 </body>

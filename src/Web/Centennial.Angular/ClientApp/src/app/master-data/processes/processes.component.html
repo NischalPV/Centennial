@@ -1,7 +1,51 @@
 <p *ngIf="!processes"><em>Loading...</em></p>
 
+<div class=" container-fluid d-lg-none">
+    <div *ngIf="processes">
+        <div class="col-12 shadow-sm">
+            <mat-card *ngFor="let process of processes" class="my-2">
+                <mat-card-header>
+                    <mat-card-title>{{process.name}}</mat-card-title>
+                    <mat-card-subtitle>{{process.createdDate}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="row my-1">
+                        <div class="col-6">
+                            <span class="pe-1 fw-bolder">Mandatory:</span>
+                            <span>{{process.isMandatory}}</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="pe-1 fw-bolder">Removable:</span>
+                            <span>{{process.isRemovable}}</span>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-6">
+                            <span class="pe-1 fw-bolder">Out Bound:</span>
+                            <span>{{process.isOutBound}}</span>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                    </div>
+                </mat-card-content>
+                <mat-divider inset></mat-divider>
+                <mat-card-actions>
+                    <button mat-icon-button class="icon-color-indigo500" aria-label="Edit Process">
+                        <mat-icon fontSet="material-icons-two-tone">edit</mat-icon>
+                    </button>
+                    <button mat-icon-button class="icon-color-teal500" aria-label="View Details">
+                        <mat-icon fontSet="material-icons-two-tone">info</mat-icon>
+                    </button>
+                    <button mat-icon-button class="icon-color-red500" aria-label="Delete Process" (click)="deleteProcess(process.id)">
+                        <mat-icon fontSet="material-icons-two-tone">delete</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
 
-<div class="container-fluid">
+<div class="container-fluid d-none d-lg-block">
     <div class="row">
         <div class="col-3 border-end text-center">
             <h1 class="font-weight-thin fs-2">

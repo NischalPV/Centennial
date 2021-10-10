@@ -1,0 +1,75 @@
+material-docs-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh
+}
+
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2
+}
+
+app-component-sidenav {
+  flex: 1
+}
+
+app-component-sidenav {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+app-component-sidenav {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+@media (max-width: 720px) {
+  app-component-sidenav {
+    overflow-y: visible
+  }
+}
+
+
+
+.docs-component-viewer-sidenav-container {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.docs-component-viewer-sidenav {
+  overflow: auto;
+}
+
+.docs-component-sidenav-inner-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.docs-component-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.docs-component-sidenav-inner-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.docs-component-sidenav-body-content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+div .mat-list-base {
+  padding-top: 0;
+}
+
+div.docs-component-viewer-nav-content .mat-nav-list .mat-list-item .mat-list-item-content {
+  padding-left: 25px;
+}

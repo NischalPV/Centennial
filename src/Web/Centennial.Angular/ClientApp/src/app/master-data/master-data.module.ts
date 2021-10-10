@@ -20,6 +20,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 // Components
 
@@ -29,6 +31,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
 import { RawMaterialComponent } from './raw-material/raw-material.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { ProductionProcessesComponent } from './production-processes/production-processes.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { EmployeesComponent } from './employees/employees.component';
     CustomersComponent,
     ProductsComponent,
     RawMaterialComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    ProductionProcessesComponent
   ],
   imports: [
     CommonModule,
@@ -55,6 +59,8 @@ import { EmployeesComponent } from './employees/employees.component';
     MatFormFieldModule,
     MatGridListModule,
     MatSlideToggleModule,
+    MatCardModule,
+    MatDividerModule,
     MasterDataRoutingModule
   ]
 })

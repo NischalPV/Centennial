@@ -20,6 +20,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 // Routing
 
@@ -33,6 +34,9 @@ import { ConfigurationRoutingModule } from './configuration/configuration-routin
 import { MasterDataModule } from './master-data/master-data.module';
 import {ConfigurationModule } from './configuration/configuration.module';
 import { ComponentPageHeader } from './component-page-header/component-page-header.component';
+import { ComponentSidenav } from './component-sidenav/component-sidenav.component';
+import { NavComponent } from './nav/nav.component';
+import { MenuItems } from './shared/classes/menu-items';
 
 
 @NgModule({
@@ -42,6 +46,8 @@ import { ComponentPageHeader } from './component-page-header/component-page-head
     IdentityComponent,
     NavMenuComponent,
     ComponentPageHeader,
+    ComponentSidenav,
+    NavComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({
@@ -59,6 +65,7 @@ import { ComponentPageHeader } from './component-page-header/component-page-head
     MatMenuModule,
     MatToolbarModule,
     MatButtonModule,
+    MatListModule,
     AppRoutingModule,
     MasterDataRoutingModule,
     ConfigurationRoutingModule,
@@ -67,7 +74,7 @@ import { ComponentPageHeader } from './component-page-header/component-page-head
     ConfigurationModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MenuItems],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
